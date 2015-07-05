@@ -1,5 +1,5 @@
 ## Running tests
 
 ```bash
-$ erlc bob*.erl
-$ erl -noshell -eval "eunit:test(bob_test, [verbose])" -s init stop
+$ lfec bob*.lfe
+$ lfe -noshell -eval '(eunit:test 'bob-test `(,verbose))" -s init stop
