@@ -1,6 +1,6 @@
-# xErlang
+# xLFE
 
-Exercism exercises in Erlang
+Exercism exercises in LFE
 
 ## Contributing Guide
 
