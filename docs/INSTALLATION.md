@@ -31,6 +31,7 @@ With your system's "developer tools" or "essential build packages,``git``, and E
 $ git clone https://github.com/rvirding/lfe
 $ cd lfe
 $ make
+$ make install
 ```
 
 Once you have LFE compiled, you can start up the REPL (interactive session) by executing the ``lfe`` binary:
