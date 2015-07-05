@@ -19,4 +19,4 @@ Arch Linux : Erlang is available on AUR via `yaourt -S erlang`
 
 ### Installing from Source
 
-Get [Erlang OTP 17.1](http://www.erlang.org/download.html)
+Get [Erlang OTP 17.4](http://www.erlang.org/download.html)
