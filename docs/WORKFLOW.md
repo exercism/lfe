@@ -2,4 +2,5 @@
 
 ```bash
 $ lfec bob*.lfe
-$ lfe -noshell -eval '(eunit:test 'bob-test `(,verbose))" -s init stop
+$ lfe -noshell -eval "(eunit:test 'bob-test '(verbose))" -s init stop
+```
