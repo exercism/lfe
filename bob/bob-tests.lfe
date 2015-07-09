@@ -68,4 +68,4 @@
 ;;   (bob-responds "\\xdcML\\xe4\\xdcTS!" "Whatever."))
 
 (defun bob-responds (question answer)
-  (is-equal answer (: bob response-for question)))
+  (is-equal answer (bob:response-for question)))
