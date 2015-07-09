@@ -7,5 +7,5 @@
 (defun accumulate
   (((cons h t) f out)
    (accumulate t f (cons (funcall f h) out)))
-  ((() _f out)
-   (: lists reverse out)))
+  (('() _f out)
+   (lists:reverse out)))
