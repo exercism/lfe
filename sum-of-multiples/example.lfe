@@ -8,9 +8,9 @@
 (defun sum-of-multiples (multiples n)
   (lists:foldl
     (lambda (x sum)
-      (case (multiple multiples x)
-        ('true (+ sum x))
-        ('false sum)))
+      (if (multiple multiples x)
+        (+ sum x)
+        sum))
     0
     (lists:seq 1 (- n 1))))
 
