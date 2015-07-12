@@ -2,7 +2,8 @@
   (behaviour ltest-unit)
   (export all))
 
-(include-lib "../deps/ltest/include/ltest-macros.lfe")
+(include-lib "eunit/include/eunit.hrl")
+(include-lib "ltest/include/ltest-macros.lfe")
 
 (deftest responds-to-something
   (bob-responds "Tom-ay-to, tom-aaaah-to." "Whatever."))
@@ -60,12 +61,17 @@
   (bob-responds "4?" "Sure."))
 
 ;; FIXME: Unicode issues...
-;; (deftest responds-to-unicode-shout
-;;   (bob-responds "\xdcML\xc4\xdcTS!" "Whoa, chill out!"))
+(deftest responds-to-unicode-shout
+  (bob-responds "\xdcML\xc4\xdcTS!" "Whoa, chill out!"))
 
-;; FIXME: Unicode issues...
-;; (deftest responds-to-unicode-non-shout
-;;   (bob-responds "\\xdcML\\xe4\\xdcTS!" "Whatever."))
+(deftest responds-to-utf8-shout
+  (bob-responds "ÜMLÄÜTS!" "Whoa, chill out!"))
+
+(deftest responds-to-unicode-non-shout
+  (bob-responds "\xdcML\xe4\xdcTS!" "Whatever."))
+
+(deftest responds-to-utf8-non-shout
+  (bob-responds "ÜMLäÜTS!" "Whatever."))
 
 (defun bob-responds (question answer)
   (is-equal answer (bob:response-for question)))
