@@ -9,7 +9,13 @@ $ export ERL_LIBS=$(find deps -maxdepth 1 -mindepth 1 | tr '\n' ':')
 ```
 
 If you're not using Bash, change the last command to what is needed to set an
-environment variable in your shell.
+environment variable in your shell, e.g. for [fish][1]:
+
+```fish
+set -xU ERL_LIBS (find deps -maxdepth 1 -mindepth 1 | tr '\n' ':')
+```
+
+[1]: http://fishshell.com
 
 For each example, the following general steps are required:
 
