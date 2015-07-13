@@ -62,13 +62,13 @@
 
 ;; FIXME: Unicode issues...
 (deftest responds-to-unicode-shout
-  (bob-responds "\xdcML\xc4\xdcTS!" "Whoa, chill out!"))
+  (bob-responds "\xdc;ML\xc4;\xdc;TS!" "Whoa, chill out!"))
 
 (deftest responds-to-utf8-shout
   (bob-responds "ÜMLÄÜTS!" "Whoa, chill out!"))
 
 (deftest responds-to-unicode-non-shout
-  (bob-responds "\xdcML\xe4\xdcTS!" "Whatever."))
+  (bob-responds "\xdc;ML\xe4;\xdc;TS!" "Whatever."))
 
 (deftest responds-to-utf8-non-shout
   (bob-responds "ÜMLäÜTS!" "Whatever."))
