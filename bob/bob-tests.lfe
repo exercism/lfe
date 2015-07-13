@@ -52,7 +52,7 @@
 ;; This one is especially challenging in Erlang, hint: use the re module.
 
 ;; (deftest responds-to-other-whitespace
-;;   (bob-responds "\n\r \t\v\xA0\x{2002}" "Fine. Be that way!"))
+;;   (bob-responds "\n\r \t\v\xA0;\x{2002};" "Fine. Be that way!"))
 
 (deftest responds-to-only-numbers
   (bob-responds "1, 2, 3" "Whatever."))
@@ -60,7 +60,6 @@
 (deftest responds-to-question-with-only-numbers
   (bob-responds "4?" "Sure."))
 
-;; FIXME: Unicode issues...
 (deftest responds-to-unicode-shout
   (bob-responds "\xdc;ML\xc4;\xdc;TS!" "Whoa, chill out!"))
 
