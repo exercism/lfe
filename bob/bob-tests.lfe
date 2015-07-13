@@ -63,14 +63,9 @@
 (deftest responds-to-unicode-shout
   (bob-responds "\xdc;ML\xc4;\xdc;TS!" "Whoa, chill out!"))
 
-(deftest responds-to-utf8-shout
-  (bob-responds "ÜMLÄÜTS!" "Whoa, chill out!"))
 
 (deftest responds-to-unicode-non-shout
   (bob-responds "\xdc;ML\xe4;\xdc;TS!" "Whatever."))
-
-(deftest responds-to-utf8-non-shout
-  (bob-responds "ÜMLäÜTS!" "Whatever."))
 
 (defun bob-responds (question answer)
   (is-equal answer (bob:response-for question)))
