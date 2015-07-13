@@ -30,3 +30,9 @@ $ lfe -pa bob -noshell -eval \
   "(eunit:test 'bob-tests '(verbose))" \
   -s init stop
 ```
+
+When you're done running the tests, don't forget to put the example back where you got it!
+
+```bash
+mv bob/bob.lfe bob/example.lfe
+```
