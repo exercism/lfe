@@ -14,10 +14,10 @@ environment variable in your shell.
 For each example, the following general steps are required:
 
 ```bash
-$ mv <problem>/example.lfe <problem>/<problem>.lfe
+$ mv <problem>/example.lfe <problem>/<module>.lfe
 $ lfec -o <problem> <problem>/*.lfe
 $ lfe -pa <problem> -noshell -eval \
-  "(eunit:test '<problem>-tests '(verbose))" \
+  "(eunit:test '<module>-tests '(verbose))" \
   -s init stop
 ```
 
