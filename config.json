@@ -15,16 +15,26 @@
     "grains",
     "anagram",
     "nucleotide-count",
+    "atbash-cipher",
     "phone-number",
+    "robot-simulator",
     "grade-school",
+    "binary",
     "word-count",
+    "circular-buffer",
     "etl",
+    "clock",
     "gigasecond",
     "beer-song",
+    "difference-of-squares",
     "allergies",
+    "bank-account",
     "luhn",
+    "series",
     "trinary",
-    "meetup"
+    "largest-series-product",
+    "meetup",
+    "parallel-letter-frequency"
   ],
   "deprecated": [
 
