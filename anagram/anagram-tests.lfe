@@ -2,7 +2,8 @@
   (behaviour ltest-unit)
   (export all))
 
-(include-lib "../deps/ltest/include/ltest-macros.lfe")
+(include-lib "eunit/include/eunit.hrl")
+(include-lib "ltest/include/ltest-macros.lfe")
 
 (deftest no-matches
   (is-equal '() (anagram:find "diaper" '("hello" "world" "zombies" "pants"))))

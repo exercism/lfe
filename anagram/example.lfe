@@ -3,16 +3,23 @@
 
 (defun find (word candidates)
   (lists:filter
-    (is-anagram? (normalize word))
-    candidates))
+   ;; #'anagram?/1 is a curried version of #'anagram?/2
+   (anagram? (normalize word))
+   candidates))
 
-(defun is-anagram?
-  (((tuple lowered sorted))
-   (lambda (other)
-     (let (((tuple lowered* sorted*) (normalize other)))
-       (cond ((=:= lowered lowered*) 'false)
-             ((=:= sorted sorted*)   'true)
-             (else                   'false))))))
+;; A curried version of #'anagram?/2 which returns a lambda that compares a
+;; candidate (after normalizing it) to the given normalized word.
+(defun anagram? (normed-word)
+  (lambda (candidate)
+    (anagram? normed-word (normalize candidate))))
+
+(defun anagram?
+  ((`#(,word-lowered ,word-sorted) `#(,candidate-lowered ,candidate-sorted))
+   (when (andalso (=/= word-lowered candidate-lowered)
+                  (=:= word-sorted  candidate-sorted)))
+   'true)
+  ((_ _)
+   'false))
 
 (defun normalize (str)
   (let ((lowered (string:to_lower str)))
