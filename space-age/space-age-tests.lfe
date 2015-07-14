@@ -2,7 +2,8 @@
   (behaviour ltest-unit)
   (export all))
 
-(include-lib "../deps/ltest/include/ltest-macros.lfe")
+(include-lib "eunit/include/eunit.hrl")
+(include-lib "ltest/include/ltest-macros.lfe")
 
 (defmacro test-earth-and-planet (seconds age-on-earth planet age-on-planet)
   `(deftest ,(list_to_atom (++ "age-in-" (atom_to_list planet) "-years"))
