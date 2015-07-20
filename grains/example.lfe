@@ -6,7 +6,7 @@
   (- n 1))
 
 (defun 2^ (x)
-  (trunc (: math pow 2 x)))
+  (trunc (math:pow 2 x)))
 
 (defun square (n)
   (trunc (2^ (1- n))))
