@@ -27,4 +27,5 @@
 ;;   (lists:foldl
 ;;     (lambda (x acc)
 ;;       (+ (square x) acc))
+;;     0
 ;;     (lists:seq 1 64)))
