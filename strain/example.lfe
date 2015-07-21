@@ -9,6 +9,8 @@
      (cons h (keep f t))
      (keep f t))))
 
+;;; Could also be written as a list comprehension:
+;;
 ;; (defun keep' (f lst)
 ;;   (lc ((<- x lst)
 ;;        (funcall f x))
