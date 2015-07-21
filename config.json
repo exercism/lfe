@@ -6,7 +6,8 @@
   "test_pattern": "TODO",
   "problems": [
     "leap",
-    "rna-transcription"
+    "rna-transcription",
+    "accumulate"
   ],
   "deprecated": [
 
