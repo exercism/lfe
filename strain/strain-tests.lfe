@@ -45,14 +45,10 @@
     (is-equal '("apple" "banana" "cherimoya")
               (strain:discard #'starts-with-z?/1 strs))))
 
-(defun even? (n)
-  (=:= (rem n 2) 0))
+(defun even? (n) (=:= (rem n 2) 0))
 
-(defun odd? (n)
-  (> (rem n 2) 0))
+(defun odd? (n) (> (rem n 2) 0))
 
-(defun starts-with-z? (str)
-  (=:= (string:sub_string str 1 1) "z"))
+(defun starts-with-z? (str) (=:= (string:sub_string str 1 1) "z"))
 
-(defun under-10? (n)
-  (< n 10))
+(defun under-10? (n) (< n 10))
