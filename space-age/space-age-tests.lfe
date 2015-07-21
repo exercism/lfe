@@ -28,8 +28,7 @@
 
 (test-earth-and-planet 8210123456 260.16 neptune 1.58)
 
-(defun equal-float? (x y)
-  (is-equal y (round x 2)))
+(defun equal-float? (x y) (is-equal y (round x 2)))
 
 (defun round (number precision)
   (let ((p (math:pow 10 precision)))
