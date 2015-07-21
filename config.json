@@ -1,0 +1,19 @@
+{
+  "slug": "lfe",
+  "language": "Lisp Flavoured Erlang (LFE)",
+  "repository": "https://github.com/exercism/xlfe",
+  "active": false,
+  "test_pattern": "TODO",
+  "problems": [
+
+  ],
+  "deprecated": [
+
+  ],
+  "ignored": [
+    "bin"
+  ],
+  "foregone": [
+
+  ]
+}
