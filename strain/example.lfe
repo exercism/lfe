@@ -5,9 +5,9 @@
 (defun keep
   ([_f []] '())
   ([f (cons h t)]
-   (case (funcall f h)
-     ('true (cons h (keep f t)))
-     (_     (keep f t)))))
+   (if (funcall f h)
+     (cons h (keep f t))
+     (keep f t))))
 
 ;; (defun keep' (f lst)
 ;;   (lc ((<- x lst)
