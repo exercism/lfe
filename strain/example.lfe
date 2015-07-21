@@ -16,5 +16,4 @@
 ;;        (funcall f x))
 ;;     x))
 
-(defun discard (f lst)
-  (keep (lambda (x) (not (funcall f x))) lst))
+(defun discard (f lst) (keep (lambda (x) (not (funcall f x))) lst))
