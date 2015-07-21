@@ -8,7 +8,8 @@
     "leap",
     "rna-transcription",
     "accumulate",
-    "bob"
+    "bob",
+    "sum-of-multiples"
   ],
   "deprecated": [
 
