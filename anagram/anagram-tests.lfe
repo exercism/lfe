@@ -19,27 +19,27 @@
 
 (deftest detect-anagram
   (is-equal
-   '("inlets")
-   (anagram:find "listen" '("enlists" "google" "inlets" "banana"))))
+    '("inlets")
+    (anagram:find "listen" '("enlists" "google" "inlets" "banana"))))
 
 (deftest multiple-anagrams
   (is-equal
-   '("gallery" "regally" "largely")
-   (anagram:find
-    "allergy"
-    '("gallery" "ballerina" "regally" "clergy" "largely" "leading"))))
+    '("gallery" "regally" "largely")
+    (anagram:find
+      "allergy"
+      '("gallery" "ballerina" "regally" "clergy" "largely" "leading"))))
 
 (deftest case-insensitive-subject
   (is-equal
-   '("carthorse")
-   (anagram:find "Orchestra" '("cashregister" "carthorse" "radishes"))))
+    '("carthorse")
+    (anagram:find "Orchestra" '("cashregister" "carthorse" "radishes"))))
 
 (deftest case-insensitive-candidate
   (is-equal
-   '("Carthorse")
-   (anagram:find "Orchestra" '("cashregister" "Carthorse" "radishes"))))
+    '("Carthorse")
+    (anagram:find "Orchestra" '("cashregister" "Carthorse" "radishes"))))
 
 (deftest does-not-detect-a-word-as-its-own-anagram
   (is-equal
-   '("cron")
-   (anagram:find "corn" '("corn" "dark" "Corn" "rank" "CORN" "cron" "park"))))
+    '("cron")
+    (anagram:find "corn" '("corn" "dark" "Corn" "rank" "CORN" "cron" "park"))))
