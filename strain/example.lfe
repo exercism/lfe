@@ -3,9 +3,8 @@
           (discard 2)))
 
 (defun keep
-  ((_f [])
-   [])
-  ((f (cons h t))
+  ([_f []] '())
+  ([f (cons h t)]
    (case (funcall f h)
      ('true (cons h (keep f t)))
      (_     (keep f t)))))
