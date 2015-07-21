@@ -15,7 +15,7 @@
   (is-equal 17 (dna:hamming-distance "GAGCCTACTAACGGGAT" "FFFFFFFFFFFFFFFFF")))
 
 (deftest ends-different
-  (is-equal 2 (dna:hamming-distance "GAGCCTACTAACGGGAT" "TAGCCTACTAACGGGAG"))))
+  (is-equal 2 (dna:hamming-distance "GAGCCTACTAACGGGAT" "TAGCCTACTAACGGGAG")))
 
 (deftest middle-different
   (is-equal 1 (dna:hamming-distance "GAGCCTACTAACGGGAT" "GAGCCTACCAACGGGAT")))
