@@ -1,5 +1,8 @@
+*.beam
 *.swp
 .DS_Store
+tmp
 bin/configlet
 bin/configlet.exe
 CHECKLIST
+deps/*
