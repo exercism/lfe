@@ -14,7 +14,8 @@
     "point-mutations",
     "space-age",
     "grains",
-    "anagram"
+    "anagram",
+    "nucleotide-count"
   ],
   "deprecated": [
 
