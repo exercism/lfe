@@ -16,7 +16,8 @@
     "grains",
     "anagram",
     "nucleotide-count",
-    "atbash-cipher"
+    "atbash-cipher",
+    "phone-number"
   ],
   "deprecated": [
 
