@@ -15,7 +15,8 @@
     "space-age",
     "grains",
     "anagram",
-    "nucleotide-count"
+    "nucleotide-count",
+    "atbash-cipher"
   ],
   "deprecated": [
 
