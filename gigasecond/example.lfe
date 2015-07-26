@@ -4,8 +4,8 @@
 (defun gigasecond () 1000000000)
 
 (defun from
-  ((`#(,year ,month ,day))
+  ([`#(,year ,month ,day)]
    (from `#(#(,year ,month ,day) #(0 0 0))))
-  ((datetime)
+  ([datetime]
    (let ((seconds (calendar:datetime_to_gregorian_seconds datetime)))
      (calendar:gregorian_seconds_to_datetime (+ seconds (gigasecond))))))

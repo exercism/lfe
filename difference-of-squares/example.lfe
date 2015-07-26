@@ -14,7 +14,6 @@
     0
     (lists:seq 1 x)))
 
-;;; Unnecessarily traverses the list twice, though maybe easier to read.
-;;
+;; Unnecessarily traverses the list twice, though maybe easier to read.
 ;; (defun sum-of-squares (x)
 ;;   (lists:sum (lists:map #'square/1 (lists:seq 1 x))))

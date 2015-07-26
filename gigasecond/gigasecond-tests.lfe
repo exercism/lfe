@@ -15,8 +15,9 @@
   (is-equal #(#(1991 3 27) #(1 46 40)) (gigasecond:from #(1959 7 19))))
 
 (deftest four-with-seconds
-  (is-equal #(#(1991 3 28) #(1 46 39))
-            (gigasecond:from #(#(1959 7 19) #(23 59 59)))))
+  (is-equal
+    #(#(1991 3 28) #(1 46 39))
+    (gigasecond:from #(#(1959 7 19) #(23 59 59)))))
 
 ;; modify the test to test your 1 Gs anniversary
 ;; (deftest with-your-birthday
