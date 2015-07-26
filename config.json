@@ -19,7 +19,8 @@
     "atbash-cipher",
     "phone-number",
     "robot-simulator",
-    "grade-school"
+    "grade-school",
+    "binary"
   ],
   "deprecated": [
 
