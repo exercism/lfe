@@ -17,7 +17,8 @@
     "anagram",
     "nucleotide-count",
     "atbash-cipher",
-    "phone-number"
+    "phone-number",
+    "robot-simulator"
   ],
   "deprecated": [
 
