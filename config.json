@@ -21,7 +21,8 @@
     "robot-simulator",
     "grade-school",
     "binary",
-    "word-count"
+    "word-count",
+    "gigasecond"
   ],
   "deprecated": [
 
