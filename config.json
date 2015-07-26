@@ -18,7 +18,8 @@
     "nucleotide-count",
     "atbash-cipher",
     "phone-number",
-    "robot-simulator"
+    "robot-simulator",
+    "grade-school"
   ],
   "deprecated": [
 
