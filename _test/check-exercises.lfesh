@@ -1,0 +1,36 @@
+#!/usr/bin/env lfescript
+;; -*- lfe -*-
+
+(defun main
+  (['()]
+   (let* ((examples (filelib:wildcard "*/example.lfe"))
+          (modules (lists:map (lambda (x) `#(,x ,(compile x))) examples)))
+     (lists:foreach #'compile-tests/1 modules)
+     (let ((results (lists:map #'run-tests/1 modules)))
+       (halt (length (lc ((<- x results) (=/= x 'ok)) x))))))
+  ([_] (usage)))
+
+(defun usage ()
+  (lfe_io:format '"Usage: ~s\n" `(,(escript:script_name)))
+  (lfe_io:format '"~s will compile and run LFE examples ~s\n"
+                 `(,(escript:script_name)
+                   "and test cases in subdirectories of where it is started.")))
+
+
+(defun compile (file)
+  (let* ((compile (lfe_comp:file file '[binary]))
+         (`#(compile ,file #(ok ,module ,binary)) `#(compile ,file ,compile))
+         (load (code:load_binary module file binary))
+         (`#(load ,module ,load) `#(load ,module ,load)))
+    `#(,module ,binary)))
+
+(defun compile-tests
+  ([`#(,example #(,example-module ,_binary))]
+   (let* ((filename (++ (atom_to_list example-module) "-tests.lfe"))
+          (filepath (filename:join `(,(filename:dirname example) ,filename))))
+     (compile filepath))))
+
+(defun run-tests
+  ([`#(,_example #(,module ,_binary))]
+   (lfe_io:format "~p: " `(,module))
+   (eunit:test (list_to_atom (++ (atom_to_list module) "-tests")) '[verbose])))
