@@ -36,7 +36,9 @@
 
   ],
   "ignored": [
-    "bin"
+    "bin",
+    "docs",
+    "_test"
   ],
   "foregone": [
 
