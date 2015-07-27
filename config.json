@@ -23,6 +23,7 @@
     "binary",
     "word-count",
     "etl",
+    "clock",
     "gigasecond",
     "difference-of-squares"
   ],
