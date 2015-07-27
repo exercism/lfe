@@ -25,7 +25,8 @@
     "etl",
     "clock",
     "gigasecond",
-    "difference-of-squares"
+    "difference-of-squares",
+    "allergies"
   ],
   "deprecated": [
 
