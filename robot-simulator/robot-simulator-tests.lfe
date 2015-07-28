@@ -8,7 +8,7 @@
 (deftest create
   (let ((robot (robot-simulator:create)))
     (is-equal 'undefined (robot-simulator:direction robot))
-    (is-equal '#(undefined undefined) (robot-simulator:position robot))))
+    (is-equal #(undefined undefined) (robot-simulator:position robot))))
 
 (deftest place
   (let ((robot     (robot-simulator:create))
