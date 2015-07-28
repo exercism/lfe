@@ -22,6 +22,7 @@
     "grade-school",
     "binary",
     "word-count",
+    "circular-buffer",
     "etl",
     "clock",
     "gigasecond",
