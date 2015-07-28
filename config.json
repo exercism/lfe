@@ -2,7 +2,7 @@
   "slug": "lfe",
   "language": "Lisp Flavoured Erlang (LFE)",
   "repository": "https://github.com/exercism/xlfe",
-  "active": false,
+  "active": true,
   "test_pattern": "TODO",
   "problems": [
     "leap",
