@@ -1,6 +1,10 @@
 # xLFE
 
-Exercism exercises in LFE
+Exercism problems in Lisp Flavoured Erlang.
+
+## TODO
+
+_Document how to contribute to the LFE track._
 
 ## Contributing Guide
 
@@ -10,4 +14,5 @@ Please see the [contributing guide](https://github.com/exercism/x-api/blob/maste
 
 The MIT License (MIT)
 
-Copyright (c) 2014 Katrina Owen, _@kytrinyx.com
+Copyright (c) 2015 Katrina Owen, _@kytrinyx.com
+
