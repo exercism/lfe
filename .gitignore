@@ -6,3 +6,4 @@ bin/configlet
 bin/configlet.exe
 CHECKLIST
 */*ebin
+deps
