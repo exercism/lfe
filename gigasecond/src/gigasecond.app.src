@@ -1,9 +1,9 @@
 %% -*- erlang -*-
-{application, 'leap',
+{application, 'gigasecond',
  [{description, ""},
   {vsn, "0.0.1"},
   {modules,
-   ['leap']},
+   ['gigasecond']},
   {registered, []},
   {applications,
    [kernel, stdlib]},

@@ -1,9 +1,9 @@
 %% -*- erlang -*-
-{application, 'leap',
+{application, 'etl',
  [{description, ""},
   {vsn, "0.0.1"},
   {modules,
-   ['leap']},
+   ['etl']},
   {registered, []},
   {applications,
    [kernel, stdlib]},

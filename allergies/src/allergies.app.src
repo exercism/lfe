@@ -1,9 +1,9 @@
 %% -*- erlang -*-
-{application, 'leap',
+{application, 'allergies',
  [{description, ""},
   {vsn, "0.0.1"},
   {modules,
-   ['leap']},
+   ['allergies']},
   {registered, []},
   {applications,
    [kernel, stdlib]},

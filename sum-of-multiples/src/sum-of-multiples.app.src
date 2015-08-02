@@ -1,9 +1,9 @@
 %% -*- erlang -*-
-{application, 'leap',
+{application, 'sum-of-multiples',
  [{description, ""},
   {vsn, "0.0.1"},
   {modules,
-   ['leap']},
+   ['sum-of-multiples']},
   {registered, []},
   {applications,
    [kernel, stdlib]},

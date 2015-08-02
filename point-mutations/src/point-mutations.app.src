@@ -1,9 +1,9 @@
 %% -*- erlang -*-
-{application, 'leap',
+{application, 'point-mutations',
  [{description, ""},
   {vsn, "0.0.1"},
   {modules,
-   ['leap']},
+   ['point-mutations']},
   {registered, []},
   {applications,
    [kernel, stdlib]},

@@ -1,9 +1,9 @@
 %% -*- erlang -*-
-{application, 'leap',
+{application, 'largest-series-product',
  [{description, ""},
   {vsn, "0.0.1"},
   {modules,
-   ['leap']},
+   ['largest-series-product']},
   {registered, []},
   {applications,
    [kernel, stdlib]},

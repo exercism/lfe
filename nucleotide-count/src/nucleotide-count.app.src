@@ -1,9 +1,9 @@
 %% -*- erlang -*-
-{application, 'leap',
+{application, 'nucleotide-count',
  [{description, ""},
   {vsn, "0.0.1"},
   {modules,
-   ['leap']},
+   ['nucleotide-count']},
   {registered, []},
   {applications,
    [kernel, stdlib]},

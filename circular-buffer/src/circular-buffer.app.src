@@ -1,9 +1,9 @@
 %% -*- erlang -*-
-{application, 'leap',
+{application, 'circular-buffer',
  [{description, ""},
   {vsn, "0.0.1"},
   {modules,
-   ['leap']},
+   ['circular-buffer']},
   {registered, []},
   {applications,
    [kernel, stdlib]},

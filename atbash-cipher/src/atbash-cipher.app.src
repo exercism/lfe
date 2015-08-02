@@ -1,9 +1,9 @@
 %% -*- erlang -*-
-{application, 'leap',
+{application, 'atbash-cipher',
  [{description, ""},
   {vsn, "0.0.1"},
   {modules,
-   ['leap']},
+   ['atbash-cipher']},
   {registered, []},
   {applications,
    [kernel, stdlib]},

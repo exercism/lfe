@@ -1,9 +1,9 @@
 %% -*- erlang -*-
-{application, 'leap',
+{application, 'robot-simulator',
  [{description, ""},
   {vsn, "0.0.1"},
   {modules,
-   ['leap']},
+   ['robot-simulator']},
   {registered, []},
   {applications,
    [kernel, stdlib]},

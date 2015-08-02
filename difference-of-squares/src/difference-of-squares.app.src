@@ -1,9 +1,9 @@
 %% -*- erlang -*-
-{application, 'leap',
+{application, 'difference-of-squares',
  [{description, ""},
   {vsn, "0.0.1"},
   {modules,
-   ['leap']},
+   ['difference-of-squares']},
   {registered, []},
   {applications,
    [kernel, stdlib]},
