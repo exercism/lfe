@@ -1,0 +1,11 @@
+%% -*- erlang -*-
+{application, 'parallel-letter-frequency',
+ [{description, ""},
+  {vsn, "0.0.1"},
+  {modules,
+   ['parallel-letter-frequency']},
+  {registered, []},
+  {applications,
+   [kernel, stdlib]},
+  {included_applications, []},
+  {env, []}]}.

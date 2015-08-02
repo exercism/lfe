@@ -1,10 +1,19 @@
-SRC=$(wildcard *.erl)
+ERL     = $(shell which erl)
+LFETOOL = $(shell which lfetool)
+REBAR   = $(shell which rebar)
 
-compile: $(SRC)
-	@erlc -pa . $(SRC)
+ifeq ($(ERL),)
+  $(error Can't find Erlang executable 'erl')
+else ifeq ($(LFETOOL),)
+  $(error Can't find lfetool)
+else ifeq ($(REBAR),)
+  $(error Can't find rebar)
+endif
 
-clean:
-	@$(RM) -r *.beam
+get-deps: ; $(REBAR) get-deps compile
 
-test: clean compile
-	@erl -pa . -eval 'eunit:test(trinary_tests), init:stop().'
+clean: ; rebar clean
+
+compile: ; $(REBAR) compile
+
+test: compile; $(LFETOOL) tests unit

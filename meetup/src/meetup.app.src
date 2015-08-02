@@ -1,0 +1,11 @@
+%% -*- erlang -*-
+{application, 'meetup',
+ [{description, ""},
+  {vsn, "0.0.1"},
+  {modules,
+   ['meetup']},
+  {registered, []},
+  {applications,
+   [kernel, stdlib]},
+  {included_applications, []},
+  {env, []}]}.

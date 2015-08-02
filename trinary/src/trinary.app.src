@@ -1,0 +1,11 @@
+%% -*- erlang -*-
+{application, 'trinary',
+ [{description, ""},
+  {vsn, "0.0.1"},
+  {modules,
+   ['trinary']},
+  {registered, []},
+  {applications,
+   [kernel, stdlib]},
+  {included_applications, []},
+  {env, []}]}.
