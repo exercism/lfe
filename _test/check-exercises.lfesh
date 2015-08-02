@@ -3,7 +3,9 @@
 
 (defun main
   (['()]
-   (let* ((examples (filelib:wildcard "*/example.lfe"))
+   ;; TODO: come up with less hacky solution
+   (code:add_paths '("deps/ltest"))
+   (let* ((examples (filelib:wildcard "*/src/example.lfe"))
           (modules (lists:map (lambda (x) `#(,x ,(compile x))) examples)))
      (lists:foreach #'compile-tests/1 modules)
      (let ((results (lists:map #'run-tests/1 modules)))
@@ -16,7 +18,6 @@
                  `(,(escript:script_name)
                    "and test cases in subdirectories of where it is started.")))
 
-
 (defun compile (file)
   (let* ((compile (lfe_comp:file file '[binary]))
          (`#(compile ,file #(ok ,module ,binary)) `#(compile ,file ,compile))
@@ -27,7 +28,8 @@
 (defun compile-tests
   ([`#(,example #(,example-module ,_binary))]
    (let* ((filename (++ (atom_to_list example-module) "-tests.lfe"))
-          (filepath (filename:join `(,(filename:dirname example) ,filename))))
+          (exercise-path (filename:dirname (filename:dirname example)))
+          (filepath (filename:join `(,exercise-path "test" ,filename))))
      (compile filepath))))
 
 (defun run-tests

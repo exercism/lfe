@@ -1,0 +1,11 @@
+%% -*- erlang -*-
+{application, 'beer-song',
+ [{description, ""},
+  {vsn, "0.0.1"},
+  {modules,
+   ['beer-song']},
+  {registered, []},
+  {applications,
+   [kernel, stdlib]},
+  {included_applications, []},
+  {env, []}]}.

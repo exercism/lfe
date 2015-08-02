@@ -1,0 +1,11 @@
+%% -*- erlang -*-
+{application, 'difference-of-squares',
+ [{description, ""},
+  {vsn, "0.0.1"},
+  {modules,
+   ['difference-of-squares']},
+  {registered, []},
+  {applications,
+   [kernel, stdlib]},
+  {included_applications, []},
+  {env, []}]}.

@@ -1,5 +1,11 @@
-language: bash
-
+language: erlang
+otp_release:
+  - 17.4
+install:
+  - './_test/bootstrap.sh'
 script:
   - bin/fetch-configlet
   - bin/configlet .
+  - './_test/check-exercises.lfesh'
+cache:
+  - apt

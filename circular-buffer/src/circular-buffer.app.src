@@ -1,0 +1,11 @@
+%% -*- erlang -*-
+{application, 'circular-buffer',
+ [{description, ""},
+  {vsn, "0.0.1"},
+  {modules,
+   ['circular-buffer']},
+  {registered, []},
+  {applications,
+   [kernel, stdlib]},
+  {included_applications, []},
+  {env, []}]}.

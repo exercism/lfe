@@ -5,4 +5,5 @@ tmp
 bin/configlet
 bin/configlet.exe
 CHECKLIST
-deps/*
+*/*ebin
+deps

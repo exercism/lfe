@@ -1,0 +1,11 @@
+%% -*- erlang -*-
+{application, 'bank-account',
+ [{description, ""},
+  {vsn, "0.0.1"},
+  {modules,
+   ['bank-account']},
+  {registered, []},
+  {applications,
+   [kernel, stdlib]},
+  {included_applications, []},
+  {env, []}]}.

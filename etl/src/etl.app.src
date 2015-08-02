@@ -1,0 +1,11 @@
+%% -*- erlang -*-
+{application, 'etl',
+ [{description, ""},
+  {vsn, "0.0.1"},
+  {modules,
+   ['etl']},
+  {registered, []},
+  {applications,
+   [kernel, stdlib]},
+  {included_applications, []},
+  {env, []}]}.

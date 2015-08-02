@@ -1,0 +1,11 @@
+%% -*- erlang -*-
+{application, 'space-age',
+ [{description, ""},
+  {vsn, "0.0.1"},
+  {modules,
+   ['space-age']},
+  {registered, []},
+  {applications,
+   [kernel, stdlib]},
+  {included_applications, []},
+  {env, []}]}.

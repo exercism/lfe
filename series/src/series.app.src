@@ -1,0 +1,11 @@
+%% -*- erlang -*-
+{application, 'series',
+ [{description, ""},
+  {vsn, "0.0.1"},
+  {modules,
+   ['series']},
+  {registered, []},
+  {applications,
+   [kernel, stdlib]},
+  {included_applications, []},
+  {env, []}]}.

@@ -1,0 +1,11 @@
+%% -*- erlang -*-
+{application, 'grade-school',
+ [{description, ""},
+  {vsn, "0.0.1"},
+  {modules,
+   ['grade-school']},
+  {registered, []},
+  {applications,
+   [kernel, stdlib]},
+  {included_applications, []},
+  {env, []}]}.

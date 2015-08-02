@@ -1,0 +1,11 @@
+%% -*- erlang -*-
+{application, 'accumulate',
+ [{description, ""},
+  {vsn, "0.0.1"},
+  {modules,
+   ['accumulate']},
+  {registered, []},
+  {applications,
+   [kernel, stdlib]},
+  {included_applications, []},
+  {env, []}]}.

@@ -1,0 +1,11 @@
+%% -*- erlang -*-
+{application, 'nucleotide-count',
+ [{description, ""},
+  {vsn, "0.0.1"},
+  {modules,
+   ['nucleotide-count']},
+  {registered, []},
+  {applications,
+   [kernel, stdlib]},
+  {included_applications, []},
+  {env, []}]}.

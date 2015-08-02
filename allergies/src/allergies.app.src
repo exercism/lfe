@@ -1,0 +1,11 @@
+%% -*- erlang -*-
+{application, 'allergies',
+ [{description, ""},
+  {vsn, "0.0.1"},
+  {modules,
+   ['allergies']},
+  {registered, []},
+  {applications,
+   [kernel, stdlib]},
+  {included_applications, []},
+  {env, []}]}.

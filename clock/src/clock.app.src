@@ -1,0 +1,11 @@
+%% -*- erlang -*-
+{application, 'clock',
+ [{description, ""},
+  {vsn, "0.0.1"},
+  {modules,
+   ['clock']},
+  {registered, []},
+  {applications,
+   [kernel, stdlib]},
+  {included_applications, []},
+  {env, []}]}.

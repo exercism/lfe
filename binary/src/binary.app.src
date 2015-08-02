@@ -1,0 +1,11 @@
+%% -*- erlang -*-
+{application, 'binary',
+ [{description, ""},
+  {vsn, "0.0.1"},
+  {modules,
+   ['binary']},
+  {registered, []},
+  {applications,
+   [kernel, stdlib]},
+  {included_applications, []},
+  {env, []}]}.

@@ -1,0 +1,11 @@
+%% -*- erlang -*-
+{application, 'gigasecond',
+ [{description, ""},
+  {vsn, "0.0.1"},
+  {modules,
+   ['gigasecond']},
+  {registered, []},
+  {applications,
+   [kernel, stdlib]},
+  {included_applications, []},
+  {env, []}]}.

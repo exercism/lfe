@@ -1,0 +1,11 @@
+%% -*- erlang -*-
+{application, 'luhn',
+ [{description, ""},
+  {vsn, "0.0.1"},
+  {modules,
+   ['luhn']},
+  {registered, []},
+  {applications,
+   [kernel, stdlib]},
+  {included_applications, []},
+  {env, []}]}.

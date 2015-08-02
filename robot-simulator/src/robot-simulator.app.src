@@ -1,0 +1,11 @@
+%% -*- erlang -*-
+{application, 'robot-simulator',
+ [{description, ""},
+  {vsn, "0.0.1"},
+  {modules,
+   ['robot-simulator']},
+  {registered, []},
+  {applications,
+   [kernel, stdlib]},
+  {included_applications, []},
+  {env, []}]}.

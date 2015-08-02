@@ -1,0 +1,11 @@
+%% -*- erlang -*-
+{application, 'largest-series-product',
+ [{description, ""},
+  {vsn, "0.0.1"},
+  {modules,
+   ['largest-series-product']},
+  {registered, []},
+  {applications,
+   [kernel, stdlib]},
+  {included_applications, []},
+  {env, []}]}.

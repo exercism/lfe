@@ -1,0 +1,11 @@
+%% -*- erlang -*-
+{application, 'point-mutations',
+ [{description, ""},
+  {vsn, "0.0.1"},
+  {modules,
+   ['point-mutations']},
+  {registered, []},
+  {applications,
+   [kernel, stdlib]},
+  {included_applications, []},
+  {env, []}]}.
