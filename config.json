@@ -41,6 +41,7 @@
   ],
   "ignored": [
     "bin",
+    "deps",
     "docs",
     "_test"
   ],

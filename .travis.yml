@@ -1,11 +1,12 @@
 language: erlang
 otp_release:
   - 17.4
+  - 18.0
 install:
   - './_test/bootstrap.sh'
 script:
   - bin/fetch-configlet
   - bin/configlet .
-  - './_test/check-exercises.lfesh'
+  - 'make test'
 cache:
   - apt
