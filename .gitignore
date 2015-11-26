@@ -1,6 +1,26 @@
+## -*- conf -*-
+.rebar3
+# _*
+.eunit
+*.o
 *.beam
+*.plt
 *.swp
+*.swo
+.erlang.cookie
+ebin
+log
+erl_crash.dump
+.rebar
+_rel
+_deps
+_plugins
+_tdeps
+logs
+# _build
+rebar.lock
 .DS_Store
+
 tmp
 bin/configlet
 bin/configlet.exe

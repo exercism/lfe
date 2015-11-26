@@ -1,16 +1,16 @@
-ERL     := $(shell which erl)
-REBAR   := $(shell which rebar)
+ERL       := $(shell which erl)
+REBAR3    := $(shell which rebar3)
+LFE        = ./_build/default/lib/lfe/bin/lfe
 
 ifeq ($(ERL),)
   $(error Can't find Erlang executable 'erl')
-else ifeq ($(REBAR),)
-  $(error Can't find rebar)
+else ifeq ($(REBAR3),)
+  $(error Can't find rebar3)
 endif
 
-get-deps: ; $(REBAR) get-deps
+clean: ; $(REBAR3) clean
 
-clean: ; $(REBAR) clean
+compile: ; $(REBAR3) compile
 
-compile: ; $(REBAR) compile
-
-test: get-deps compile; ./deps/lfe/bin/lfescript ./_test/check-exercises.lfesh
+.PHONY: test
+test: compile; $(LFE) ./_test/check-exercises.lfe
