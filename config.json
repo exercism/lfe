@@ -43,6 +43,7 @@
     "bin",
     "deps",
     "docs",
+    "_build",
     "_test"
   ],
   "foregone": [
