@@ -5,30 +5,36 @@
 (include-lib "eunit/include/eunit.hrl")
 (include-lib "ltest/include/ltest-macros.lfe")
 
-(deftest encode-all
-  (is-equal (lists:seq #\z #\a -1) (atbash-cipher:encode (lists:seq #\a #\z))))
+(deftest encode-no
+  (is-equal "ml" (atbash-cipher:encode "no")))
 
-(deftest decode-all
-  (is-equal (lists:seq #\z #\a -1) (atbash-cipher:decode (lists:seq #\a #\z))))
+(deftest encode-yes
+  (is-equal "bvh" (atbash-cipher:encode "yes")))
 
-(deftest encode-all-caps
-  (is-equal (lists:seq #\Z #\A -1) (atbash-cipher:encode (lists:seq #\A #\Z))))
+(deftest encode-OMG
+  (is-equal "lnt" (atbash-cipher:encode "OMG")))
 
-(deftest decode-all-caps
-  (is-equal (lists:seq #\Z #\A -1) (atbash-cipher:decode (lists:seq #\A #\Z))))
+(deftest encode-O-M-G
+  (is-equal "lnt" (atbash-cipher:encode "O M G")))
 
-(deftest examples-encode
-  (is-equal "gvhg" (atbash-cipher:encode "test")))
+(deftest encode-long-word
+  (is-equal "nrmwy oldrm tob" (atbash-cipher:encode "mindblowingly")))
 
-(deftest examples-decode
-  (is-equal "test" (atbash-cipher:decode "gvhg")))
+(deftest encode-numbers
+  (is-equal "gvhgr mt123 gvhgr mt"
+            (atbash-cipher:encode "Testing, 1 2 3, testing.")))
 
-(deftest encode-decode
-  (let ((str "The quick brown fox jumps over the lazy dog."))
-    (is-equal str (atbash-cipher:decode (atbash-cipher:encode str)))))
+(deftest encode-sentence
+  (is-equal "gifgs rhurx grlm" (atbash-cipher:encode "Truth is fiction.")))
 
-(deftest alphanumeric-encode
-  (is-equal "gvhg: 1, 2, 3." (atbash-cipher:encode "test: 1, 2, 3.")))
+(deftest encode-all-the-things
+  (let ((plain-text  "The quick brown fox jumps over the lazy dog.")
+        (cipher-text "gsvjf rxpyi ldmul cqfnk hlevi gsvoz abwlt"))
+    (is-equal cipher-text (atbash-cipher:encode plain-text))))
 
-(deftest alphanumeric-decode
-  (is-equal "test: 1, 2, 3." (atbash-cipher:encode "gvhg: 1, 2, 3.")))
+(deftest decode-word
+  (is-equal "exercism" (atbash-cipher:decode "vcvix rhn")))
+
+(deftest decode-sentence
+  (is-equal "anobstacleisoftenasteppingstone"
+            (atbash-cipher:decode "zmlyh gzxov rhlug vmzhg vkkrm thglm v")))
