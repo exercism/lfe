@@ -14,6 +14,9 @@
 (deftest sum-to-10
   (is-equal 23 (sum-of-multiples:sum-of-multiples 10)))
 
+(deftest sum-to-100
+  (is-equal 2318 (sum-of-multiples:sum-of-multiples 100)))
+  
 (deftest sum-to-1000
   (is-equal 233168 (sum-of-multiples:sum-of-multiples 1000)))
 
