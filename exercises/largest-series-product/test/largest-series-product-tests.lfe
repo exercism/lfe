@@ -21,8 +21,14 @@
 (deftest all-contain-zeroes
   (is-equal 0 (largest-series-product:from-string "99099" 3)))
 
+(deftest too-long
+  (is-error _ (largest-series-product:from-string "123" 4)))
+
 (deftest empty-product
   (is-equal 1 (largest-series-product:from-string "" 0)))
 
 (deftest nonempty-string-empty-product
   (is-equal 1 (largest-series-product:from-string "123" 0)))
+
+(deftest empty-string-nonempty-product
+  (is-error _ (largest-series-product:from-string "" 1)))
