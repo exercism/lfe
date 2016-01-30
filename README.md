@@ -1,5 +1,6 @@
 # xLFE
 [![Build Status](https://travis-ci.org/exercism/xlfe.svg?branch=master)](https://travis-ci.org/exercism/xlfe)
+[![Build status](https://ci.appveyor.com/api/projects/status/2i4og4ghwwlynx29/branch/master?svg=true)](https://ci.appveyor.com/project/yurrriq/xlfe/branch/master)
 
 Exercism problems in Lisp Flavoured Erlang.
 

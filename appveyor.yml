@@ -4,6 +4,7 @@ build:
 install:
   - ps: >-
       Start-FileDownload "https://s3.amazonaws.com/rebar3/rebar3" -FileName rebar3
+
       $env:Path += ";${pwd}"
 test_script:
   - ps: >-
