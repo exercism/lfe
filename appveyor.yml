@@ -1,3 +1,6 @@
+version: 1.0.{build}
+build:
+  verbosity: minimal
 install:
   - ps: >-
       Start-FileDownload "https://s3.amazonaws.com/rebar3/rebar3" -FileName rebar3
