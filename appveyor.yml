@@ -10,7 +10,7 @@ install:
 build_script:
   cmd: .\rebar3 compile
 test_script:
-  - ps: >-
+  - cmd: >-
       .\bin\fetch-configlet
 
       .\bin\configlet .
