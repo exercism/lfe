@@ -6,9 +6,15 @@ install:
       Start-FileDownload "https://s3.amazonaws.com/rebar3/rebar3" -FileName rebar3
 
       $env:Path += ";${pwd}"
+
+build_script:
+  cmd: .\rebar3 compile
 test_script:
   - ps: >-
       .\bin\fetch-configlet
+
       .\bin\configlet .
+
       .\rebar3 compile
+
       .\_build\default\lib\lfe\bin\lfe .\bin\check-exercises.lfe
