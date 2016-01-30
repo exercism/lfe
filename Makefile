@@ -13,4 +13,4 @@ clean: ; $(REBAR3) clean
 compile: ; $(REBAR3) compile
 
 .PHONY: test
-test: compile; $(LFE) ./_test/check-exercises.lfe
+test: compile; $(LFE) ./bin/check-exercises.lfe
