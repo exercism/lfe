@@ -14,3 +14,9 @@
 (deftest six
   (let ((string "73167176531330624919225119674426574742355349194934"))
     (is-equal 23520 (largest-series-product:from-string string 6))))
+
+(deftest all-zeroes
+  (is-equal 0 (largest-series-product:from-string "0000" 2)))
+
+(deftest all-contain-zeroes
+  (is-equal 0 (largest-series-product:from-string "99099" 3)))
