@@ -20,3 +20,9 @@
 
 (deftest all-contain-zeroes
   (is-equal 0 (largest-series-product:from-string "99099" 3)))
+
+(deftest empty-product
+  (is-equal 1 (largest-series-product:from-string "" 0)))
+
+(deftest nonempty-string-empty-product
+  (is-equal 1 (largest-series-product:from-string "123" 0)))
