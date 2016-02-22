@@ -37,11 +37,12 @@
     "accumulate"
   ],
   "ignored": [
+    "_build",
+    "_test",
     "bin",
     "deps",
     "docs",
-    "_build",
-    "_test"
+    "staging"
   ],
   "foregone": [
     "trinary",
