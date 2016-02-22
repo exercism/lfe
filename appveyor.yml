@@ -1,18 +1,14 @@
 version: 1.0.{build}
-build: off
 install:
-  cmd: >-
+- cmd: >-
     git clone -q https://github.com/rebar/rebar3.git C:\projects\xlfe\bin\rebar3
 
     cd C:\projects\xlfe\bin\rebar3
 
     .\bootstrap.bat
+build: off
 test_script:
-  cmd: >-
+- cmd: >-
     cd C:\projects\xlfe
-
-    .\bin\fetch-configlet
-
-    .\bin\configlet .
 
     C:\projects\xlfe\bin\rebar3\rebar3.cmd eunit
