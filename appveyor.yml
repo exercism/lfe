@@ -5,11 +5,13 @@ install:
   cmd: >-
     git clone -q https://github.com/rebar/rebar3.git C:\projects\xlfe\bin\rebar3
 
-    C:\projects\xlfe\bin\rebar3\bootstrap.bat
+    cd C:\projects\xlfe\bin\rebar3
+
+    .\bootstrap.bat
 build_script:
   cmd: C:\projects\xlfe\bin\rebar3\rebar3.cmd compile
 test_script:
-  ps: >-
+  cmd: >-
     .\bin\fetch-configlet
 
     .\bin\configlet .
