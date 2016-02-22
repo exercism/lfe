@@ -2,19 +2,16 @@ version: 1.0.{build}
 build:
   verbosity: minimal
 install:
-  - ps: >-
-      Start-FileDownload "https://s3.amazonaws.com/rebar3/rebar3" -FileName rebar3
+  cmd: >-
+    git clone -q https://github.com/rebar/rebar3.git C:\projects\xlfe\bin\rebar3
 
-      $env:Path += ";${pwd}"
-
+    C:\projects\xlfe\bin\rebar3\bootstrap.bat
 build_script:
-  cmd: .\rebar3 compile
+  cmd: C:\projects\xlfe\bin\rebar3\rebar3.cmd compile
 test_script:
-  - cmd: >-
-      .\bin\fetch-configlet
+  ps: >-
+    .\bin\fetch-configlet
 
-      .\bin\configlet .
+    .\bin\configlet .
 
-      .\rebar3 compile
-
-      .\_build\default\lib\lfe\bin\lfe .\bin\check-exercises.lfe
+    C:\projects\xlfe\bin\rebar3\rebar3.cmd eunit
