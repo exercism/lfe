@@ -1,9 +1,9 @@
 %% -*- erlang -*-
-{application, 'point-mutations',
+{application, hamming,
  [{description, ""},
   {vsn, "0.0.1"},
   {modules,
-   ['point-mutations']},
+   [hamming]},
   {registered, []},
   {applications,
    [kernel, stdlib]},
