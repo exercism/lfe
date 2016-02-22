@@ -32,7 +32,8 @@
     "series",
     "trinary",
     "largest-series-product",
-    "meetup"
+    "meetup",
+    "parallel-letter-frequency"
   ],
   "deprecated": [
     "accumulate"
@@ -42,10 +43,9 @@
     "_test",
     "bin",
     "deps",
-    "docs",
-    "staging"
+    "docs"
   ],
   "foregone": [
-    "parallel-letter-frequency"
+
   ]
 }
