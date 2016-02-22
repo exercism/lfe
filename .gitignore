@@ -1,6 +1,6 @@
 ## -*- conf -*-
 .rebar3
-# _*
+_*
 .eunit
 *.o
 *.beam
@@ -12,17 +12,11 @@ ebin
 log
 erl_crash.dump
 .rebar
-_rel
-_deps
-_plugins
-_tdeps
 logs
-# _build
-rebar.lock
+exercises/*/rebar.lock
 .DS_Store
 
 tmp
 bin/configlet
 bin/configlet.exe
 CHECKLIST
-*/*ebin
