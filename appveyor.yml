@@ -8,7 +8,6 @@ install:
     cd C:\projects\xlfe\bin\rebar3
 
     .\bootstrap.bat
-build: off
 test_script:
   cmd: >-
     cd C:\projects\xlfe
