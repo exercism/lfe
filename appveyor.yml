@@ -8,10 +8,11 @@ install:
     cd C:\projects\xlfe\bin\rebar3
 
     .\bootstrap.bat
-build_script:
-  cmd: C:\projects\xlfe\bin\rebar3\rebar3.cmd compile
+build: off
 test_script:
   cmd: >-
+    cd C:\projects\xlfe
+
     .\bin\fetch-configlet
 
     .\bin\configlet .
