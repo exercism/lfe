@@ -30,6 +30,7 @@
     "bank-account",
     "luhn",
     "series",
+    "trinary",
     "largest-series-product",
     "meetup"
   ],
@@ -45,7 +46,6 @@
     "staging"
   ],
   "foregone": [
-    "trinary",
     "parallel-letter-frequency"
   ]
 }
