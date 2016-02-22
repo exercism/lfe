@@ -1,5 +1,6 @@
 ERL    := $(shell which erl)
 REBAR3 := $(shell which rebar3)
+LFE     = ./_build/default/lib/lfe/bin/lfe
 
 ifeq ($(ERL),)
   $(error Can't find Erlang executable 'erl')
@@ -12,4 +13,4 @@ compile: ; $(REBAR3) compile
 clean: ; $(REBAR3) clean
 
 .PHONY: test
-test: ; $(REBAR3) eunit
+test: compile; $(LFE) ./bin/check-exercises.lfe

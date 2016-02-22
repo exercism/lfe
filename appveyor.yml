@@ -11,4 +11,6 @@ test_script:
 - cmd: >-
     cd C:\projects\xlfe
 
-    C:\projects\xlfe\bin\rebar3\rebar3.cmd eunit
+    C:\projects\xlfe\bin\rebar3\rebar3.cmd compile
+
+    .\_build\default\lib\lfe\bin\lfe .\bin\check-exercises.lfe
