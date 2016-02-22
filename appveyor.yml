@@ -13,4 +13,6 @@ test_script:
 
     C:\projects\xlfe\bin\rebar3\rebar3.cmd compile
 
-    .\_build\default\lib\lfe\bin\lfe .\bin\check-exercises.lfe
+    set ERL_LIBS=C:\projects\xlfe\_build\default\lib\lfe
+
+    erl.exe -noshell -user lfe_init -extra .\bin\check-exercises.lfe
