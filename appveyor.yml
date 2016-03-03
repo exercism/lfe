@@ -1,18 +1,26 @@
 version: 1.0.{build}
 install:
 - cmd: >-
-    git clone -q https://github.com/rebar/rebar3.git C:\projects\xlfe\bin\rebar3
+    git clone -q https://github.com/rebar/rebar3.git $APPVEYOR_BUILD_FOLDER\bin\rebar3
 
-    cd C:\projects\xlfe\bin\rebar3
+    cd $APPVEYOR_BUILD_FOLDER\rebar3
 
     .\bootstrap.bat
+
+    cd $APPVEYOR_BUILD_FOLDER
+
+    curl -fsSL -o configlet.zip https://github.com/exercism/configlet/releases/download/v1.0.4/configlet-windows-32bit.zip
+
+    7z e configlet.zip
+
+    .\configlet.exe .
 build: off
 test_script:
 - cmd: >-
-    cd C:\projects\xlfe
+    cd $APPVEYOR_BUILD_FOLDER
 
-    C:\projects\xlfe\bin\rebar3\rebar3.cmd compile
+    $APPVEYOR_BUILD_FOLDER\bin\rebar3\rebar3.cmd compile
 
-    set ERL_LIBS=C:\projects\xlfe\_build\default\lib\lfe
+    set ERL_LIBS=$APPVEYOR_BUILD_FOLDER\_build\default\lib\lfe
 
     erl.exe -noshell -user lfe_init -extra .\bin\check-exercises.lfe
