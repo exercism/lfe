@@ -2,7 +2,6 @@
   (behaviour ltest-unit)
   (export all))
 
-(include-lib "eunit/include/eunit.hrl")
 (include-lib "ltest/include/ltest-macros.lfe")
 
 (deftest no-allergies-at-all (is-equal '() (allergies:allergies 0)))
