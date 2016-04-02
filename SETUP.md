@@ -1,12 +1,14 @@
 * * * *
 
-For installation and learning resources, refer to the
-[exercism help page](http://help.exercism.io/getting-started-with-lfe.html).
+For installation and learning resources, refer to the [exercism help page][].
 
-For running the tests provided, you will need `make`.  Open a terminal
-window and run the following from the exercise directory:
+[exercism help page]: http://exercism.io/languages/lfe
 
-    make test
+To run the provided tests, you will need `make`.
+Open a terminal window and run the following from the exercise directory:
 
-And you should now be able to see the results of the test suite for
-the exercise.
+```sh
+make test
+```
+
+You should now be able to see the results of the test suite for the exercise.
