@@ -19,8 +19,4 @@ test_script:
 - cmd: >-
     cd %APPVEYOR_BUILD_FOLDER%
 
-    %APPVEYOR_BUILD_FOLDER%\bin\rebar3\rebar3.cmd compile
-
-    set ERL_LIBS=%APPVEYOR_BUILD_FOLDER%\_build\default\lib\lfe
-
-    erl.exe -noshell -user lfe_init -extra .\bin\check-exercises.lfe
+    %APPVEYOR_BUILD_FOLDER%\bin\rebar3\rebar3.cmd eunit
