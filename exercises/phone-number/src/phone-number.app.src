@@ -3,7 +3,7 @@
  [{description, ""},
   {vsn, "0.0.1"},
   {modules,
-   ['phone-number']},
+   [phone]},
   {registered, []},
   {applications,
    [kernel, stdlib]},
