@@ -30,9 +30,8 @@
 
 (defun place (robot dir pos)
   (let [(pid (robot-pid robot))]
-    (begin
-      (gen_server:cast pid (tuple 'position  pos))
-      (gen_server:cast pid (tuple 'direction dir)))))
+    (gen_server:cast pid (tuple 'position  pos))
+    (gen_server:cast pid (tuple 'direction dir))))
 
 (defun direction (rob)
   (gen_server:call (robot-pid rob) 'direction))
