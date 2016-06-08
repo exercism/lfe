@@ -1,74 +1,101 @@
 (defmodule robot-simulator
-  (export (advance 1)
-          (control 2)
-          (create 0)
-          (direction 1)
-          (left 1)
+  (export (create 0)
           (place 3)
+          (direction 1)
           (position 1)
-          (right 1)))
+          (left 1)
+          (right 1)
+          (advance 1)
+          (control 2)
 
-(defun advance (robot) (! robot 'advance))
+          ;; gen_server stuff
+          (init 1)
+          (handle_cast 2)
+          (handle_call 3))
+  (behaviour gen_server))
 
-(defun control (robot string)
-  (lists:filtermap
-    (lambda (char)
-      (let ((f (control-function char)))
-        (andalso (is_function f) `#(true ,(funcall f robot)))))
-    string))
+(defrecord robot
+  pid)
+
+(defrecord robot_info
+  (position (tuple 'undefined 'undefined))
+  direction)
+
+;; public API
+;; ==========
 
 (defun create ()
-  (spawn (lambda () (loop 'undefined `#(undefined undefined)))))
+  (let [((tuple 'ok pid) (gen_server:start_link 'robot-simulator '() '()))]
+    (make-robot pid pid)))
 
-(defun left (robot) (! robot `#(turn left)))
+(defun place (robot dir pos)
+  (let [(pid (robot-pid robot))]
+    (begin
+      (gen_server:cast pid (tuple 'position  pos))
+      (gen_server:cast pid (tuple 'direction dir)))))
 
-(defun direction (robot) (request robot 'direction))
+(defun direction (rob)
+  (gen_server:call (robot-pid rob) 'direction))
 
-(defun place (robot direction position)
-  (! robot `#(place ,direction ,position)))
+(defun position (rob)
+  (gen_server:call (robot-pid rob) 'position))
 
-(defun position (robot) (request robot 'position))
+(defun left (rob)
+  (gen_server:cast (robot-pid rob) (tuple 'turn 'left)))
 
-(defun right (robot) (! robot `#(turn right)))
+(defun right (rob)
+  (gen_server:cast (robot-pid rob) (tuple 'turn 'right)))
 
-(defun control-function
-  ([#\A] #'advance/1)
-  ([#\L] #'left/1)
-  ([#\R] #'right/1)
-  ([_c]  '()))
+(defun advance (rob)
+  (gen_server:cast (robot-pid rob) 'advance))
 
-(defun loop (direction position)
-  (receive
-    ('advance
-     (loop direction (new-position direction position)))
-    (`#(direction ,pid)
-     (! pid `#(direction ,direction))
-     (loop direction position))
-    (`#(turn ,turn)
-     (loop (new-direction direction turn) position))
-    (`#(place ,new-direction ,new-position)
-     (loop new-direction new-position))
-    (`#(position ,pid)
-     (! pid `#(position ,position))
-     (loop direction position))))
+(defun control (rob commands)
+  (lists:foldl (match-lambda [(#\R _) (right rob)]
+                             [(#\L _) (left  rob)]
+                             [(#\A _) (advance rob)]
+                             [(_   _) 'ok])
+               '()
+               commands))
 
-(defun new-direction
-  (['north 'right] 'east)
-  (['south 'right] 'west)
-  (['east  'right] 'south)
-  (['west  'right] 'north)
-  (['north 'left]  'west)
-  (['south 'left]  'east)
-  (['east  'left]  'north)
-  (['west  'left]  'south))
+;; gen_server API
+;; ==============
 
-(defun new-position
-  (['north `#(,x ,y)] `#(,x ,(+ y 1)))
-  (['south `#(,x ,y)] `#(,x ,(- y 1)))
-  (['east  `#(,x ,y)] `#(,(+ x 1) ,y))
-  (['west  `#(,x ,y)] `#(,(- x 1) ,y)))
+(defun init (_)
+  (tuple 'ok (make-robot_info)))
 
-(defun request (robot request)
-  (! robot `#(,request ,(self)))
-  (receive
-    (`#(,request ,answer) answer)))
+(defun handle_cast
+  [((tuple 'position  pos) ri) (tuple 'noreply (set-robot_info-position  ri pos))]
+  [((tuple 'direction dir) ri) (tuple 'noreply (set-robot_info-direction ri dir))]
+  [((tuple 'turn 'left)  ri) (handle_cast (tuple 'direction (turn_left  (robot_info-direction ri))) ri)]
+  [((tuple 'turn 'right) ri) (handle_cast (tuple 'direction (turn_right (robot_info-direction ri))) ri)]
+  [('advance ri) (handle_cast (tuple 'position (advance (robot_info-position ri)
+                                                        (robot_info-direction ri)))
+                              ri)])
+
+(defun handle_call
+  [('direction _ ri) (tuple 'reply (robot_info-direction ri) ri)]
+  [('position  _ ri) (tuple 'reply (robot_info-position  ri) ri)])
+
+
+
+
+;; Private helper functions
+;; ========================
+
+(defun turn_left
+  [('north) 'west]
+  [('west)  'south]
+  [('south) 'east]
+  [('east)  'north])
+
+(defun turn_right
+  [('north) 'east]
+  [('east)  'south]
+  [('south) 'west]
+  [('west)  'north])
+
+(defun advance
+  [((tuple x y) 'east)  (tuple (+ x 1) y)]
+  [((tuple x y) 'west)  (tuple (- x 1) y)]
+  [((tuple x y) 'north) (tuple x (+ y 1))]
+  [((tuple x y) 'south) (tuple x (- y 1))])
