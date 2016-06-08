@@ -29,7 +29,7 @@
          (students (grade-school:get 5 school)))
     (is-equal '("Bradley" "Franklin") (lists:sort students))))
 
-(deftest get-students-in-a-non-existant-grade
+(deftest get-students-in-a-non-existent-grade
   (is-equal '() (grade-school:get 1 (grade-school:new))))
 
 (deftest sort-school
