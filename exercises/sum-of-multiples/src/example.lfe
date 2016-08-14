@@ -1,8 +1,5 @@
 (defmodule sum-of-multiples
-  (export (sum-of-multiples 1)
-          (sum-of-multiples 2)))
-
-(defun sum-of-multiples (n) (sum-of-multiples '(3 5) n))
+  (export (sum-of-multiples 2)))
 
 (defun sum-of-multiples (multiples n)
   (lists:foldl
