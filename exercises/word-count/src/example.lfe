@@ -13,7 +13,7 @@
 (defun sep? (char) (not (alnum? char)))
 
 (defun tokenize
-  (['()] '())
+  ([()] ())
   ([string]
    (case (lists:splitwith #'alnum?/1 (lists:dropwhile #'sep?/1 string))
      (`#([] ,rest)    (tokenize rest))

@@ -5,16 +5,16 @@
 (include-lib "ltest/include/ltest-macros.lfe")
 
 (deftest no-matches
-  (is-equal '() (anagram:find "diaper" '("hello" "world" "zombies" "pants"))))
+  (is-equal () (anagram:find "diaper" '("hello" "world" "zombies" "pants"))))
 
 (deftest detect-simple-anagram
   (is-equal '("tan") (anagram:find "ant" '("tan" "stand" "at"))))
 
 (deftest does-not-confuse-different-duplicates
-  (is-equal '() (anagram:find "galea" '("eagle"))))
+  (is-equal () (anagram:find "galea" '("eagle"))))
 
 (deftest eliminate-angram-subsets
-  (is-equal '() (anagram:find "good" '("dog" "goody"))))
+  (is-equal () (anagram:find "good" '("dog" "goody"))))
 
 (deftest detect-anagram
   (is-equal

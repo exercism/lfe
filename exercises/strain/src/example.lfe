@@ -3,7 +3,7 @@
           (discard 2)))
 
 (defun keep
-  ([_f []] '())
+  ([_f []] ())
   ([f (cons h t)]
    (if (funcall f h)
      (cons h (keep f t))

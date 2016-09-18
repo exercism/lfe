@@ -22,7 +22,7 @@
 ;; See: https://github.com/lfex/clj/blob/0.3.0/src/clj-seq.lfe#L151-L160
 (defun split-by
   ([0 data] data)
-  ([_ '()]  '())
+  ([_ ()]  ())
   ([x data] (when (> x (length data)))
    (split-by (length data) data))
   ([x data]

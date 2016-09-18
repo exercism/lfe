@@ -25,7 +25,7 @@
 ;; ==========
 
 (defun create ()
-  (let [((tuple 'ok pid) (gen_server:start_link 'robot-simulator '() '()))]
+  (let [((tuple 'ok pid) (gen_server:start_link 'robot-simulator () ()))]
     (make-robot pid pid)))
 
 (defun place (robot dir pos)
@@ -53,7 +53,7 @@
                              [(#\L _) (left  rob)]
                              [(#\A _) (advance rob)]
                              [(_   _) 'ok])
-               '()
+               ()
                commands))
 
 ;; gen_server API

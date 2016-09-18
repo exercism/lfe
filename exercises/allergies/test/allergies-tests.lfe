@@ -4,7 +4,7 @@
 
 (include-lib "ltest/include/ltest-macros.lfe")
 
-(deftest no-allergies-at-all (is-equal '() (allergies:allergies 0)))
+(deftest no-allergies-at-all (is-equal () (allergies:allergies 0)))
 
 (deftest allergic-to-just-eggs (is-equal '(eggs) (allergies:allergies 1)))
 

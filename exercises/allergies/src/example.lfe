@@ -31,5 +31,5 @@
    index)
   ([index (cons _ allergies) allergen]
    (index (+ index 1) allergies allergen))
-  ([_ '() _]
+  ([_ () _]
    'not-found))

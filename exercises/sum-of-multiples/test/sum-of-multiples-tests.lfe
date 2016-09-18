@@ -38,4 +38,4 @@
   (is-equal 4950 (sum-of-multiples:sum-of-multiples '(1) 100)))
 
 (deftest sum-to-10_000-using-empty
-  (is-equal 0 (sum-of-multiples:sum-of-multiples '() 10000)))
+  (is-equal 0 (sum-of-multiples:sum-of-multiples () 10000)))

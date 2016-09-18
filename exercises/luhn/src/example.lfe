@@ -19,7 +19,7 @@
     0))
 
 (defun checksum
-  (['() _ total] total)
+  ([() _ total] total)
   ([(cons h reversed-number) 'odd total]
    (checksum reversed-number 'even (- (+ total h) #\0)))
   ([(cons h reversed-number) 'even total] (when (< h #\5))

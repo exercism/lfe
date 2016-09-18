@@ -6,14 +6,14 @@
 
 (defun add (name grade school)
   (case (get grade school)
-    ('() (orddict:store grade `(,name) school))
+    (() (orddict:store grade `(,name) school))
     (class (orddict:store grade (ordsets:add_element name class) school))))
 
 (defun get (grade students)
   (case (orddict:find grade students)
     (`#(ok ,class) class)
-    (_ '())))
+    (_ ())))
 
-(defun new () '())
+(defun new () ())
 
 (defun sort (school) school)

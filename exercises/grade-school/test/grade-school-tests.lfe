@@ -30,7 +30,7 @@
     (is-equal '("Bradley" "Franklin") (lists:sort students))))
 
 (deftest get-students-in-a-non-existent-grade
-  (is-equal '() (grade-school:get 1 (grade-school:new))))
+  (is-equal () (grade-school:get 1 (grade-school:new))))
 
 (deftest sort-school
   (let* ((school (grade-school:add "Jennifer"    4 (grade-school:new)))
