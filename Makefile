@@ -1,6 +1,10 @@
-ERL    := $(shell which erl)
-REBAR3 := $(shell which rebar3)
-LFE     = ./_build/default/lib/lfe/bin/lfe
+ERL      := $(shell which erl)
+REBAR3   := $(shell which rebar3)
+
+null     :=
+space    := $(null) #
+comma    := ,
+testmods := $(basename $(notdir $(wildcard exercises/*/test/*.lfe)))
 
 ifeq ($(ERL),)
   $(error Can't find Erlang executable 'erl')
@@ -13,4 +17,4 @@ compile: ; $(REBAR3) compile
 clean: ; $(REBAR3) clean
 
 .PHONY: test
-test: ; $(REBAR3) eunit
+test: ; $(REBAR3) eunit -m $(subst $(space),$(comma),$(testmods))
