@@ -1,17 +1,20 @@
 ---
 language: erlang
-otp_release:
-- 17.4
-- 18.0
-- 18.2
 install: true
 before_script:
 - wget https://s3.amazonaws.com/rebar3/rebar3
-- chmod 755 rebar3
+- chmod +x rebar3
+env: PATH=$PATH:.
 script:
 - bin/fetch-configlet
 - bin/configlet .
-- export PATH="$PATH:$PWD"
 - make test
 cache:
 - apt
+otp_release:
+- 19.0
+- 18.3
+- 18.2
+- 18.0
+- 17.5
+- 17.4
