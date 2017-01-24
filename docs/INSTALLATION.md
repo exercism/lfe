@@ -17,8 +17,16 @@ $ brew install lfe
 ```
 
 ### Installing from Source
-With your system's "developer tools" or "essential build packages", `git`
-and Erlang's `erl` installed, you can download and build LFE with the following:
+Install your system's "developer tools" or "essential build packages", `git`
+and Erlang's `erl`.
+
+For example, on Ubuntu 14.04:
+
+```bash
+$ sudo apt-get install build-essentials git erlang erlang-base-hipe
+```.
+
+Afterwards you can download and build LFE with the following:
 
 ```bash
 $ git clone https://github.com/rvirding/lfe
