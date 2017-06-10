@@ -6,13 +6,6 @@
   "deprecated": [
     "accumulate"
   ],
-  "ignored": [
-    "_build",
-    "_test",
-    "bin",
-    "deps",
-    "docs"
-  ],
   "foregone": [
 
   ],
