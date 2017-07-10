@@ -7,7 +7,7 @@ before_script:
 env: PATH=$PATH:.
 script:
 - bin/fetch-configlet
-- bin/configlet .
+- bin/configlet lint .
 - make test
 cache:
 - apt
