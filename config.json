@@ -1,4 +1,6 @@
 {
+  "language": "LFE",
+  "blurb": "Lisp Flavoured Erlang is one of those eat your cake and have it too programming languages. As they say: It's the best of Erlang and of Lisp; at the same time!",
   "active": true,
   "exercises": [
     {
@@ -247,6 +249,5 @@
       "uuid": "d706e999-482a-42de-8492-0a65e6258c19"
     }
   ],
-  "foregone": [],
-  "language": "Lisp Flavoured Erlang (LFE)"
+  "foregone": []
 }
