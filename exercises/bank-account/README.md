@@ -41,6 +41,5 @@ make test
 
 You should now be able to see the results of the test suite for the exercise.
 
-
 ## Submitting Incomplete Solutions
 It's possible to submit an incomplete solution so you can see how others have completed the exercise.
