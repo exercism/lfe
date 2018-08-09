@@ -33,7 +33,9 @@
       "core": false,
       "unlocked_by": null,
       "difficulty": 1,
-      "topics": null
+      "topics": [
+        "math"
+      ]
     },
     {
       "slug": "strain",
@@ -121,7 +123,9 @@
       "core": false,
       "unlocked_by": null,
       "difficulty": 1,
-      "topics": null
+      "topics": [
+        "math"
+      ]
     },
     {
       "slug": "word-count",
@@ -177,7 +181,9 @@
       "core": false,
       "unlocked_by": null,
       "difficulty": 1,
-      "topics": null
+      "topics": [
+        "math"
+      ]
     },
     {
       "slug": "allergies",
@@ -217,7 +223,9 @@
       "core": false,
       "unlocked_by": null,
       "difficulty": 1,
-      "topics": null
+      "topics": [
+        "math"
+      ]
     },
     {
       "slug": "largest-series-product",
@@ -225,7 +233,9 @@
       "core": false,
       "unlocked_by": null,
       "difficulty": 1,
-      "topics": null
+      "topics": [
+        "math"
+      ]
     },
     {
       "slug": "meetup",
