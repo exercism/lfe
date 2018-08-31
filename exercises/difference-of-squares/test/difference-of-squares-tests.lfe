@@ -6,5 +6,5 @@
 
 (deftest ten
   (let ((summed  (difference-of-squares:sum-of-squares 10))
-        (squared (difference-of-squares:square-of-sums 10)))
+        (squared (difference-of-squares:square-of-sum 10)))
     (is-equal 2640 (- squared summed))))
