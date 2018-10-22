@@ -4,6 +4,17 @@
   "blurb": "Lisp Flavoured Erlang is one of those eat your cake and have it too programming languages. As they say: It's the best of Erlang and of Lisp; at the same time!",
   "exercises": [
     {
+      "slug": "hello-world",
+      "uuid": "05345431-e18b-4737-9b40-dbca5fbb549c",
+      "core": true,
+      "auto_approve": true,
+      "unlocked_by": null,
+      "difficulty": 1,
+      "topics": [
+        "strings"
+      ]
+    },
+    {
       "slug": "leap",
       "uuid": "5617bcf3-dc58-437a-8e56-56d04ff8ddfb",
       "core": false,

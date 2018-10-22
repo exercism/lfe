@@ -1,0 +1,11 @@
+%% -*- erlang -*-
+{application, 'hello-world',
+ [{description, ""},
+  {vsn, "0.0.1"},
+  {modules,
+   ['hello-world']},
+  {registered, []},
+  {applications,
+   [kernel, stdlib]},
+  {included_applications, []},
+  {env, []}]}.
