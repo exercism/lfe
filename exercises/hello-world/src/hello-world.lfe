@@ -1,5 +1,5 @@
 (defmodule hello-world
-  (export (from 1)))
+  (export (hello-world 0)))
 
 (defun hello-world ()
   "Hello, world!")
