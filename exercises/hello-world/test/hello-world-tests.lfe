@@ -5,4 +5,4 @@
 (include-lib "ltest/include/ltest-macros.lfe")
 
 (deftest hello-world
-  (is-equal "Hello, world!" (hello-world:hello-world))
+  (is-equal "Hello, world!" (hello-world:hello-world)))
