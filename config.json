@@ -1,5 +1,6 @@
 {
   "language": "LFE",
+  "slug": "lfe",
   "active": true,
   "status": {
     "concept_exercises": false,
