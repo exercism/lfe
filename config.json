@@ -2,6 +2,7 @@
   "language": "LFE",
   "active": true,
   "blurb": "Lisp Flavoured Erlang is one of those eat your cake and have it too programming languages. As they say: It's the best of Erlang and of Lisp; at the same time!",
+  "version": 3,
   "exercises": [
     {
       "slug": "hello-world",
