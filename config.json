@@ -27,66 +27,18 @@
       ]
     },
     {
-      "slug": "leap",
-      "uuid": "5617bcf3-dc58-437a-8e56-56d04ff8ddfb",
+      "slug": "accumulate",
+      "uuid": "d706e999-482a-42de-8492-0a65e6258c19",
       "core": false,
       "unlocked_by": null,
-      "difficulty": 1,
-      "topics": null
+      "difficulty": 0,
+      "topics": null,
+      "deprecated": true,
+      "status": "deprecated"
     },
     {
-      "slug": "rna-transcription",
-      "uuid": "8db0d097-9758-4671-81ff-fd8111c4fd7d",
-      "core": false,
-      "unlocked_by": null,
-      "difficulty": 1,
-      "topics": null
-    },
-    {
-      "slug": "bob",
-      "uuid": "58764b96-7033-45f2-90a6-dd5e41a27ede",
-      "core": false,
-      "unlocked_by": null,
-      "difficulty": 1,
-      "topics": null
-    },
-    {
-      "slug": "sum-of-multiples",
-      "uuid": "8f8697e6-2e8b-47dc-8bd0-747f29b93ae7",
-      "core": false,
-      "unlocked_by": null,
-      "difficulty": 1,
-      "topics": [
-        "math"
-      ]
-    },
-    {
-      "slug": "strain",
-      "uuid": "fe975ff0-e374-44c9-910b-740cc3cff4ad",
-      "core": false,
-      "unlocked_by": null,
-      "difficulty": 1,
-      "topics": null
-    },
-    {
-      "slug": "hamming",
-      "uuid": "8583b88b-03e4-4bba-bc7b-767f2298d67e",
-      "core": false,
-      "unlocked_by": null,
-      "difficulty": 1,
-      "topics": null
-    },
-    {
-      "slug": "space-age",
-      "uuid": "dfb7c4aa-dc52-4973-8c50-f5153ab51406",
-      "core": false,
-      "unlocked_by": null,
-      "difficulty": 1,
-      "topics": null
-    },
-    {
-      "slug": "grains",
-      "uuid": "0669f6eb-f740-431e-a4fc-70bc3d4cf498",
+      "slug": "allergies",
+      "uuid": "68eec796-a269-4e66-84b5-e26574ff614e",
       "core": false,
       "unlocked_by": null,
       "difficulty": 1,
@@ -101,14 +53,6 @@
       "topics": null
     },
     {
-      "slug": "nucleotide-count",
-      "uuid": "9b1ae897-b15d-4180-af45-1c69f98a8f34",
-      "core": false,
-      "unlocked_by": null,
-      "difficulty": 1,
-      "topics": null
-    },
-    {
       "slug": "atbash-cipher",
       "uuid": "78c7360b-1460-4f16-8efe-5efcbd2cb863",
       "core": false,
@@ -117,24 +61,16 @@
       "topics": null
     },
     {
-      "slug": "phone-number",
-      "uuid": "c1e07140-0566-4b50-aca1-3eddaa87d4d2",
+      "slug": "bank-account",
+      "uuid": "b5091e1d-c950-4cad-b583-c6b90c50c02e",
       "core": false,
       "unlocked_by": null,
       "difficulty": 1,
       "topics": null
     },
     {
-      "slug": "robot-simulator",
-      "uuid": "88c6dbe6-f672-4dba-950c-483e55ebd252",
-      "core": false,
-      "unlocked_by": null,
-      "difficulty": 1,
-      "topics": null
-    },
-    {
-      "slug": "grade-school",
-      "uuid": "d9013304-cc50-4a56-a645-51c4a80f1c82",
+      "slug": "beer-song",
+      "uuid": "b3581dfe-27c4-4356-a1d9-1e13759db736",
       "core": false,
       "unlocked_by": null,
       "difficulty": 1,
@@ -151,8 +87,8 @@
       ]
     },
     {
-      "slug": "word-count",
-      "uuid": "5fca0d45-2bf5-486e-9c57-25cff5e4a9c5",
+      "slug": "bob",
+      "uuid": "58764b96-7033-45f2-90a6-dd5e41a27ede",
       "core": false,
       "unlocked_by": null,
       "difficulty": 1,
@@ -167,32 +103,8 @@
       "topics": null
     },
     {
-      "slug": "etl",
-      "uuid": "049c088d-a0e6-4a19-8040-0a470c838e42",
-      "core": false,
-      "unlocked_by": null,
-      "difficulty": 1,
-      "topics": null
-    },
-    {
       "slug": "clock",
       "uuid": "0a75c71e-b634-4b49-b374-718528e21075",
-      "core": false,
-      "unlocked_by": null,
-      "difficulty": 1,
-      "topics": null
-    },
-    {
-      "slug": "gigasecond",
-      "uuid": "63099375-19fa-462f-9e82-960508c229a4",
-      "core": false,
-      "unlocked_by": null,
-      "difficulty": 1,
-      "topics": null
-    },
-    {
-      "slug": "beer-song",
-      "uuid": "b3581dfe-27c4-4356-a1d9-1e13759db736",
       "core": false,
       "unlocked_by": null,
       "difficulty": 1,
@@ -209,16 +121,58 @@
       ]
     },
     {
-      "slug": "allergies",
-      "uuid": "68eec796-a269-4e66-84b5-e26574ff614e",
+      "slug": "etl",
+      "uuid": "049c088d-a0e6-4a19-8040-0a470c838e42",
       "core": false,
       "unlocked_by": null,
       "difficulty": 1,
       "topics": null
     },
     {
-      "slug": "bank-account",
-      "uuid": "b5091e1d-c950-4cad-b583-c6b90c50c02e",
+      "slug": "gigasecond",
+      "uuid": "63099375-19fa-462f-9e82-960508c229a4",
+      "core": false,
+      "unlocked_by": null,
+      "difficulty": 1,
+      "topics": null
+    },
+    {
+      "slug": "grade-school",
+      "uuid": "d9013304-cc50-4a56-a645-51c4a80f1c82",
+      "core": false,
+      "unlocked_by": null,
+      "difficulty": 1,
+      "topics": null
+    },
+    {
+      "slug": "grains",
+      "uuid": "0669f6eb-f740-431e-a4fc-70bc3d4cf498",
+      "core": false,
+      "unlocked_by": null,
+      "difficulty": 1,
+      "topics": null
+    },
+    {
+      "slug": "hamming",
+      "uuid": "8583b88b-03e4-4bba-bc7b-767f2298d67e",
+      "core": false,
+      "unlocked_by": null,
+      "difficulty": 1,
+      "topics": null
+    },
+    {
+      "slug": "largest-series-product",
+      "uuid": "49005564-d4d3-4b49-991c-1a3f63e71f58",
+      "core": false,
+      "unlocked_by": null,
+      "difficulty": 1,
+      "topics": [
+        "math"
+      ]
+    },
+    {
+      "slug": "leap",
+      "uuid": "5617bcf3-dc58-437a-8e56-56d04ff8ddfb",
       "core": false,
       "unlocked_by": null,
       "difficulty": 1,
@@ -233,36 +187,16 @@
       "topics": null
     },
     {
-      "slug": "series",
-      "uuid": "f2ca089e-66db-4b85-8275-5932952a36bf",
+      "slug": "meetup",
+      "uuid": "1a93aacc-160f-4121-b03a-742e20f7c073",
       "core": false,
       "unlocked_by": null,
       "difficulty": 1,
       "topics": null
     },
     {
-      "slug": "trinary",
-      "uuid": "db8c35d3-5203-4b3c-bb58-bd7a42ab2e5d",
-      "core": false,
-      "unlocked_by": null,
-      "difficulty": 1,
-      "topics": [
-        "math"
-      ]
-    },
-    {
-      "slug": "largest-series-product",
-      "uuid": "49005564-d4d3-4b49-991c-1a3f63e71f58",
-      "core": false,
-      "unlocked_by": null,
-      "difficulty": 1,
-      "topics": [
-        "math"
-      ]
-    },
-    {
-      "slug": "meetup",
-      "uuid": "1a93aacc-160f-4121-b03a-742e20f7c073",
+      "slug": "nucleotide-count",
+      "uuid": "9b1ae897-b15d-4180-af45-1c69f98a8f34",
       "core": false,
       "unlocked_by": null,
       "difficulty": 1,
@@ -277,14 +211,80 @@
       "topics": null
     },
     {
-      "slug": "accumulate",
-      "uuid": "d706e999-482a-42de-8492-0a65e6258c19",
+      "slug": "phone-number",
+      "uuid": "c1e07140-0566-4b50-aca1-3eddaa87d4d2",
       "core": false,
       "unlocked_by": null,
-      "difficulty": 0,
-      "topics": null,
-      "deprecated": true,
-      "status": "deprecated"
+      "difficulty": 1,
+      "topics": null
+    },
+    {
+      "slug": "rna-transcription",
+      "uuid": "8db0d097-9758-4671-81ff-fd8111c4fd7d",
+      "core": false,
+      "unlocked_by": null,
+      "difficulty": 1,
+      "topics": null
+    },
+    {
+      "slug": "robot-simulator",
+      "uuid": "88c6dbe6-f672-4dba-950c-483e55ebd252",
+      "core": false,
+      "unlocked_by": null,
+      "difficulty": 1,
+      "topics": null
+    },
+    {
+      "slug": "series",
+      "uuid": "f2ca089e-66db-4b85-8275-5932952a36bf",
+      "core": false,
+      "unlocked_by": null,
+      "difficulty": 1,
+      "topics": null
+    },
+    {
+      "slug": "space-age",
+      "uuid": "dfb7c4aa-dc52-4973-8c50-f5153ab51406",
+      "core": false,
+      "unlocked_by": null,
+      "difficulty": 1,
+      "topics": null
+    },
+    {
+      "slug": "strain",
+      "uuid": "fe975ff0-e374-44c9-910b-740cc3cff4ad",
+      "core": false,
+      "unlocked_by": null,
+      "difficulty": 1,
+      "topics": null
+    },
+    {
+      "slug": "sum-of-multiples",
+      "uuid": "8f8697e6-2e8b-47dc-8bd0-747f29b93ae7",
+      "core": false,
+      "unlocked_by": null,
+      "difficulty": 1,
+      "topics": [
+        "math"
+      ]
+    },
+    {
+      "slug": "trinary",
+      "uuid": "db8c35d3-5203-4b3c-bb58-bd7a42ab2e5d",
+      "core": false,
+      "unlocked_by": null,
+      "difficulty": 1,
+      "topics": [
+        "math"
+      ]
+    },
+    {
+      "slug": "word-count",
+      "uuid": "5fca0d45-2bf5-486e-9c57-25cff5e4a9c5",
+      "core": false,
+      "unlocked_by": null,
+      "difficulty": 1,
+      "topics": null
     }
   ]
 }
