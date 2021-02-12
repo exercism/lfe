@@ -1,3 +1,5 @@
+# Installation
+
 First, make sure you have Erlang installed, following the instructions on the
 [Erlang][1] installation page as appropriate.
 [1]: /languages/erlang

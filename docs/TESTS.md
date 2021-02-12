@@ -1,3 +1,5 @@
+# Tests
+
 For each example, the following general steps are required.
 
 First, change directory to the exercise you want to practice, in
