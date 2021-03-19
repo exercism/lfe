@@ -1,0 +1,25 @@
+{
+  "docs": [
+    {
+      "uuid": "7046fa9d-bea4-4395-9e8f-5ce2a3003bf8",
+      "slug": "installation",
+      "path": "docs/INSTALLATION.md",
+      "title": "Installing LFE locally",
+      "blurb": "Learn how to install LFE locally to solve Exercism's exercises on your own machine"
+    },
+    {
+      "uuid": "75f3bd52-0258-4b12-9cba-443b0de5d9e4",
+      "slug": "learning",
+      "path": "docs/LEARNING.md",
+      "title": "How to learn LFE",
+      "blurb": "An overview of how to get started from scratch with LFE"
+    },
+    {
+      "uuid": "66360c69-4433-4a8f-a73a-d5423f34450f",
+      "slug": "tests",
+      "path": "docs/TESTS.md",
+      "title": "Testing on the LFE track",
+      "blurb": "Learn how to test your LFE exercises on Exercism"
+    }
+  ]
+}
