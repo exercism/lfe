@@ -1,6 +1,13 @@
 {
   "blurb": "Given a word and a list of possible anagrams, select the correct sublist.",
-  "authors": [],
+  "authors": [
+    "kytrinyx"
+  ],
+  "contributors": [
+    "adolfopa",
+    "etrepum",
+    "yurrriq"
+  ],
   "files": {
     "solution": [],
     "test": [],

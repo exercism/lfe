@@ -1,6 +1,10 @@
 {
   "blurb": "Count the frequency of letters in texts using parallel computation.",
   "authors": [],
+  "contributors": [
+    "tmcgilchrist",
+    "yurrriq"
+  ],
   "files": {
     "solution": [],
     "test": [],
