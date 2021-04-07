@@ -2,9 +2,15 @@
   "blurb": "We are going to do the `Transform` step of an Extract-Transform-Load.",
   "authors": [],
   "files": {
-    "solution": [],
-    "test": [],
-    "example": []
+    "solution": [
+      "src/etl.app.src"
+    ],
+    "test": [
+      "test/etl-tests.lfe"
+    ],
+    "example": [
+      "src/example.lfe"
+    ]
   },
   "source": "The Jumpstart Lab team",
   "source_url": "http://jumpstartlab.com"

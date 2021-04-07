@@ -2,9 +2,15 @@
   "blurb": "Implement a clock that handles times without dates.",
   "authors": [],
   "files": {
-    "solution": [],
-    "test": [],
-    "example": []
+    "solution": [
+      "src/clock.app.src"
+    ],
+    "test": [
+      "test/clock-tests.lfe"
+    ],
+    "example": [
+      "src/example.lfe"
+    ]
   },
   "source": "Pairing session with Erin Drummond",
   "source_url": "https://twitter.com/ebdrummond"
