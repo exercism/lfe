@@ -1,3 +1,5 @@
+# About
+
 Lisp Flavoured Erlang (AKA LFE) is a lisp syntax front-end to the Erlang compiler. 
 Code produced with it is compatible with "normal" Erlang code. 
 LFE is a (proper) Lisp based on the features and limitations of the Erlang VM.
