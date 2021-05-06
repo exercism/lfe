@@ -3,7 +3,7 @@
   "authors": [],
   "files": {
     "solution": [
-      "src/robot-simulator.app.src"
+      "src/robot-simulator.lfe"
     ],
     "test": [
       "test/robot-simulator-tests.lfe"

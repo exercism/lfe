@@ -3,7 +3,7 @@
   "authors": [],
   "files": {
     "solution": [
-      "src/largest-series-product.app.src"
+      "src/largest-series-product.lfe"
     ],
     "test": [
       "test/largest-series-product-tests.lfe"

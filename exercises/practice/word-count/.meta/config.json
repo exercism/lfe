@@ -3,7 +3,7 @@
   "authors": [],
   "files": {
     "solution": [
-      "src/word-count.app.src"
+      "src/word-count.lfe"
     ],
     "test": [
       "test/word-count-tests.lfe"

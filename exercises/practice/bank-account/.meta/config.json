@@ -3,7 +3,7 @@
   "authors": [],
   "files": {
     "solution": [
-      "src/bank-account.app.src"
+      "src/bank-account.lfe"
     ],
     "test": [
       "test/bank-account-tests.lfe"

@@ -3,7 +3,7 @@
   "authors": [],
   "files": {
     "solution": [
-      "src/phone-number.app.src"
+      "src/phone-number.lfe"
     ],
     "test": [
       "test/phone-number-tests.lfe"

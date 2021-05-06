@@ -3,7 +3,7 @@
   "authors": [],
   "files": {
     "solution": [
-      "src/grade-school.app.src"
+      "src/grade-school.lfe"
     ],
     "test": [
       "test/grade-school-tests.lfe"

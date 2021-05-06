@@ -3,7 +3,7 @@
   "authors": [],
   "files": {
     "solution": [
-      "src/rna-transcription.app.src"
+      "src/rna-transcription.lfe"
     ],
     "test": [
       "test/rna-transcription-tests.lfe"

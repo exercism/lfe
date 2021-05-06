@@ -3,7 +3,7 @@
   "authors": [],
   "files": {
     "solution": [
-      "src/nucleotide-count.app.src"
+      "src/nucleotide-count.lfe"
     ],
     "test": [
       "test/nucleotide-count-tests.lfe"

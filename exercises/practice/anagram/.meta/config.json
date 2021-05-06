@@ -3,7 +3,7 @@
   "authors": [],
   "files": {
     "solution": [
-      "src/anagram.app.src"
+      "src/anagram.lfe"
     ],
     "test": [
       "test/anagram-tests.lfe"

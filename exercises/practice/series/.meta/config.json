@@ -3,7 +3,7 @@
   "authors": [],
   "files": {
     "solution": [
-      "src/series.app.src"
+      "src/series.lfe"
     ],
     "test": [
       "test/series-tests.lfe"

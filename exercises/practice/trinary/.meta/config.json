@@ -3,7 +3,7 @@
   "authors": [],
   "files": {
     "solution": [
-      "src/trinary.app.src"
+      "src/trinary.lfe"
     ],
     "test": [
       "test/trinary-tests.lfe"

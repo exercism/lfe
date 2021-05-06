@@ -3,7 +3,7 @@
   "authors": [],
   "files": {
     "solution": [
-      "src/circular-buffer.app.src"
+      "src/circular-buffer.lfe"
     ],
     "test": [
       "test/circular-buffer-tests.lfe"

@@ -3,7 +3,7 @@
   "authors": [],
   "files": {
     "solution": [
-      "src/binary.app.src"
+      "src/binary.lfe"
     ],
     "test": [
       "test/binary-tests.lfe"

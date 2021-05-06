@@ -16,7 +16,7 @@
   },
   "files": {
     "solution": [
-      "src/%{kebab_slug}.app.src"
+      "src/%{kebab_slug}.lfe"
     ],
     "test": [
       "test/%{kebab_slug}-tests.lfe"

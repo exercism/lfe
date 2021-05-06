@@ -3,7 +3,7 @@
   "authors": [],
   "files": {
     "solution": [
-      "src/etl.app.src"
+      "src/etl.lfe"
     ],
     "test": [
       "test/etl-tests.lfe"

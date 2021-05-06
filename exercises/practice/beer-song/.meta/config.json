@@ -3,7 +3,7 @@
   "authors": [],
   "files": {
     "solution": [
-      "src/beer-song.app.src"
+      "src/beer-song.lfe"
     ],
     "test": [
       "test/beer-song-tests.lfe"

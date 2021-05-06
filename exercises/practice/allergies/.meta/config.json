@@ -3,7 +3,7 @@
   "authors": [],
   "files": {
     "solution": [
-      "src/allergies.app.src"
+      "src/allergies.lfe"
     ],
     "test": [
       "test/allergies-tests.lfe"

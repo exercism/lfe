@@ -3,7 +3,7 @@
   "authors": [],
   "files": {
     "solution": [
-      "src/atbash-cipher.app.src"
+      "src/atbash-cipher.lfe"
     ],
     "test": [
       "test/atbash-cipher-tests.lfe"

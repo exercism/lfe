@@ -3,7 +3,7 @@
   "authors": [],
   "files": {
     "solution": [
-      "src/grains.app.src"
+      "src/grains.lfe"
     ],
     "test": [
       "test/grains-tests.lfe"

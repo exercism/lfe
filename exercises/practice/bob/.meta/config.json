@@ -3,7 +3,7 @@
   "authors": [],
   "files": {
     "solution": [
-      "src/bob.app.src"
+      "src/bob.lfe"
     ],
     "test": [
       "test/bob-tests.lfe"

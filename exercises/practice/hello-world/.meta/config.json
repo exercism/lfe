@@ -3,7 +3,7 @@
   "authors": [],
   "files": {
     "solution": [
-      "src/hello-world.app.src"
+      "src/hello-world.lfe"
     ],
     "test": [
       "test/hello-world-tests.lfe"

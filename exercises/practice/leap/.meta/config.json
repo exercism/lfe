@@ -3,7 +3,7 @@
   "authors": [],
   "files": {
     "solution": [
-      "src/leap.app.src"
+      "src/leap.lfe"
     ],
     "test": [
       "test/leap-tests.lfe"

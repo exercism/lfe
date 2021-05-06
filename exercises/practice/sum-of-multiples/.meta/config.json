@@ -3,7 +3,7 @@
   "authors": [],
   "files": {
     "solution": [
-      "src/sum-of-multiples.app.src"
+      "src/sum-of-multiples.lfe"
     ],
     "test": [
       "test/sum-of-multiples-tests.lfe"

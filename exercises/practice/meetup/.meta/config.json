@@ -3,7 +3,7 @@
   "authors": [],
   "files": {
     "solution": [
-      "src/meetup.app.src"
+      "src/meetup.lfe"
     ],
     "test": [
       "test/meetup-tests.lfe"

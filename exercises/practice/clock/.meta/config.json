@@ -3,7 +3,7 @@
   "authors": [],
   "files": {
     "solution": [
-      "src/clock.app.src"
+      "src/clock.lfe"
     ],
     "test": [
       "test/clock-tests.lfe"

@@ -3,7 +3,7 @@
   "authors": [],
   "files": {
     "solution": [
-      "src/space-age.app.src"
+      "src/space-age.lfe"
     ],
     "test": [
       "test/space-age-tests.lfe"

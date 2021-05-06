@@ -3,7 +3,7 @@
   "authors": [],
   "files": {
     "solution": [
-      "src/strain.app.src"
+      "src/strain.lfe"
     ],
     "test": [
       "test/strain-tests.lfe"

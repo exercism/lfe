@@ -3,7 +3,7 @@
   "authors": [],
   "files": {
     "solution": [
-      "src/luhn.app.src"
+      "src/luhn.lfe"
     ],
     "test": [
       "test/luhn-tests.lfe"

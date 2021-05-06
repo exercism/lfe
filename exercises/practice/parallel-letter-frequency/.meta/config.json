@@ -3,7 +3,7 @@
   "authors": [],
   "files": {
     "solution": [
-      "src/parallel-letter-frequency.app.src"
+      "src/parallel-letter-frequency.lfe"
     ],
     "test": [
       "test/parallel-letter-frequency-tests.lfe"

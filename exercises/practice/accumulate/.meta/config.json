@@ -3,7 +3,7 @@
   "authors": [],
   "files": {
     "solution": [
-      "src/accumulate.app.src"
+      "src/accumulate.lfe"
     ],
     "test": [
       "test/accumulate-tests.lfe"
