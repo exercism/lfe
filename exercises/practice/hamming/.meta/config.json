@@ -2,7 +2,9 @@
   "blurb": "Calculate the Hamming difference between two DNA strands.",
   "authors": [],
   "files": {
-    "solution": [],
+    "solution": [
+      "src/hamming.lfe"
+    ],
     "test": [
       "test/hamming-tests.lfe"
     ],

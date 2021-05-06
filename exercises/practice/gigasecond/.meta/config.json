@@ -2,7 +2,9 @@
   "blurb": "Given a moment, determine the moment that would be after a gigasecond has passed.",
   "authors": [],
   "files": {
-    "solution": [],
+    "solution": [
+      "src/gigasecond.lfe"
+    ],
     "test": [
       "test/gigasecond-tests.lfe"
     ],

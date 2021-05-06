@@ -2,7 +2,9 @@
   "blurb": "Implement a clock that handles times without dates.",
   "authors": [],
   "files": {
-    "solution": [],
+    "solution": [
+      "src/clock.lfe"
+    ],
     "test": [
       "test/clock-tests.lfe"
     ],

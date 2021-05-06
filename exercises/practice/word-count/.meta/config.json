@@ -2,7 +2,9 @@
   "blurb": "Given a phrase, count the occurrences of each word in that phrase.",
   "authors": [],
   "files": {
-    "solution": [],
+    "solution": [
+      "src/word-count.lfe"
+    ],
     "test": [
       "test/word-count-tests.lfe"
     ],

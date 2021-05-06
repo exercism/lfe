@@ -2,7 +2,9 @@
   "blurb": "Produce the lyrics to that beloved classic, that field-trip favorite: 99 Bottles of Beer on the Wall.",
   "authors": [],
   "files": {
-    "solution": [],
+    "solution": [
+      "src/beer-song.lfe"
+    ],
     "test": [
       "test/beer-song-tests.lfe"
     ],

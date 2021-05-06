@@ -2,7 +2,9 @@
   "blurb": "Clean up user-entered phone numbers so that they can be sent SMS messages.",
   "authors": [],
   "files": {
-    "solution": [],
+    "solution": [
+      "src/phone-number.lfe"
+    ],
     "test": [
       "test/phone-number-tests.lfe"
     ],

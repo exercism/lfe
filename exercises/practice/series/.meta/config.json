@@ -2,7 +2,9 @@
   "blurb": "Given a string of digits, output all the contiguous substrings of length `n` in that string.",
   "authors": [],
   "files": {
-    "solution": [],
+    "solution": [
+      "src/series.lfe"
+    ],
     "test": [
       "test/series-tests.lfe"
     ],

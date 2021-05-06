@@ -2,7 +2,9 @@
   "blurb": "Calculate the date of meetups.",
   "authors": [],
   "files": {
-    "solution": [],
+    "solution": [
+      "src/meetup.lfe"
+    ],
     "test": [
       "test/meetup-tests.lfe"
     ],
