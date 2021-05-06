@@ -2,9 +2,7 @@
   "blurb": "Create an implementation of the atbash cipher, an ancient encryption system created in the Middle East.",
   "authors": [],
   "files": {
-    "solution": [
-      "src/atbash-cipher.app.src"
-    ],
+    "solution": [],
     "test": [
       "test/atbash-cipher-tests.lfe"
     ],

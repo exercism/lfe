@@ -2,9 +2,7 @@
   "blurb": "Bob is a lackadaisical teenager. In conversation, his responses are very limited.",
   "authors": [],
   "files": {
-    "solution": [
-      "src/bob.app.src"
-    ],
+    "solution": [],
     "test": [
       "test/bob-tests.lfe"
     ],

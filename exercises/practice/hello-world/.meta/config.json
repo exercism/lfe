@@ -2,9 +2,7 @@
   "blurb": "The classical introductory exercise. Just say \"Hello, World!\"",
   "authors": [],
   "files": {
-    "solution": [
-      "src/hello-world.app.src"
-    ],
+    "solution": [],
     "test": [
       "test/hello-world-tests.lfe"
     ],

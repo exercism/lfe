@@ -2,9 +2,7 @@
   "blurb": "Given a DNA strand, return its RNA Complement Transcription.",
   "authors": [],
   "files": {
-    "solution": [
-      "src/rna-transcription.app.src"
-    ],
+    "solution": [],
     "test": [
       "test/rna-transcription-tests.lfe"
     ],

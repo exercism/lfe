@@ -2,9 +2,7 @@
   "blurb": "Count the frequency of letters in texts using parallel computation.",
   "authors": [],
   "files": {
-    "solution": [
-      "src/parallel-letter-frequency.app.src"
-    ],
+    "solution": [],
     "test": [
       "test/parallel-letter-frequency-tests.lfe"
     ],

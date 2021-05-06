@@ -2,9 +2,7 @@
   "blurb": "Write a robot simulator.",
   "authors": [],
   "files": {
-    "solution": [
-      "src/robot-simulator.app.src"
-    ],
+    "solution": [],
     "test": [
       "test/robot-simulator-tests.lfe"
     ],

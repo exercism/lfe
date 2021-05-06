@@ -2,9 +2,7 @@
   "blurb": "Given a number, find the sum of all the multiples of particular numbers up to but not including that number.",
   "authors": [],
   "files": {
-    "solution": [
-      "src/sum-of-multiples.app.src"
-    ],
+    "solution": [],
     "test": [
       "test/sum-of-multiples-tests.lfe"
     ],

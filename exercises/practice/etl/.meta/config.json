@@ -2,9 +2,7 @@
   "blurb": "We are going to do the `Transform` step of an Extract-Transform-Load.",
   "authors": [],
   "files": {
-    "solution": [
-      "src/etl.app.src"
-    ],
+    "solution": [],
     "test": [
       "test/etl-tests.lfe"
     ],

@@ -2,9 +2,7 @@
   "blurb": "Given a number determine whether or not it is valid per the Luhn formula.",
   "authors": [],
   "files": {
-    "solution": [
-      "src/luhn.app.src"
-    ],
+    "solution": [],
     "test": [
       "test/luhn-tests.lfe"
     ],

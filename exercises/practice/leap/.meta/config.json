@@ -2,9 +2,7 @@
   "blurb": "Given a year, report if it is a leap year.",
   "authors": [],
   "files": {
-    "solution": [
-      "src/leap.app.src"
-    ],
+    "solution": [],
     "test": [
       "test/leap-tests.lfe"
     ],

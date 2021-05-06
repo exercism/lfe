@@ -2,9 +2,7 @@
   "blurb": "Given a word and a list of possible anagrams, select the correct sublist.",
   "authors": [],
   "files": {
-    "solution": [
-      "src/anagram.app.src"
-    ],
+    "solution": [],
     "test": [
       "test/anagram-tests.lfe"
     ],

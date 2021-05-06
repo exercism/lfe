@@ -2,9 +2,7 @@
   "blurb": "Find the difference between the square of the sum and the sum of the squares of the first N natural numbers.",
   "authors": [],
   "files": {
-    "solution": [
-      "src/difference-of-squares.app.src"
-    ],
+    "solution": [],
     "test": [
       "test/difference-of-squares-tests.lfe"
     ],
