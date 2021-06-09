@@ -3,10 +3,10 @@
   "authors": [],
   "files": {
     "solution": [
-      "src/phone-number.lfe"
+      "src/phone.lfe"
     ],
     "test": [
-      "test/phone-number-tests.lfe"
+      "test/phone-tests.lfe"
     ],
     "example": [
       "src/example.lfe"

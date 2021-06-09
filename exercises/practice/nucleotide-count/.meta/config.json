@@ -3,10 +3,10 @@
   "authors": [],
   "files": {
     "solution": [
-      "src/nucleotide-count.lfe"
+      "src/dna.lfe"
     ],
     "test": [
-      "test/nucleotide-count-tests.lfe"
+      "test/dna-tests.lfe"
     ],
     "example": [
       "src/example.lfe"
