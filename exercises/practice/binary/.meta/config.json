@@ -3,10 +3,10 @@
   "authors": [],
   "files": {
     "solution": [
-      "src/binary.lfe"
+      "src/binary-string.lfe"
     ],
     "test": [
-      "test/binary-tests.lfe"
+      "test/binary-string-tests.lfe"
     ],
     "example": [
       "src/example.lfe"
