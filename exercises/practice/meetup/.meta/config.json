@@ -1,6 +1,10 @@
 {
   "blurb": "Calculate the date of meetups.",
   "authors": [],
+  "contributors": [
+    "etrepum",
+    "yurrriq"
+  ],
   "files": {
     "solution": [
       "src/meetup.lfe"

@@ -1,6 +1,13 @@
 {
   "blurb": "The classical introductory exercise. Just say \"Hello, World!\"",
-  "authors": [],
+  "authors": [
+    "benreyn"
+  ],
+  "contributors": [
+    "agentofuser",
+    "NobbZ",
+    "yurrriq"
+  ],
   "files": {
     "solution": [
       "src/hello-world.lfe"

@@ -1,6 +1,11 @@
 {
   "blurb": "Write a robot simulator.",
   "authors": [],
+  "contributors": [
+    "NobbZ",
+    "tmcgilchrist",
+    "yurrriq"
+  ],
   "files": {
     "solution": [
       "src/robot-simulator.lfe"
