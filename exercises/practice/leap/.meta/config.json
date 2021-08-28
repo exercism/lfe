@@ -15,7 +15,7 @@
       "test/leap-tests.lfe"
     ],
     "example": [
-      "src/example.lfe"
+      ".meta/example.lfe"
     ]
   },
   "source": "JavaRanch Cattle Drive, exercise 3",

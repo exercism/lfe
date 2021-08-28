@@ -11,7 +11,7 @@
       "test/hamming-tests.lfe"
     ],
     "example": [
-      "src/example.lfe"
+      ".meta/example.lfe"
     ]
   },
   "source": "The Calculating Point Mutations problem at Rosalind",

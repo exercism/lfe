@@ -14,7 +14,7 @@
       "test/robot-simulator-tests.lfe"
     ],
     "example": [
-      "src/example.lfe"
+      ".meta/example.lfe"
     ]
   },
   "source": "Inspired by an interview question at a famous company.",

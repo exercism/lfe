@@ -15,7 +15,7 @@
       "test/clock-tests.lfe"
     ],
     "example": [
-      "src/example.lfe"
+      ".meta/example.lfe"
     ]
   },
   "source": "Pairing session with Erin Drummond",

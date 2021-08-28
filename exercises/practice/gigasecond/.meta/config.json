@@ -15,7 +15,7 @@
       "test/gigasecond-tests.lfe"
     ],
     "example": [
-      "src/example.lfe"
+      ".meta/example.lfe"
     ]
   },
   "source": "Chapter 9 in Chris Pine's online Learn to Program tutorial.",

@@ -18,7 +18,7 @@
       "test/grade-school-tests.lfe"
     ],
     "example": [
-      "src/example.lfe"
+      ".meta/example.lfe"
     ]
   },
   "source": "A pairing session with Phil Battos at gSchool",

@@ -16,7 +16,7 @@
       "test/anagram-tests.lfe"
     ],
     "example": [
-      "src/example.lfe"
+      ".meta/example.lfe"
     ]
   },
   "source": "Inspired by the Extreme Startup game",

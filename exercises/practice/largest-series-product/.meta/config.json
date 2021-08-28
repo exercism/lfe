@@ -14,7 +14,7 @@
       "test/largest-series-product-tests.lfe"
     ],
     "example": [
-      "src/example.lfe"
+      ".meta/example.lfe"
     ]
   },
   "source": "A variation on Problem 8 at Project Euler",

@@ -13,7 +13,7 @@
       "test/circular-buffer-tests.lfe"
     ],
     "example": [
-      "src/example.lfe"
+      ".meta/example.lfe"
     ]
   },
   "source": "Wikipedia",

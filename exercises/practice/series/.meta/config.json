@@ -13,7 +13,7 @@
       "test/series-tests.lfe"
     ],
     "example": [
-      "src/example.lfe"
+      ".meta/example.lfe"
     ]
   },
   "source": "A subset of the Problem 8 at Project Euler",

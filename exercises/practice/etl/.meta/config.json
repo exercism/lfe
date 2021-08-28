@@ -16,7 +16,7 @@
       "test/etl-tests.lfe"
     ],
     "example": [
-      "src/example.lfe"
+      ".meta/example.lfe"
     ]
   },
   "source": "The Jumpstart Lab team",

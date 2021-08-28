@@ -16,7 +16,7 @@
       "test/allergies-tests.lfe"
     ],
     "example": [
-      "src/example.lfe"
+      ".meta/example.lfe"
     ]
   },
   "source": "Jumpstart Lab Warm-up",
