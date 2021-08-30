@@ -13,7 +13,7 @@
       "test/parallel-letter-frequency-tests.lfe"
     ],
     "example": [
-      "src/example.lfe"
+      ".meta/example.lfe"
     ]
   }
 }

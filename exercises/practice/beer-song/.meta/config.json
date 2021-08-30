@@ -16,7 +16,7 @@
       "test/beer-song-tests.lfe"
     ],
     "example": [
-      "src/example.lfe"
+      ".meta/example.lfe"
     ]
   },
   "source": "Learn to Program by Chris Pine",

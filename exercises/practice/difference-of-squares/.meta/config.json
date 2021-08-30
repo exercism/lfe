@@ -14,7 +14,7 @@
       "test/difference-of-squares-tests.lfe"
     ],
     "example": [
-      "src/example.lfe"
+      ".meta/example.lfe"
     ]
   },
   "source": "Problem 6 at Project Euler",

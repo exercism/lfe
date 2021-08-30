@@ -20,7 +20,7 @@
       "test/sum-of-multiples-tests.lfe"
     ],
     "example": [
-      "src/example.lfe"
+      ".meta/example.lfe"
     ]
   },
   "source": "A variation on Problem 1 at Project Euler",

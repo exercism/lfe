@@ -18,7 +18,7 @@
       "test/strain-tests.lfe"
     ],
     "example": [
-      "src/example.lfe"
+      ".meta/example.lfe"
     ]
   },
   "source": "Conversation with James Edward Gray II",

@@ -19,7 +19,7 @@
       "test/rna-transcription-tests.lfe"
     ],
     "example": [
-      "src/example.lfe"
+      ".meta/example.lfe"
     ]
   },
   "source": "Hyperphysics",

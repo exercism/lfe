@@ -16,7 +16,7 @@
       "test/hello-world-tests.lfe"
     ],
     "example": [
-      "src/example.lfe"
+      ".meta/example.lfe"
     ]
   },
   "source": "This is an exercise to introduce users to using Exercism",

@@ -18,7 +18,7 @@
       "test/bob-tests.lfe"
     ],
     "example": [
-      "src/example.lfe"
+      ".meta/example.lfe"
     ]
   },
   "source": "Inspired by the 'Deaf Grandma' exercise in Chris Pine's Learn to Program tutorial.",
