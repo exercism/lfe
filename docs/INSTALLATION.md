@@ -60,7 +60,7 @@ For example, on Ubuntu 14.04:
 
 ```bash
 $ sudo apt-get install build-essentials git erlang erlang-base-hipe
-```.
+```
 
 Afterwards you can download and build LFE with the following:
 
