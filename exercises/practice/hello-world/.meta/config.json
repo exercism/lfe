@@ -1,0 +1,24 @@
+{
+  "blurb": "The classical introductory exercise. Just say \"Hello, World!\".",
+  "authors": [
+    "benreyn"
+  ],
+  "contributors": [
+    "agentofuser",
+    "NobbZ",
+    "yurrriq"
+  ],
+  "files": {
+    "solution": [
+      "src/hello-world.lfe"
+    ],
+    "test": [
+      "test/hello-world-tests.lfe"
+    ],
+    "example": [
+      ".meta/example.lfe"
+    ]
+  },
+  "source": "This is an exercise to introduce users to using Exercism",
+  "source_url": "https://en.wikipedia.org/wiki/%22Hello,_world!%22_program"
+}

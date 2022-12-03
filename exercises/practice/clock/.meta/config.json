@@ -1,0 +1,23 @@
+{
+  "blurb": "Implement a clock that handles times without dates.",
+  "authors": [
+    "lehoff"
+  ],
+  "contributors": [
+    "tmcgilchrist",
+    "yurrriq"
+  ],
+  "files": {
+    "solution": [
+      "src/clock.lfe"
+    ],
+    "test": [
+      "test/clock-tests.lfe"
+    ],
+    "example": [
+      ".meta/example.lfe"
+    ]
+  },
+  "source": "Pairing session with Erin Drummond",
+  "source_url": "https://twitter.com/ebdrummond"
+}

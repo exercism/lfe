@@ -1,8 +1,10 @@
+# Installation
+
 First, make sure you have Erlang installed, following the instructions on the
 [Erlang][1] installation page as appropriate.
 [1]: /languages/erlang
 
-### Homebrew for Mac OS X
+## Homebrew for Mac OS X
 
 Update your Homebrew to latest:
 
@@ -16,7 +18,7 @@ Install LFE:
 $ brew install lfe
 ```
 
-### Using a docker container
+## Using a docker container
 If you just want to quickly take a look at LFE without polluting your
 system with new packages, you can just pull a docker container with
 LFE preinstalled.
@@ -50,15 +52,15 @@ ok
 Nice! Use `(exit)` or Ctrl-C (C-c) twice to exit.
 
 
-### Installing from Source
+## Installing from Source
 Install your system's "developer tools" or "essential build packages", `git`
 and Erlang's `erl`.
 
-For example, on Ubuntu 14.04:
+For example, on Ubuntu 18.04:
 
 ```bash
 $ sudo apt-get install build-essential git erlang erlang-base-hipe
-```.
+```
 
 Afterwards you can download and build LFE with the following:
 

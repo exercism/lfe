@@ -1,0 +1,23 @@
+{
+  "blurb": "Calculate the number of grains of wheat on a chessboard given that the number on each square doubles.",
+  "authors": [
+    "defndaines"
+  ],
+  "contributors": [
+    "tmcgilchrist",
+    "yurrriq"
+  ],
+  "files": {
+    "solution": [
+      "src/grains.lfe"
+    ],
+    "test": [
+      "test/grains-tests.lfe"
+    ],
+    "example": [
+      ".meta/example.lfe"
+    ]
+  },
+  "source": "The CodeRanch Cattle Drive, Assignment 6",
+  "source_url": "https://coderanch.com/wiki/718824/Grains"
+}

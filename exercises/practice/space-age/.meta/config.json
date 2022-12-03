@@ -1,0 +1,26 @@
+{
+  "blurb": "Given an age in seconds, calculate how old someone is in terms of a given planet's solar years.",
+  "authors": [
+    "tmcgilchrist"
+  ],
+  "contributors": [
+    "adolfopa",
+    "etrepum",
+    "kytrinyx",
+    "oubiwann",
+    "yurrriq"
+  ],
+  "files": {
+    "solution": [
+      "src/space-age.lfe"
+    ],
+    "test": [
+      "test/space-age-tests.lfe"
+    ],
+    "example": [
+      ".meta/example.lfe"
+    ]
+  },
+  "source": "Partially inspired by Chapter 1 in Chris Pine's online Learn to Program tutorial.",
+  "source_url": "https://pine.fm/LearnToProgram/?Chapter=01"
+}

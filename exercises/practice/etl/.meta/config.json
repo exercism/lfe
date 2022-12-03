@@ -1,0 +1,24 @@
+{
+  "blurb": "We are going to do the `Transform` step of an Extract-Transform-Load.",
+  "authors": [
+    "kytrinyx"
+  ],
+  "contributors": [
+    "adolfopa",
+    "etrepum",
+    "yurrriq"
+  ],
+  "files": {
+    "solution": [
+      "src/etl.lfe"
+    ],
+    "test": [
+      "test/etl-tests.lfe"
+    ],
+    "example": [
+      ".meta/example.lfe"
+    ]
+  },
+  "source": "Exercise by the JumpstartLab team for students at The Turing School of Software and Design.",
+  "source_url": "https://turing.edu"
+}

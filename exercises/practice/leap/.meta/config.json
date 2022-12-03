@@ -1,0 +1,23 @@
+{
+  "blurb": "Given a year, report if it is a leap year.",
+  "authors": [
+    "tmcgilchrist"
+  ],
+  "contributors": [
+    "kytrinyx",
+    "yurrriq"
+  ],
+  "files": {
+    "solution": [
+      "src/leap.lfe"
+    ],
+    "test": [
+      "test/leap-tests.lfe"
+    ],
+    "example": [
+      ".meta/example.lfe"
+    ]
+  },
+  "source": "CodeRanch Cattle Drive, Assignment 3",
+  "source_url": "https://coderanch.com/t/718816/Leap"
+}

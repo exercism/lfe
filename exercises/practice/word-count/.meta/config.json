@@ -1,0 +1,23 @@
+{
+  "blurb": "Given a phrase, count the occurrences of each word in that phrase.",
+  "authors": [
+    "kytrinyx"
+  ],
+  "contributors": [
+    "adolfopa",
+    "etrepum",
+    "yurrriq"
+  ],
+  "files": {
+    "solution": [
+      "src/word-count.lfe"
+    ],
+    "test": [
+      "test/word-count-tests.lfe"
+    ],
+    "example": [
+      ".meta/example.lfe"
+    ]
+  },
+  "source": "This is a classic toy problem, but we were reminded of it by seeing it in the Go Tour."
+}
