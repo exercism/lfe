@@ -59,7 +59,7 @@ and Erlang's `erl`.
 For example, on Ubuntu 18.04:
 
 ```bash
-$ sudo apt-get install build-essentials git erlang erlang-base-hipe
+$ sudo apt-get install build-essential git erlang erlang-base-hipe
 ```
 
 Afterwards you can download and build LFE with the following:
