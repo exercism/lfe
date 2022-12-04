@@ -1,5 +1,4 @@
 {
-  "blurb": "Create an implementation of the atbash cipher, an ancient encryption system created in the Middle East.",
   "authors": [],
   "contributors": [
     "tmcgilchrist",
@@ -16,6 +15,7 @@
       ".meta/example.lfe"
     ]
   },
+  "blurb": "Create an implementation of the atbash cipher, an ancient encryption system created in the Middle East.",
   "source": "Wikipedia",
   "source_url": "https://en.wikipedia.org/wiki/Atbash"
 }
