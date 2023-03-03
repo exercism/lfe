@@ -13,6 +13,9 @@
     ],
     "example": [
       ".meta/example.lfe"
+    ],
+    "invalidator": [
+      "rebar.config"
     ]
   },
   "blurb": "Calculate the date of meetups.",
