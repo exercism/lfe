@@ -18,40 +18,6 @@ Install LFE:
 $ brew install lfe
 ```
 
-## Using a docker container
-If you just want to quickly take a look at LFE without polluting your
-system with new packages, you can just pull a docker container with
-LFE preinstalled.
-
-Let's fetch a Debian image with LFE:
-
-```bash
-$ docker pull lfex/debian  # it will take a while...
-[...]
-``` 
-
-Now let's run the LFE REPL inside the container:
-
-```bash
-$ docker run -i -t lfex/debian lfe
-Erlang/OTP 19 [ert[...]
-
-lfe >
-```
-
-And let's write some LFE to test it:
-
-```bash
-lfe > (* 7 4)
-28
-lfe > (lfe_io:format "hello world~n" ())
-hello world
-ok
-```
-
-Nice! Use `(exit)` or Ctrl-C (C-c) twice to exit.
-
-
 ## Installing from Source
 Install your system's "developer tools" or "essential build packages", `git`
 and Erlang's `erl`.
@@ -65,7 +31,7 @@ $ sudo apt-get install build-essential git erlang erlang-base-hipe
 Afterwards you can download and build LFE with the following:
 
 ```bash
-$ git clone https://github.com/rvirding/lfe
+$ git clone https://github.com/lfe/lfe.git
 $ cd lfe
 $ make
 $ make install
