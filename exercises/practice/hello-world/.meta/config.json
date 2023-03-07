@@ -16,6 +16,9 @@
     ],
     "example": [
       ".meta/example.lfe"
+    ],
+    "invalidator": [
+      "rebar.config"
     ]
   },
   "blurb": "The classical introductory exercise. Just say \"Hello, World!\".",

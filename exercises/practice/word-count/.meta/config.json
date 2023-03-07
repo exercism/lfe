@@ -16,6 +16,9 @@
     ],
     "example": [
       ".meta/example.lfe"
+    ],
+    "invalidator": [
+      "rebar.config"
     ]
   },
   "blurb": "Given a phrase, count the occurrences of each word in that phrase.",
