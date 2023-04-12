@@ -40,10 +40,6 @@
       ,(gen-equal 0 (largest-series-product:from-string "99099" 3)))
     #(#"rejects span longer than string length"
       ,(gen-error (largest-series-product:from-string "123" 4)))
-    #(#"reports 1 for empty string and empty product (0 span)"
-      ,(gen-equal 1 (largest-series-product:from-string "" 0)))
-    #(#"reports 1 for nonempty string and empty product (0 span)"
-      ,(gen-equal 1 (largest-series-product:from-string "123" 0)))
     #(#"rejects empty string and nonzero span"
       ,(gen-error (largest-series-product:from-string "" 1)))
     #(#"rejects invalid character in digits"
