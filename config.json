@@ -16,7 +16,7 @@
     "highlightjs_language": "lisp"
   },
   "test_runner": {
-    "average_run_time": 7.0
+    "average_run_time": 7
   },
   "files": {
     "solution": [
