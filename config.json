@@ -342,7 +342,38 @@
     ]
   },
   "concepts": [],
-  "key_features": [],
+  "key_features": [
+    {
+      "title": "Core Erlang Foundation",
+      "content": "With LFE, you can use Lisp features while reaping the benefits of Erlang VM.",
+      "icon": "powerful"
+    },
+    {
+      "title": "Functional",
+      "content": "Take advantage of features such as Function Composition and Pattern Matching.",
+      "icon": "functional"
+    },
+    {
+      "title": "Fault tolerant",
+      "content": "LFE runs on the Erlang VM, ideal for low-latency and fault-tolerant systems.",
+      "icon": "safe"
+    },
+    {
+      "title": "S-expressions",
+      "content": "LFE brought homoiconicity to the Erlang VM, as it supports Symbolic expressions.",
+      "icon": "homoiconic"
+    },
+    {
+      "title": "Hot Code Loading",
+      "content": "With LFE you can upgrade running systems without restarts, via hot code loading.",
+      "icon": "tooling"
+    },
+    {
+      "title": "Macros",
+      "content": "LFE supports metaprogramming via low-hygiene macros, ideal for creating DSLs.",
+      "icon": "extensible"
+    }
+  ],
   "tags": [
     "paradigm/functional",
     "typing/dynamic",
