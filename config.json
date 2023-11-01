@@ -36,7 +36,6 @@
     ]
   },
   "exercises": {
-    "concept": [],
     "practice": [
       {
         "slug": "hello-world",
@@ -56,7 +55,6 @@
         "practices": [],
         "prerequisites": [],
         "difficulty": 1,
-        "topics": null,
         "status": "deprecated"
       },
       {
@@ -65,8 +63,7 @@
         "uuid": "68eec796-a269-4e66-84b5-e26574ff614e",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 1,
-        "topics": null
+        "difficulty": 1
       },
       {
         "slug": "anagram",
@@ -74,8 +71,7 @@
         "uuid": "9bc1f720-ccd0-449f-99a7-1790b30690f1",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 1,
-        "topics": null
+        "difficulty": 1
       },
       {
         "slug": "atbash-cipher",
@@ -83,8 +79,7 @@
         "uuid": "78c7360b-1460-4f16-8efe-5efcbd2cb863",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 1,
-        "topics": null
+        "difficulty": 1
       },
       {
         "slug": "bank-account",
@@ -92,8 +87,7 @@
         "uuid": "b5091e1d-c950-4cad-b583-c6b90c50c02e",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 1,
-        "topics": null
+        "difficulty": 1
       },
       {
         "slug": "beer-song",
@@ -101,8 +95,7 @@
         "uuid": "b3581dfe-27c4-4356-a1d9-1e13759db736",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 1,
-        "topics": null
+        "difficulty": 1
       },
       {
         "slug": "binary",
@@ -121,8 +114,7 @@
         "uuid": "58764b96-7033-45f2-90a6-dd5e41a27ede",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 1,
-        "topics": null
+        "difficulty": 1
       },
       {
         "slug": "circular-buffer",
@@ -130,8 +122,7 @@
         "uuid": "ea131235-e238-4c8a-98b2-bb6191a89312",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 1,
-        "topics": null
+        "difficulty": 1
       },
       {
         "slug": "clock",
@@ -139,8 +130,7 @@
         "uuid": "0a75c71e-b634-4b49-b374-718528e21075",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 1,
-        "topics": null
+        "difficulty": 1
       },
       {
         "slug": "difference-of-squares",
@@ -159,8 +149,7 @@
         "uuid": "049c088d-a0e6-4a19-8040-0a470c838e42",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 1,
-        "topics": null
+        "difficulty": 1
       },
       {
         "slug": "gigasecond",
@@ -168,8 +157,7 @@
         "uuid": "63099375-19fa-462f-9e82-960508c229a4",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 1,
-        "topics": null
+        "difficulty": 1
       },
       {
         "slug": "grade-school",
@@ -177,8 +165,7 @@
         "uuid": "d9013304-cc50-4a56-a645-51c4a80f1c82",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 1,
-        "topics": null
+        "difficulty": 1
       },
       {
         "slug": "grains",
@@ -186,8 +173,7 @@
         "uuid": "0669f6eb-f740-431e-a4fc-70bc3d4cf498",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 1,
-        "topics": null
+        "difficulty": 1
       },
       {
         "slug": "hamming",
@@ -195,8 +181,7 @@
         "uuid": "8583b88b-03e4-4bba-bc7b-767f2298d67e",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 1,
-        "topics": null
+        "difficulty": 1
       },
       {
         "slug": "largest-series-product",
@@ -215,8 +200,7 @@
         "uuid": "5617bcf3-dc58-437a-8e56-56d04ff8ddfb",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 1,
-        "topics": null
+        "difficulty": 1
       },
       {
         "slug": "luhn",
@@ -224,8 +208,7 @@
         "uuid": "ee67a9ed-aad7-49db-bb00-a09925e48ffa",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 1,
-        "topics": null
+        "difficulty": 1
       },
       {
         "slug": "meetup",
@@ -233,8 +216,7 @@
         "uuid": "1a93aacc-160f-4121-b03a-742e20f7c073",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 1,
-        "topics": null
+        "difficulty": 1
       },
       {
         "slug": "nucleotide-count",
@@ -242,8 +224,7 @@
         "uuid": "9b1ae897-b15d-4180-af45-1c69f98a8f34",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 1,
-        "topics": null
+        "difficulty": 1
       },
       {
         "slug": "parallel-letter-frequency",
@@ -251,8 +232,7 @@
         "uuid": "b41a9294-5d21-49f2-9c7e-9506662a80d2",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 1,
-        "topics": null
+        "difficulty": 1
       },
       {
         "slug": "phone-number",
@@ -260,8 +240,7 @@
         "uuid": "c1e07140-0566-4b50-aca1-3eddaa87d4d2",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 1,
-        "topics": null
+        "difficulty": 1
       },
       {
         "slug": "rna-transcription",
@@ -269,8 +248,7 @@
         "uuid": "8db0d097-9758-4671-81ff-fd8111c4fd7d",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 1,
-        "topics": null
+        "difficulty": 1
       },
       {
         "slug": "robot-simulator",
@@ -278,8 +256,7 @@
         "uuid": "88c6dbe6-f672-4dba-950c-483e55ebd252",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 1,
-        "topics": null
+        "difficulty": 1
       },
       {
         "slug": "series",
@@ -287,8 +264,7 @@
         "uuid": "f2ca089e-66db-4b85-8275-5932952a36bf",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 1,
-        "topics": null
+        "difficulty": 1
       },
       {
         "slug": "space-age",
@@ -296,8 +272,7 @@
         "uuid": "dfb7c4aa-dc52-4973-8c50-f5153ab51406",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 1,
-        "topics": null
+        "difficulty": 1
       },
       {
         "slug": "strain",
@@ -305,8 +280,7 @@
         "uuid": "fe975ff0-e374-44c9-910b-740cc3cff4ad",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 1,
-        "topics": null
+        "difficulty": 1
       },
       {
         "slug": "sum-of-multiples",
@@ -336,12 +310,10 @@
         "uuid": "5fca0d45-2bf5-486e-9c57-25cff5e4a9c5",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 1,
-        "topics": null
+        "difficulty": 1
       }
     ]
   },
-  "concepts": [],
   "key_features": [
     {
       "title": "Core Erlang Foundation",
@@ -375,14 +347,14 @@
     }
   ],
   "tags": [
+    "execution_mode/compiled",
     "paradigm/functional",
+    "platform/linux",
+    "platform/mac",
+    "platform/windows",
+    "runtime/beam",
     "typing/dynamic",
     "typing/strong",
-    "execution_mode/compiled",
-    "platform/windows",
-    "platform/mac",
-    "platform/linux",
-    "runtime/beam",
     "used_for/backends",
     "used_for/scripts"
   ]
