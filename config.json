@@ -26,7 +26,7 @@
       "test/%{kebab_slug}-tests.lfe"
     ],
     "example": [
-      "src/example.lfe"
+      ".meta/example.lfe"
     ],
     "exemplar": [
       ".meta/exemplar.lfe"
