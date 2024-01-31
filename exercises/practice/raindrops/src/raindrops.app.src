@@ -1,0 +1,11 @@
+%% -*- erlang -*-
+{application, 'raindrops',
+ [{description, "Convert a number into its corresponding raindrop sounds - Pling, Plang and Plong."},
+  {vsn, "0.0.1"},
+  {modules,
+   ['raindrops']},
+  {registered, []},
+  {applications,
+   [kernel, stdlib]},
+  {included_applications, []},
+  {env, []}]}.
