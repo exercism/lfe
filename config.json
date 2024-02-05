@@ -45,7 +45,6 @@
         "prerequisites": [],
         "difficulty": 1,
         "topics": [
-          "strings"
         ]
       },
       {
@@ -56,6 +55,15 @@
         "prerequisites": [],
         "difficulty": 1,
         "status": "deprecated"
+      },
+      {
+        "slug": "acronym",
+        "name": "Acronym",
+        "uuid": "d3b82743-950f-4577-ab3a-655ff3522c6b",
+        "practices": [],
+        "prerequisites": [
+        ],
+        "difficulty": 2
       },
       {
         "slug": "allergies",
