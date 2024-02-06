@@ -1,0 +1,11 @@
+%% -*- erlang -*-
+{application, 'roman-numerals',
+ [{description, "Write a function to convert from normal numbers to Roman Numerals."},
+  {vsn, "0.0.1"},
+  {modules,
+   ['roman-numerals']},
+  {registered, []},
+  {applications,
+   [kernel, stdlib]},
+  {included_applications, []},
+  {env, []}]}.
