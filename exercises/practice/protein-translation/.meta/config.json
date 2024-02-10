@@ -1,0 +1,18 @@
+{
+  "authors": [
+    "kahgoh"
+  ],
+  "files": {
+    "solution": [
+      "src/protein-translation.lfe"
+    ],
+    "test": [
+      "test/protein-translation-tests.lfe"
+    ],
+    "example": [
+      ".meta/example.lfe"
+    ]
+  },
+  "blurb": "Translate RNA sequences into proteins.",
+  "source": "Tyler Long"
+}
