@@ -1,0 +1,11 @@
+%% -*- erlang -*-
+{application, 'reverse-string',
+ [{description, ""},
+  {vsn, "0.0.1"},
+  {modules,
+   [reverse]},
+  {registered, []},
+  {applications,
+   [kernel, stdlib]},
+  {included_applications, []},
+  {env, []}]}.
