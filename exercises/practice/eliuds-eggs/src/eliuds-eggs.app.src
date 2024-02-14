@@ -1,0 +1,11 @@
+%% -*- erlang -*-
+{application, 'eliuds-eggs',
+ [{description, ""},
+  {vsn, "0.0.1"},
+  {modules,
+   ['eliuds-eggs']},
+  {registered, []},
+  {applications,
+   [kernel, stdlib]},
+  {included_applications, []},
+  {env, []}]}.
