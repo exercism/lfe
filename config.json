@@ -321,6 +321,22 @@
         "difficulty": 1
       },
       {
+        "slug": "eliuds-eggs",
+        "name": "Eliud's Eggs",
+        "uuid": "e02de36d-defa-495b-8940-6b2a179afc87",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 1
+      },
+      {
+        "slug": "reverse-string",
+        "name": "Reverse String",
+        "uuid": "a6a5838c-f35c-4fd2-ab80-62d6a61dd6b3",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 2
+      },
+      {
         "slug": "protein-translation",
         "name": "Protein Translation",
         "uuid": "b61ac6a8-b40d-48ea-8a72-89608506c256",
