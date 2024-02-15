@@ -337,6 +337,14 @@
         "difficulty": 2
       },
       {
+        "slug": "scrabble-score",
+        "name": "Scrabble Score",
+        "uuid": "2197494b-94a8-45b4-932d-3f35c0305a62",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 2
+      },
+      {
         "slug": "roman-numerals",
         "name": "Roman Numerals",
         "uuid": "461223ea-e86b-4b94-9e7a-ac3ec1aa8a12",
