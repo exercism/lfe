@@ -337,6 +337,14 @@
         "difficulty": 2
       },
       {
+        "slug": "scrabble-score",
+        "name": "Scrabble Score",
+        "uuid": "2197494b-94a8-45b4-932d-3f35c0305a62",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 2
+      },
+      {
         "slug": "protein-translation",
         "name": "Protein Translation",
         "uuid": "b61ac6a8-b40d-48ea-8a72-89608506c256",

@@ -1,0 +1,19 @@
+{
+  "authors": [
+    "BNAndras"
+  ],
+  "files": {
+    "solution": [
+      "src/scrabble-score.lfe"
+    ],
+    "test": [
+      "test/scrabble-score-tests.lfe"
+    ],
+    "example": [
+      ".meta/example.lfe"
+    ]
+  },
+  "blurb": "Given a word, compute the Scrabble score for that word.",
+  "source": "Inspired by the Extreme Startup game",
+  "source_url": "https://github.com/rchatley/extreme_startup"
+}
