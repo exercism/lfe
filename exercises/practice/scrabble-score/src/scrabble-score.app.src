@@ -1,0 +1,11 @@
+%% -*- erlang -*-
+{application, 'scrabble-score',
+ [{description, ""},
+  {vsn, "0.0.1"},
+  {modules,
+   ['scrabble-score']},
+  {registered, []},
+  {applications,
+   [kernel, stdlib]},
+  {included_applications, []},
+  {env, []}]}.
