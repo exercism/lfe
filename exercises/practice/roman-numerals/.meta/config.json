@@ -1,0 +1,22 @@
+{
+  "authors": [
+    "kahgoh"
+  ],
+  "files": {
+    "solution": [
+      "src/roman-numerals.lfe"
+    ],
+    "test": [
+      "test/roman-numerals-tests.lfe"
+    ],
+    "example": [
+      ".meta/example.lfe"
+    ],
+    "invalidator": [
+      "rebar.config"
+    ]
+  },
+  "blurb": "Convert modern Arabic numbers into Roman numerals.",
+  "source": "The Roman Numeral Kata",
+  "source_url": "https://codingdojo.org/kata/RomanNumerals/"
+}
