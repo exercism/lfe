@@ -1,0 +1,39 @@
+#!/usr/bin/env bash
+
+temp_dir_base=$(mktemp -d)
+
+run_test() {
+    slug=$(basename $1)
+    temp_dir=${temp_dir_base}/${slug}
+    mkdir -p ${temp_dir}
+    
+    cp -r "$1/." $temp_dir
+    cp $temp_dir/.meta/example.lfe $temp_dir/src/$slug.lfe
+
+    (cd /opt/test-runner && bin/run.sh $slug $temp_dir $temp_dir) || exit 1
+
+    test_status="$(jq -r '.status' $temp_dir/results.json)"
+
+    if [ "$test_status" != "pass" ]; then
+    	echo "Tests for $slug have failed:"
+    	cat $temp_dir/results.json
+    	exit 1
+    fi
+}
+
+
+
+for concept_exercise_dir in ./exercises/concept/*/; do
+    if [ -d $concept_exercise_dir ]; then
+        echo "Checking $(basename "${concept_exercise_dir}") exercise..."
+        run_test $concept_exercise_dir
+    fi
+done
+
+# Verify the Practice Exercises
+for practice_exercise_dir in ./exercises/practice/*/; do
+    if [ -d $practice_exercise_dir ]; then
+        echo "Checking $(basename "${practice_exercise_dir}") exercise..."
+        run_test $practice_exercise_dir
+    fi
+done
