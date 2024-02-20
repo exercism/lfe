@@ -1,0 +1,22 @@
+{
+  "authors": [
+    "kephas"
+  ],
+  "files": {
+    "solution": [
+      "src/acronym.lfe"
+    ],
+    "test": [
+      "test/acronym-tests.lfe"
+    ],
+    "example": [
+      ".meta/example.lfe"
+    ],
+    "invalidator": [
+      "rebar.config"
+    ]
+  },
+  "blurb": "Convert a long phrase to its acronym.",
+  "source": "Julien Vanier",
+  "source_url": "https://github.com/monkbroc"
+}
