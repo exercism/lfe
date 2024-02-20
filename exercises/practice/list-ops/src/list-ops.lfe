@@ -39,7 +39,6 @@
   ; Please implement the 'foldr' function
 )
 
-
 (defun reverse (contents)
   ; Please implement the 'reverse' function
 )
