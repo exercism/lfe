@@ -2,8 +2,6 @@
   "authors": [
     "kephas"
   ],
-  "contributors": [
-  ],
   "files": {
     "solution": [
       "src/acronym.lfe"

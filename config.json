@@ -43,9 +43,7 @@
         "uuid": "05345431-e18b-4737-9b40-dbca5fbb549c",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 1,
-        "topics": [
-        ]
+        "difficulty": 1
       },
       {
         "slug": "accumulate",
@@ -61,8 +59,7 @@
         "name": "Acronym",
         "uuid": "d3b82743-950f-4577-ab3a-655ff3522c6b",
         "practices": [],
-        "prerequisites": [
-        ],
+        "prerequisites": [],
         "difficulty": 2
       },
       {
@@ -375,6 +372,14 @@
         "practices": [],
         "prerequisites": [],
         "difficulty": 2
+      },
+      {
+        "slug": "list-ops",
+        "name": "List Ops",
+        "uuid": "f5ade076-6afd-4f03-8916-543cb7f350a1",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 1
       }
     ]
   },

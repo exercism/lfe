@@ -1,0 +1,10 @@
+%% -*- erlang -*-
+{application, 'list-ops',
+ [{description, "Implement basic list operations."},
+  {vsn, "0.0.1"},
+  {modules,['list-ops']},
+  {registered, []},
+  {applications,
+   [kernel, stdlib]},
+  {included_applications, []},
+  {env, []}]}.
