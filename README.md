@@ -1,6 +1,6 @@
 # Exercism LFE Track
-[![Build Status](https://travis-ci.org/exercism/lfe.svg?branch=master)](https://travis-ci.org/exercism/lfe)
-[![Build status](https://ci.appveyor.com/api/projects/status/2i4og4ghwwlynx29/branch/master?svg=true)](https://ci.appveyor.com/project/yurrriq/lfe/branch/master)
+[![Configlet](https://github.com/exercism/lfe/actions/workflows/configlet.yml/badge.svg)](https://github.com/exercism/lfe/actions/workflows/configlet.yml)
+[![Verify Exercises](https://github.com/exercism/lfe/actions/workflows/test.yml/badge.svg)](https://github.com/exercism/lfe/actions/workflows/test.yml)
 
 Exercism problems in Lisp Flavoured Erlang.
 
