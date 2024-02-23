@@ -1,6 +1,7 @@
 %% -*- erlang -*-
 {application, 'word-count',
- [{description, ""},
+ [{description, "Given a phrase, count the occurrences of each word in that phrase."
+},
   {vsn, "0.0.1"},
   {modules,
    ['word-count']},
