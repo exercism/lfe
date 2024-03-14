@@ -138,6 +138,14 @@
         "difficulty": 1
       },
       {
+        "slug": "collatz-conjecture",
+        "name": "Collatz Conjecture",
+        "uuid": "3796230e-f37e-464c-bb22-8dc3d1664aec",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 2
+      },
+      {
         "slug": "difference-of-squares",
         "name": "Difference of Squares",
         "uuid": "a84e2796-4c0b-4eaf-b836-b10cc3c7cff4",
