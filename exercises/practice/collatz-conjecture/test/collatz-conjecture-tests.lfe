@@ -9,7 +9,7 @@
 
 (deftest divide-if-even
   (is-equal (collatz-conjecture:steps 16) 4))
-
+()
 (deftest even-and-odd-steps
   (is-equal (collatz-conjecture:steps 12) 9))
 
@@ -18,6 +18,6 @@
 
 (deftest zero-is-an-error
   (is-error _ (collatz-conjecture:steps 0)))
-  
+
 (deftest negative-value-is-an-error
   (is-error _ (collatz-conjecture:steps -1)))
