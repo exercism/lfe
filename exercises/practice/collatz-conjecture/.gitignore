@@ -1,0 +1,11 @@
+## -*- conf -*-
+.rebar3
+_build/
+ebin/
+erl_crash.dump
+rebar3.crashdump
+
+tmp
+bin/configlet
+bin/configlet.exe
+CHECKLIST
