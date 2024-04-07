@@ -1,6 +1,7 @@
 (defmodule difference-of-squares
   (export (square-of-sum 1)
-          (sum-of-squares 1)))
+          (sum-of-squares 1)
+          (difference-of-squares 1)))
 
 (defun square (x) (trunc (math:pow x 2)))
 
@@ -13,6 +14,8 @@
       (+ (square x) sum))
     0
     (lists:seq 1 x)))
+
+(defun difference-of-squares (x) (- (square-of-sum x) (sum-of-squares x)))
 
 ;; Unnecessarily traverses the list twice, though maybe easier to read.
 ;; (defun sum-of-squares (x)
