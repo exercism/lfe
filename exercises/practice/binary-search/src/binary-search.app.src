@@ -1,0 +1,11 @@
+%% -*- erlang -*-
+{application, 'binary-search',
+ [{description, ""},
+  {vsn, "0.0.1"},
+  {modules,
+   ['binary-search']},
+  {registered, []},
+  {applications,
+   [kernel, stdlib]},
+  {included_applications, []},
+  {env, []}]}.
