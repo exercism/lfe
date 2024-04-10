@@ -366,6 +366,14 @@
         "difficulty": 1
       },
       {
+        "slug": "dnd-character",
+        "name": "D&D Character",
+        "uuid": "eba5ba27-1c8b-485a-8bf4-08df4239a6f3",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 2
+      },
+      {
         "slug": "pangram",
         "name": "Pangram",
         "uuid": "d319360a-afef-4b65-be5f-da45d48367cb",

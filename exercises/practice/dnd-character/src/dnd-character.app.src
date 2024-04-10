@@ -1,0 +1,11 @@
+%% -*- erlang -*-
+{application, 'dnd-character',
+ [{description, ""},
+  {vsn, "0.0.1"},
+  {modules,
+   ['dnd-character']},
+  {registered, []},
+  {applications,
+   [kernel, stdlib]},
+  {included_applications, []},
+  {env, []}]}.
