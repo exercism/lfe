@@ -63,14 +63,6 @@
         "difficulty": 2
       },
       {
-        "slug": "allergies",
-        "name": "Allergies",
-        "uuid": "68eec796-a269-4e66-84b5-e26574ff614e",
-        "practices": [],
-        "prerequisites": [],
-        "difficulty": 5
-      },
-      {
         "slug": "anagram",
         "name": "Anagram",
         "uuid": "9bc1f720-ccd0-449f-99a7-1790b30690f1",
@@ -85,22 +77,6 @@
         "practices": [],
         "prerequisites": [],
         "difficulty": 2
-      },
-      {
-        "slug": "bank-account",
-        "name": "Bank Account",
-        "uuid": "b5091e1d-c950-4cad-b583-c6b90c50c02e",
-        "practices": [],
-        "prerequisites": [],
-        "difficulty": 5
-      },
-      {
-        "slug": "beer-song",
-        "name": "Beer Song",
-        "uuid": "b3581dfe-27c4-4356-a1d9-1e13759db736",
-        "practices": [],
-        "prerequisites": [],
-        "difficulty": 8
       },
       {
         "slug": "binary",
@@ -122,22 +98,6 @@
         "difficulty": 2
       },
       {
-        "slug": "circular-buffer",
-        "name": "Circular Buffer",
-        "uuid": "ea131235-e238-4c8a-98b2-bb6191a89312",
-        "practices": [],
-        "prerequisites": [],
-        "difficulty": 8
-      },
-      {
-        "slug": "clock",
-        "name": "Clock",
-        "uuid": "0a75c71e-b634-4b49-b374-718528e21075",
-        "practices": [],
-        "prerequisites": [],
-        "difficulty": 5
-      },
-      {
         "slug": "collatz-conjecture",
         "name": "Collatz Conjecture",
         "uuid": "3796230e-f37e-464c-bb22-8dc3d1664aec",
@@ -157,28 +117,12 @@
         ]
       },
       {
-        "slug": "etl",
-        "name": "ETL",
-        "uuid": "049c088d-a0e6-4a19-8040-0a470c838e42",
-        "practices": [],
-        "prerequisites": [],
-        "difficulty": 5
-      },
-      {
         "slug": "gigasecond",
         "name": "Gigasecond",
         "uuid": "63099375-19fa-462f-9e82-960508c229a4",
         "practices": [],
         "prerequisites": [],
         "difficulty": 2
-      },
-      {
-        "slug": "grade-school",
-        "name": "Grade School",
-        "uuid": "d9013304-cc50-4a56-a645-51c4a80f1c82",
-        "practices": [],
-        "prerequisites": [],
-        "difficulty": 5
       },
       {
         "slug": "grains",
@@ -197,17 +141,6 @@
         "difficulty": 2
       },
       {
-        "slug": "largest-series-product",
-        "name": "Largest Series Product",
-        "uuid": "49005564-d4d3-4b49-991c-1a3f63e71f58",
-        "practices": [],
-        "prerequisites": [],
-        "difficulty": 5,
-        "topics": [
-          "math"
-        ]
-      },
-      {
         "slug": "leap",
         "name": "Leap",
         "uuid": "5617bcf3-dc58-437a-8e56-56d04ff8ddfb",
@@ -216,36 +149,12 @@
         "difficulty": 2
       },
       {
-        "slug": "luhn",
-        "name": "Luhn",
-        "uuid": "ee67a9ed-aad7-49db-bb00-a09925e48ffa",
-        "practices": [],
-        "prerequisites": [],
-        "difficulty": 5
-      },
-      {
-        "slug": "meetup",
-        "name": "Meetup",
-        "uuid": "1a93aacc-160f-4121-b03a-742e20f7c073",
-        "practices": [],
-        "prerequisites": [],
-        "difficulty": 5
-      },
-      {
         "slug": "nucleotide-count",
         "name": "Nucleotide Count",
         "uuid": "9b1ae897-b15d-4180-af45-1c69f98a8f34",
         "practices": [],
         "prerequisites": [],
         "difficulty": 2
-      },
-      {
-        "slug": "parallel-letter-frequency",
-        "name": "Parallel Letter Frequency",
-        "uuid": "b41a9294-5d21-49f2-9c7e-9506662a80d2",
-        "practices": [],
-        "prerequisites": [],
-        "difficulty": 5
       },
       {
         "slug": "phone-number",
@@ -262,22 +171,6 @@
         "practices": [],
         "prerequisites": [],
         "difficulty": 2
-      },
-      {
-        "slug": "robot-simulator",
-        "name": "Robot Simulator",
-        "uuid": "88c6dbe6-f672-4dba-950c-483e55ebd252",
-        "practices": [],
-        "prerequisites": [],
-        "difficulty": 5
-      },
-      {
-        "slug": "series",
-        "name": "Series",
-        "uuid": "f2ca089e-66db-4b85-8275-5932952a36bf",
-        "practices": [],
-        "prerequisites": [],
-        "difficulty": 5
       },
       {
         "slug": "space-age",
@@ -316,14 +209,6 @@
         "topics": [
           "math"
         ]
-      },
-      {
-        "slug": "word-count",
-        "name": "Word Count",
-        "uuid": "5fca0d45-2bf5-486e-9c57-25cff5e4a9c5",
-        "practices": [],
-        "prerequisites": [],
-        "difficulty": 5
       },
       {
         "slug": "raindrops",
@@ -366,14 +251,6 @@
         "difficulty": 2
       },
       {
-        "slug": "roman-numerals",
-        "name": "Roman Numerals",
-        "uuid": "461223ea-e86b-4b94-9e7a-ac3ec1aa8a12",
-        "practices": [],
-        "prerequisites": [],
-        "difficulty": 5
-      },
-      {
         "slug": "dnd-character",
         "name": "D&D Character",
         "uuid": "eba5ba27-1c8b-485a-8bf4-08df4239a6f3",
@@ -398,6 +275,121 @@
         "difficulty": 2
       },
       {
+        "slug": "binary-search",
+        "name": "Binary Search",
+        "uuid": "7177483a-8370-4d24-81c4-8dfdfd83846d",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 2
+      },
+      {
+        "slug": "allergies",
+        "name": "Allergies",
+        "uuid": "68eec796-a269-4e66-84b5-e26574ff614e",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 5
+      },
+      {
+        "slug": "bank-account",
+        "name": "Bank Account",
+        "uuid": "b5091e1d-c950-4cad-b583-c6b90c50c02e",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 5
+      },
+      {
+        "slug": "clock",
+        "name": "Clock",
+        "uuid": "0a75c71e-b634-4b49-b374-718528e21075",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 5
+      },
+      {
+        "slug": "etl",
+        "name": "ETL",
+        "uuid": "049c088d-a0e6-4a19-8040-0a470c838e42",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 5
+      },
+      {
+        "slug": "grade-school",
+        "name": "Grade School",
+        "uuid": "d9013304-cc50-4a56-a645-51c4a80f1c82",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 5
+      },
+      {
+        "slug": "largest-series-product",
+        "name": "Largest Series Product",
+        "uuid": "49005564-d4d3-4b49-991c-1a3f63e71f58",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 5,
+        "topics": [
+          "math"
+        ]
+      },
+      {
+        "slug": "luhn",
+        "name": "Luhn",
+        "uuid": "ee67a9ed-aad7-49db-bb00-a09925e48ffa",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 5
+      },
+      {
+        "slug": "meetup",
+        "name": "Meetup",
+        "uuid": "1a93aacc-160f-4121-b03a-742e20f7c073",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 5
+      },
+      {
+        "slug": "parallel-letter-frequency",
+        "name": "Parallel Letter Frequency",
+        "uuid": "b41a9294-5d21-49f2-9c7e-9506662a80d2",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 5
+      },
+      {
+        "slug": "robot-simulator",
+        "name": "Robot Simulator",
+        "uuid": "88c6dbe6-f672-4dba-950c-483e55ebd252",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 5
+      },
+      {
+        "slug": "series",
+        "name": "Series",
+        "uuid": "f2ca089e-66db-4b85-8275-5932952a36bf",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 5
+      },
+      {
+        "slug": "word-count",
+        "name": "Word Count",
+        "uuid": "5fca0d45-2bf5-486e-9c57-25cff5e4a9c5",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 5
+      },
+      {
+        "slug": "roman-numerals",
+        "name": "Roman Numerals",
+        "uuid": "461223ea-e86b-4b94-9e7a-ac3ec1aa8a12",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 5
+      },
+      {
         "slug": "sieve",
         "name": "Sieve",
         "uuid": "50f4505d-c82a-46a7-bfeb-0100c5f2d45f",
@@ -406,12 +398,20 @@
         "difficulty": 5
       },
       {
-        "slug": "binary-search",
-        "name": "Binary Search",
-        "uuid": "7177483a-8370-4d24-81c4-8dfdfd83846d",
+        "slug": "beer-song",
+        "name": "Beer Song",
+        "uuid": "b3581dfe-27c4-4356-a1d9-1e13759db736",
         "practices": [],
         "prerequisites": [],
-        "difficulty": 2
+        "difficulty": 8
+      },
+      {
+        "slug": "circular-buffer",
+        "name": "Circular Buffer",
+        "uuid": "ea131235-e238-4c8a-98b2-bb6191a89312",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 8
       }
     ]
   },
