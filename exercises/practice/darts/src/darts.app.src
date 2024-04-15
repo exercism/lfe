@@ -1,0 +1,11 @@
+%% -*- erlang -*-
+{application, 'darts',
+ [{description, ""},
+  {vsn, "0.0.1"},
+  {modules,
+   ['darts']},
+  {registered, []},
+  {applications,
+   [kernel, stdlib]},
+  {included_applications, []},
+  {env, []}]}.
