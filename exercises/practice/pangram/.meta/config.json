@@ -11,6 +11,9 @@
     ],
     "example": [
       ".meta/example.lfe"
+    ],
+    "invalidator": [
+      "rebar.config"
     ]
   },
   "blurb": "Determine if a sentence is a pangram.",

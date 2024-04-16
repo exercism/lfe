@@ -11,6 +11,9 @@
     ],
     "example": [
       ".meta/example.lfe"
+    ],
+    "invalidator": [
+      "rebar.config"
     ]
   },
   "blurb": "Randomly generate Dungeons & Dragons characters.",
