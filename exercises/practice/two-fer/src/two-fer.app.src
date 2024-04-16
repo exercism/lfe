@@ -1,0 +1,11 @@
+%% -*- erlang -*-
+{application, 'two-fer',
+ [{description, ""},
+  {vsn, "0.0.1"},
+  {modules,
+   ['two-fer']},
+  {registered, []},
+  {applications,
+   [kernel, stdlib]},
+  {included_applications, []},
+  {env, []}]}.
