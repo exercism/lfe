@@ -299,6 +299,14 @@
         "difficulty": 2
       },
       {
+        "slug": "square-root",
+        "name": "Square Root",
+        "uuid": "aa031ed2-2e79-4956-8e31-9c86b971589a",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 2
+      },
+      {
         "slug": "allergies",
         "name": "Allergies",
         "uuid": "68eec796-a269-4e66-84b5-e26574ff614e",

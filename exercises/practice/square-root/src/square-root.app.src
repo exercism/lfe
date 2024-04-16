@@ -1,0 +1,11 @@
+%% -*- erlang -*-
+{application, 'square-root',
+ [{description, ""},
+  {vsn, "0.0.1"},
+  {modules,
+   ['square-root']},
+  {registered, []},
+  {applications,
+   [kernel, stdlib]},
+  {included_applications, []},
+  {env, []}]}.
