@@ -1,0 +1,11 @@
+%% -*- erlang -*-
+{application, 'queen-attack',
+ [{description, ""},
+  {vsn, "0.0.1"},
+  {modules,
+   ['queen-attack']},
+  {registered, []},
+  {applications,
+   [kernel, stdlib]},
+  {included_applications, []},
+  {env, []}]}.
