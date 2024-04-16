@@ -165,6 +165,14 @@
         "difficulty": 2
       },
       {
+        "slug": "queen-attack",
+        "name": "Queen Attack",
+        "uuid": "aaa30836-220f-4f3c-9129-068d703bb9a6",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 2
+      },
+      {
         "slug": "rna-transcription",
         "name": "RNA Transcription",
         "uuid": "8db0d097-9758-4671-81ff-fd8111c4fd7d",
