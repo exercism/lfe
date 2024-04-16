@@ -1,0 +1,11 @@
+%% -*- erlang -*-
+{application, 'resistor-color',
+ [{description, ""},
+  {vsn, "0.0.1"},
+  {modules,
+   ['resistor-color']},
+  {registered, []},
+  {applications,
+   [kernel, stdlib]},
+  {included_applications, []},
+  {env, []}]}.

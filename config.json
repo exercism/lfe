@@ -173,6 +173,14 @@
         "difficulty": 2
       },
       {
+        "slug": "resistor-color",
+        "name": "Resistor Color",
+        "uuid": "2af13bc4-76d6-4986-988f-b6acce6aa128",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 2
+      },
+      {
         "slug": "queen-attack",
         "name": "Queen Attack",
         "uuid": "aaa30836-220f-4f3c-9129-068d703bb9a6",
