@@ -283,6 +283,14 @@
         "difficulty": 2
       },
       {
+        "slug": "triangle",
+        "name": "Triangle",
+        "uuid": "82577254-d303-4996-9596-ca88428e6a9a",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 2
+      },
+      {
         "slug": "binary-search",
         "name": "Binary Search",
         "uuid": "7177483a-8370-4d24-81c4-8dfdfd83846d",
