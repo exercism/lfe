@@ -79,5 +79,8 @@
 (deftest 3001-is-MMMI
   (is-equal "MMMI" (roman-numerals:roman 3001)))
 
+(deftest 3888-is-MMMDCCCLXXXVIII
+  (is-equal "MMMDCCCLXXXVIII" (roman-numerals:roman 3888)))
+
 (deftest 3999-is-MMMCMXCIX
   (is-equal "MMMCMXCIX" (roman-numerals:roman 3999)))
