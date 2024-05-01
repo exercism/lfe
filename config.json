@@ -181,6 +181,14 @@
         "difficulty": 2
       },
       {
+        "slug": "resistor-color-duo",
+        "name": "Resistor Color Duo",
+        "uuid": "be651c89-5bb7-4842-8fa8-8c65431281a0",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 2
+      },
+      {
         "slug": "queen-attack",
         "name": "Queen Attack",
         "uuid": "aaa30836-220f-4f3c-9129-068d703bb9a6",
