@@ -165,14 +165,6 @@
         "difficulty": 2
       },
       {
-        "slug": "phone-number",
-        "name": "Phone Number",
-        "uuid": "c1e07140-0566-4b50-aca1-3eddaa87d4d2",
-        "practices": [],
-        "prerequisites": [],
-        "difficulty": 2
-      },
-      {
         "slug": "resistor-color",
         "name": "Resistor Color",
         "uuid": "2af13bc4-76d6-4986-988f-b6acce6aa128",
@@ -409,6 +401,14 @@
         "slug": "parallel-letter-frequency",
         "name": "Parallel Letter Frequency",
         "uuid": "b41a9294-5d21-49f2-9c7e-9506662a80d2",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 5
+      },
+      {
+        "slug": "phone-number",
+        "name": "Phone Number",
+        "uuid": "c1e07140-0566-4b50-aca1-3eddaa87d4d2",
         "practices": [],
         "prerequisites": [],
         "difficulty": 5
