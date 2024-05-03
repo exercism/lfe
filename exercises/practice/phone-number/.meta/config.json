@@ -3,16 +3,17 @@
     "kytrinyx"
   ],
   "contributors": [
+    "BNAndras",
     "adolfopa",
     "etrepum",
     "yurrriq"
   ],
   "files": {
     "solution": [
-      "src/phone.lfe"
+      "src/phone-number.lfe"
     ],
     "test": [
-      "test/phone-tests.lfe"
+      "test/phone-number-tests.lfe"
     ],
     "example": [
       ".meta/example.lfe"
