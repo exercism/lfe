@@ -1,9 +1,10 @@
 {
-  "authors": [],
+  "authors": [
+    "yurrriq"
+  ],
   "contributors": [
     "petertseng",
-    "tmcgilchrist",
-    "yurrriq"
+    "tmcgilchrist"
   ],
   "files": {
     "solution": [
