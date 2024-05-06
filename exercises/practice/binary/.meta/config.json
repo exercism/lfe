@@ -1,8 +1,9 @@
 {
-  "authors": [],
-  "contributors": [
-    "tmcgilchrist",
+  "authors": [
     "yurrriq"
+  ],
+  "contributors": [
+    "tmcgilchrist"
   ],
   "files": {
     "solution": [

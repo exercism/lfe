@@ -1,9 +1,10 @@
 {
-  "authors": [],
+  "authors": [
+    "yurrriq"
+  ],
   "contributors": [
     "Scientifica96",
-    "tmcgilchrist",
-    "yurrriq"
+    "tmcgilchrist"
   ],
   "files": {
     "solution": [
