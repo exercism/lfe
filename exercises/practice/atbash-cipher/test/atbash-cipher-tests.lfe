@@ -45,3 +45,11 @@
 (deftest decode-all-the-letters
   (is-equal "thequickbrownfoxjumpsoverthelazydog"
             (atbash-cipher:decode "gsvjf rxpyi ldmul cqfnk hlevi gsvoz abwlt")))
+
+(deftest decode-with-too-many-spaces
+  (is-equal "exercism"
+            (atbash-cipher:decode "vc vix    r hn")))
+
+(deftest decode-with-no-spaces
+  (is-equal "anobstacleisoftenasteppingstone"
+            (atbash-cipher:decode "zmlyhgzxovrhlugvmzhgvkkrmthglmv")))
