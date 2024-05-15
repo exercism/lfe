@@ -1,0 +1,11 @@
+%% -*- erlang -*-
+{application, 'isogram',
+ [{description, ""},
+  {vsn, "0.0.1"},
+  {modules,
+   ['isogram']},
+  {registered, []},
+  {applications,
+   [kernel, stdlib]},
+  {included_applications, []},
+  {env, []}]}.
