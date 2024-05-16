@@ -3,7 +3,7 @@
  [{description, ""},
   {vsn, "0.0.1"},
   {modules,
-   ['dna']},
+   ['nucleotide-count']},
   {registered, []},
   {applications,
    [kernel, stdlib]},
