@@ -4,20 +4,29 @@
 
 (include-lib "ltest/include/ltest-macros.lfe")
 
-(deftest empty
+(deftest empty-strands
   (is-equal 0 (hamming:distance "" "")))
 
-(deftest equal
-  (is-equal 0 (hamming:distance "GAGCCTACTAACGGGAT" "GAGCCTACTAACGGGAT")))
+(deftest single-letter-identical-strands
+  (is-equal 0 (hamming:distance "A" "A")))
 
-(deftest all-different
-  (is-equal 17 (hamming:distance "GAGCCTACTAACGGGAT" "FFFFFFFFFFFFFFFFF")))
+(deftest single-letter-different-strands
+  (is-equal 1 (hamming:distance "G" "T")))
 
-(deftest ends-different
-  (is-equal 2 (hamming:distance "GAGCCTACTAACGGGAT" "TAGCCTACTAACGGGAG")))
+(deftest long-identical-strands
+  (is-equal 0 (hamming:distance "GGACTGAAATCTG" "GGACTGAAATCTG")))
 
-(deftest middle-different
-  (is-equal 1 (hamming:distance "GAGCCTACTAACGGGAT" "GAGCCTACCAACGGGAT")))
+(deftest long-different-strands
+  (is-equal 9 (hamming:distance "GGACGGATTCTG" "AGGACGGATTCT")))
 
-(deftest some-differences
-  (is-equal 6 (hamming:distance "GAGCCTACTAACGGGAT" "GAACCTCCCAAGGGATT")))
+(deftest disallow-first-strand-longer
+  (is-error (hamming:distance "AATG" "AAA")))
+
+(deftest disallow-second-strand-longer
+  (is-error (hamming:distance "ATA" "AGTG")))
+
+(deftest disallow-empty-first-strand
+  (is-error (hamming:distance "" "G")))
+
+(deftest disallow-empty-second-strand
+  (is-error (hamming:distance "G" "")))
