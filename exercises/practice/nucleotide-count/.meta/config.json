@@ -11,10 +11,10 @@
   ],
   "files": {
     "solution": [
-      "src/dna.lfe"
+      "src/nucleotide-count.lfe"
     ],
     "test": [
-      "test/dna-tests.lfe"
+      "test/nucleotide-count-tests.lfe"
     ],
     "example": [
       ".meta/example.lfe"

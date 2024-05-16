@@ -1,6 +1,5 @@
-(defmodule dna
-  (export (count 2)
-          (nucleotide-counts 1)))
+(defmodule nucleotide-count
+  (export (counts 1)))
 
 (defun validate (nucleotide)
   (if (lists:member nucleotide '("A" "C" "G" "T"))
@@ -8,7 +7,7 @@
     (erlang:error (++ "Invalid nucleotide: '" nucleotide "'"))))
 
 (defun count (strand nucleotide)
-  ;; `validate` will throw iff `nucleotide` is invalid.
+  ;; `validate` will throw if `nucleotide` is invalid.
   (validate nucleotide)
   (lists:foldl
     (lambda (nucleotide* sum)
@@ -18,7 +17,7 @@
     0
     strand))
 
-(defun nucleotide-counts (strand)
+(defun counts (strand)
   (lists:map
     (lambda (nucleotide)
       `#(,nucleotide ,(count strand nucleotide)))
