@@ -1,0 +1,11 @@
+%% -*- erlang -*-
+{application, 'armstrong-numbers',
+ [{description, ""},
+  {vsn, "0.0.1"},
+  {modules,
+   ['armstrong-numbers']},
+  {registered, []},
+  {applications,
+   [kernel, stdlib]},
+  {included_applications, []},
+  {env, []}]}.
