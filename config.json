@@ -181,6 +181,14 @@
         "difficulty": 2
       },
       {
+        "slug": "perfect-numbers",
+        "name": "Perfect Numbers",
+        "uuid": "659d24f5-1e6d-4622-a2dc-177aecc10fae",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 2
+      },
+      {
         "slug": "resistor-color",
         "name": "Resistor Color",
         "uuid": "2af13bc4-76d6-4986-988f-b6acce6aa128",
