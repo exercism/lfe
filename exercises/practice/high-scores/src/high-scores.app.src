@@ -1,0 +1,11 @@
+%% -*- erlang -*-
+{application, 'high-scores',
+ [{description, ""},
+  {vsn, "0.0.1"},
+  {modules,
+   ['high-scores']},
+  {registered, []},
+  {applications,
+   [kernel, stdlib]},
+  {included_applications, []},
+  {env, []}]}.
