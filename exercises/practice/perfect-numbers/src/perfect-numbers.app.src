@@ -1,0 +1,11 @@
+%% -*- erlang -*-
+{application, 'perfect-numbers',
+ [{description, ""},
+  {vsn, "0.0.1"},
+  {modules,
+   ['perfect-numbers']},
+  {registered, []},
+  {applications,
+   [kernel, stdlib]},
+  {included_applications, []},
+  {env, []}]}.
