@@ -1,0 +1,11 @@
+%% -*- erlang -*-
+{application, 'yacht',
+ [{description, "a"},
+  {vsn, "0.0.1"},
+  {modules,
+   ['yacht']},
+  {registered, []},
+  {applications,
+   [kernel, stdlib]},
+  {included_applications, []},
+  {env, []}]}.
