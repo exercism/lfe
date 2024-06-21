@@ -1,6 +1,6 @@
 # About
 
-**Lisp Flavoured Erlang** (AKA LFE) cmbine the robustness and concurrency of Erlang with the flexibility and power of a Lisp syntax.
+**Lisp Flavoured Erlang** (AKA LFE) combine the robustness and concurrency of Erlang with the flexibility and power of a Lisp syntax.
 
 LFE is a programming language that uses Lisp syntax as a front-end for the Erlang compiler. This means you can write code in LFE that works seamlessly within the Erlang ecosystem, taking full advantage of Erlang's powerful features. But what makes LFE stand out is its ability to mix the concise and expressive nature of Lisp with Erlang's proven capabilities.
 
