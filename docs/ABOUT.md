@@ -9,3 +9,4 @@ LFE is useful in applications that require the **robustness** and **concurrency*
 LFE is classified as a Lisp-2, which means it has separate evaluation rules for functions and arguments. This design allows for more sophisticated function definitions and greater flexibility in code structure. Moreover, LFE supports polymorphic function definitions, as Erlang does.
 
 LFE predates Elixir and was created by Robert Virding, one of the original developers of Erlang. With strong influences from Common Lisp, LFE is built on a foundation of decades of programming language development.
+
