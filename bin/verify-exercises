@@ -8,7 +8,13 @@ run_test() {
     mkdir -p ${temp_dir}
     
     cp -r "$1/." $temp_dir
-    cp $temp_dir/.meta/example.lfe $temp_dir/src/$slug.lfe
+
+    outpath=$temp_dir/src/$slug.lfe
+    if [ "$slug" = "binary" ]; then
+        outpath=$temp_dir/src/binary-string.lfe
+    fi
+
+    cp $temp_dir/.meta/example.lfe $outpath
 
     (cd /opt/test-runner && bin/run.sh $slug $temp_dir $temp_dir) || exit 1
 
