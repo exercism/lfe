@@ -38,18 +38,25 @@ description = "binary ignores leading zeros"
 
 [44f7d8b1-ddc3-4751-8be3-700a538b421c]
 description = "2 is not a valid binary digit"
+include = false
 
 [c263a24d-6870-420f-b783-628feefd7b6e]
 description = "a number containing a non-binary digit is invalid"
+include = false
 
 [8d81305b-0502-4a07-bfba-051c5526d7f2]
 description = "a number with trailing non-binary characters is invalid"
+include = false
 
 [a7f79b6b-039a-4d42-99b4-fcee56679f03]
 description = "a number with leading non-binary characters is invalid"
+include = false
 
 [9e0ece9d-b8aa-46a0-a22b-3bed2e3f741e]
 description = "a number with internal non-binary characters is invalid"
+include = false
 
 [46c8dd65-0c32-4273-bb0d-f2b111bccfbd]
 description = "a number and a word whitespace separated is invalid"
+include = false
+

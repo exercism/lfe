@@ -1,9 +1,9 @@
 %% -*- erlang -*-
-{application, 'binary',
+{application, 'binary-string',
  [{description, ""},
   {vsn, "0.0.1"},
   {modules,
-   ['binary']},
+   ['binary-string']},
   {registered, []},
   {applications,
    [kernel, stdlib]},
