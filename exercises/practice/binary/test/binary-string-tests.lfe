@@ -29,5 +29,5 @@
   (is-equal 1128 (binary-string:to-decimal "10001101000")))
 
 (deftest binary-ignores-leading-zeros
-  (is-equal 31 (binary-string:from-decimal "000011111")))
+  (is-equal 31 (binary-string:to-decimal "000011111")))
 
