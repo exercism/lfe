@@ -438,6 +438,14 @@
         "difficulty": 5
       },
       {
+        "slug": "matching-brackets",
+        "name": "Matching Brackets",
+        "uuid": "3104857d-f658-429e-b5d8-d6a73c8c75e5",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 5
+      },
+      {
         "slug": "meetup",
         "name": "Meetup",
         "uuid": "1a93aacc-160f-4121-b03a-742e20f7c073",
