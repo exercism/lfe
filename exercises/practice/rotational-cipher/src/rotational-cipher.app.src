@@ -1,0 +1,11 @@
+%% -*- erlang -*-
+{application, 'rotational-cipher',
+ [{description, "exercism.org exercise: Rotational Cipher"},
+  {vsn, "0.0.1"},
+  {modules,
+   ['rotational-cipher']},
+  {registered, []},
+  {applications,
+   [kernel, stdlib]},
+  {included_applications, []},
+  {env, []}]}.
