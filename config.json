@@ -32,7 +32,8 @@
       ".meta/exemplar.lfe"
     ],
     "invalidator": [
-      "rebar.config"
+      "rebar.config",
+      "rebar.lock"
     ]
   },
   "exercises": {

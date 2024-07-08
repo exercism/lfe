@@ -18,7 +18,8 @@
       ".meta/example.lfe"
     ],
     "invalidator": [
-      "rebar.config"
+      "rebar.config",
+      "rebar.lock"
     ]
   },
   "blurb": "Given a word and a list of possible anagrams, select the correct sublist.",

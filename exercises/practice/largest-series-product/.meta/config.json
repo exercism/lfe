@@ -17,7 +17,8 @@
       ".meta/example.lfe"
     ],
     "invalidator": [
-      "rebar.config"
+      "rebar.config",
+      "rebar.lock"
     ]
   },
   "blurb": "Given a string of digits, calculate the largest product for a contiguous substring of digits of length n.",

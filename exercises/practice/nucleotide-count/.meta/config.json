@@ -20,7 +20,8 @@
       ".meta/example.lfe"
     ],
     "invalidator": [
-      "rebar.config"
+      "rebar.config",
+      "rebar.lock"
     ]
   },
   "blurb": "Given a DNA string, compute how many times each nucleotide occurs in the string.",
