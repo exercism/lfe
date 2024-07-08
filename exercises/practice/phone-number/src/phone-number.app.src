@@ -1,6 +1,6 @@
 %% -*- erlang -*-
 {application, 'phone-number',
- [{description, ""},
+ [{description, "exercism.org - phone number"},
   {vsn, "0.0.1"},
   {modules,
    ['phone-number']},

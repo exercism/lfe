@@ -1,6 +1,6 @@
 %% -*- erlang -*-
 {application, 'grains',
- [{description, ""},
+ [{description, "exercism.org - grains"},
   {vsn, "0.0.1"},
   {modules,
    ['grains']},

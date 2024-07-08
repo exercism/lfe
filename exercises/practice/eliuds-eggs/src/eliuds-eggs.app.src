@@ -1,6 +1,6 @@
 %% -*- erlang -*-
 {application, 'eliuds-eggs',
- [{description, ""},
+ [{description, "exercism.org - eliud's eggs"},
   {vsn, "0.0.1"},
   {modules,
    ['eliuds-eggs']},

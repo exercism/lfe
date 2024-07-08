@@ -13,7 +13,8 @@
       ".meta/example.lfe"
     ],
     "invalidator": [
-      "rebar.config"
+      "rebar.config",
+      "rebar.lock"
     ]
   },
   "blurb": "Convert modern Arabic numbers into Roman numerals.",

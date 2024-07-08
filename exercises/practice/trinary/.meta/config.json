@@ -18,7 +18,8 @@
       ".meta/example.lfe"
     ],
     "invalidator": [
-      "rebar.config"
+      "rebar.config",
+      "rebar.lock"
     ]
   },
   "blurb": "Convert a trinary number, represented as a string (e.g. '102012'), to its decimal equivalent using first principles.",

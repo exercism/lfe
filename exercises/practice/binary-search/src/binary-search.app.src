@@ -1,6 +1,6 @@
 %% -*- erlang -*-
 {application, 'binary-search',
- [{description, ""},
+ [{description, "exercism.org - binary search"},
   {vsn, "0.0.1"},
   {modules,
    ['binary-search']},

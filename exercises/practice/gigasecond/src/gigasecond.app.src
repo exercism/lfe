@@ -1,6 +1,6 @@
 %% -*- erlang -*-
 {application, 'gigasecond',
- [{description, ""},
+ [{description, "exercism.org - gigasecond"},
   {vsn, "0.0.1"},
   {modules,
    ['gigasecond']},

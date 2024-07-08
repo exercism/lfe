@@ -1,6 +1,6 @@
 %% -*- erlang -*-
 {application, 'collatz-conjecture',
- [{description, ""},
+ [{description, "exercism.org - collatz conjecture"},
   {vsn, "0.0.1"},
   {modules,
    ['collatz-conjecture']},

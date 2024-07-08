@@ -1,6 +1,6 @@
 %% -*- erlang -*-
 {application, 'sieve',
- [{description, "Use the Sieve of Eratosthenes to find all the primes from 2 up to a given number."},
+ [{description, "exercism.org - sieve"},
   {vsn, "0.0.1"},
   {modules,
    ['sieve']},

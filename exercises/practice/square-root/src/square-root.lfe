@@ -1,4 +1,5 @@
 (defmodule square-root
   (export (calculate 1)))
 
-  ; Please implement the calculate function.
+; Please implement the exported function(s).
+

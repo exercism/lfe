@@ -11,6 +11,10 @@
     ],
     "example": [
       ".meta/example.lfe"
+    ],
+    "invalidator": [
+      "rebar.config",
+      "rebar.lock"
     ]
   },
   "blurb": "Given a natural radicand, return its square root.",

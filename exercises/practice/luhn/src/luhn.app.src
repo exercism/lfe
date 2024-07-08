@@ -1,6 +1,6 @@
 %% -*- erlang -*-
 {application, 'luhn',
- [{description, "Given a number determine whether or not it is valid per the Luhn formula."},
+ [{description, "exercism.org - luhn"},
   {vsn, "0.0.1"},
   {modules,
    ['luhn']},

@@ -1,6 +1,6 @@
 %% -*- erlang -*-
 {application, 'dnd-character',
- [{description, ""},
+ [{description, "exercism.org - d&d character"},
   {vsn, "0.0.1"},
   {modules,
    ['dnd-character']},

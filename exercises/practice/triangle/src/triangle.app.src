@@ -1,6 +1,6 @@
 %% -*- erlang -*-
 {application, 'triangle',
- [{description, ""},
+ [{description, "exercism.org - triangle"},
   {vsn, "0.0.1"},
   {modules,
    ['triangle']},

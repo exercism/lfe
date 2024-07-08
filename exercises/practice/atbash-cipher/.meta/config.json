@@ -16,7 +16,8 @@
       ".meta/example.lfe"
     ],
     "invalidator": [
-      "rebar.config"
+      "rebar.config",
+      "rebar.lock"
     ]
   },
   "blurb": "Create an implementation of the atbash cipher, an ancient encryption system created in the Middle East.",

@@ -1,5 +1,5 @@
 (defmodule luhn
-  (export (valid? 1))
-)
+  (export (valid? 1)))
 
-; Please implement the `valid?` function.
+; Please implement the exported function(s).
+

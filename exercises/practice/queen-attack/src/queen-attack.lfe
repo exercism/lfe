@@ -2,4 +2,5 @@
   (export (create 2)
           (can-attack 2)))
 
-  ; Please implement the create and can-attack functions.
+; Please implement the exported function(s).
+

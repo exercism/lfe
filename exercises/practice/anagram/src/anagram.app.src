@@ -1,6 +1,6 @@
 %% -*- erlang -*-
 {application, 'anagram',
- [{description, ""},
+ [{description, "exercism.org - anagram"},
   {vsn, "0.0.1"},
   {modules,
    ['anagram']},

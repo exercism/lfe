@@ -21,7 +21,8 @@
       ".meta/example.lfe"
     ],
     "invalidator": [
-      "rebar.config"
+      "rebar.config",
+      "rebar.lock"
     ]
   },
   "blurb": "Given a DNA strand, return its RNA Complement Transcription.",

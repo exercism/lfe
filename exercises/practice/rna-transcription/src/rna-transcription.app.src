@@ -1,6 +1,6 @@
 %% -*- erlang -*-
 {application, 'rna-transcription',
- [{description, ""},
+ [{description, "exercism.org - rna transcription"},
   {vsn, "0.0.1"},
   {modules,
    ['rna-transcription']},

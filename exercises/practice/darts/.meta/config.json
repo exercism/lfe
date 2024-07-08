@@ -11,6 +11,10 @@
     ],
     "example": [
       ".meta/example.lfe"
+    ],
+    "invalidator": [
+      "rebar.config",
+      "rebar.lock"
     ]
   },
   "blurb": "Calculate the points scored in a single toss of a Darts game.",

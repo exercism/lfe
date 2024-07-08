@@ -1,6 +1,6 @@
 %% -*- erlang -*-
 {application, 'nucleotide-count',
- [{description, ""},
+ [{description, "exercism.org - nucleotide count"},
   {vsn, "0.0.1"},
   {modules,
    ['nucleotide-count']},

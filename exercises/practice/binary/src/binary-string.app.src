@@ -1,6 +1,6 @@
 %% -*- erlang -*-
 {application, 'binary-string',
- [{description, ""},
+ [{description, "exercism.org - binary string"},
   {vsn, "0.0.1"},
   {modules,
    ['binary-string']},

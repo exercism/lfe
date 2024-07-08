@@ -1,5 +1,5 @@
 (defmodule acronym
-    (export (abbreviate 1)))
+  (export (abbreviate 1)))
 
-(defun abbreviate (str)
-  (throw "Please implement the abbreviate function"))
+; Please implement the exported function(s).
+

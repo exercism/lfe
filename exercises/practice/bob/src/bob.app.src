@@ -1,6 +1,6 @@
 %% -*- erlang -*-
 {application, 'bob',
- [{description, ""},
+ [{description, "exercism.org - bob"},
   {vsn, "0.0.1"},
   {modules,
    ['bob']},

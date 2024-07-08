@@ -1,6 +1,6 @@
 %% -*- erlang -*-
 {application, 'armstrong-numbers',
- [{description, ""},
+ [{description, "exercism.org - armstrong numbers"},
   {vsn, "0.0.1"},
   {modules,
    ['armstrong-numbers']},

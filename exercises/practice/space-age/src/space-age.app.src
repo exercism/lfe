@@ -1,6 +1,6 @@
 %% -*- erlang -*-
 {application, 'space-age',
- [{description, ""},
+ [{description, "exercism.org - space age"},
   {vsn, "0.0.1"},
   {modules,
    ['space-age']},

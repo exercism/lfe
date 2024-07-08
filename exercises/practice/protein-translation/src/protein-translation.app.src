@@ -1,9 +1,9 @@
 %% -*- erlang -*-
 {application, 'protein-translation',
- [{description, "Translate RNA sequences into proteins."},
+ [{description, "exercism.org - protein translation"},
   {vsn, "0.0.1"},
   {modules,
-   ['raindrops']},
+   ['protein-translation']},
   {registered, []},
   {applications,
    [kernel, stdlib]},
