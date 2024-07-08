@@ -1,4 +1,5 @@
 (defmodule pangram
   (export (pangram? 1)))
 
-  ; Please implement the pangram? function.
+; Please implement the exported function(s).
+

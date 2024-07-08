@@ -10,4 +10,5 @@
           (get-charisma 1)
           (get-hitpoints 1)))
 
-  ; Please implement the exported functions.
+  ; Please implement the exported function(s).
+

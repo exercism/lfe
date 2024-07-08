@@ -1,4 +1,5 @@
 (defmodule anagram
   (export (find 2)))
 
-  ; Please implement the find function
+; Please implement the exported function(s).
+

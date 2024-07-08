@@ -1,4 +1,5 @@
 (defmodule collatz-conjecture
   (export (steps 1)))
 
- ; Please implement the steps function.
+; Please implement the exported function(s).
+

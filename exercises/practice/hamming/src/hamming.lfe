@@ -1,4 +1,5 @@
 (defmodule hamming
   (export (distance 2)))
 
- ; Please implement the distance function.
+; Please implement the exported function(s).
+

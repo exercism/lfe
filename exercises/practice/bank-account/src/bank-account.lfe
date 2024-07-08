@@ -6,4 +6,5 @@
           (deposit 2)
           (withdraw 2)))
 
-  ; Please implement the exported functions.
+; Please implement the exported function(s).
+

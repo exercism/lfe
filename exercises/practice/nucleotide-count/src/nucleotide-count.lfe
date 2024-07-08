@@ -1,4 +1,5 @@
 (defmodule nucleotide-count
   (export (counts 1)))
 
-  ; Please implement the counts function
+; Please implement the exported function(s).
+

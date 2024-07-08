@@ -3,5 +3,5 @@
           (personal-best 1)
           (personal-top-three 1)))
 
-  ; Please implement the exported functions.
+; Please implement the exported function(s).
 
