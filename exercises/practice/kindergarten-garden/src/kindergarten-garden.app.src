@@ -1,0 +1,11 @@
+%% -*- erlang -*-
+{application, 'kindergarten-garden',
+ [{description, "exercism.org - kindergarten garden"},
+  {vsn, "0.0.1"},
+  {modules,
+   ['kindergarten-garden']},
+  {registered, []},
+  {applications,
+   [kernel, stdlib]},
+  {included_applications, []},
+  {env, []}]}.
