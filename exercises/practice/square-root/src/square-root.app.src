@@ -1,6 +1,6 @@
 %% -*- erlang -*-
 {application, 'square-root',
- [{description, ""},
+ [{description, "exercism.org - square root"},
   {vsn, "0.0.1"},
   {modules,
    ['square-root']},

@@ -1,6 +1,6 @@
 %% -*- erlang -*-
 {application, 'meetup',
- [{description, ""},
+ [{description, "exercism.org - meetup"},
   {vsn, "0.0.1"},
   {modules,
    ['meetup']},

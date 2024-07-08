@@ -1,6 +1,6 @@
 %% -*- erlang -*-
 {application, 'darts',
- [{description, ""},
+ [{description, "exercism.org - darts"},
   {vsn, "0.0.1"},
   {modules,
    ['darts']},

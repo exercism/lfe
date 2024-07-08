@@ -1,6 +1,6 @@
 %% -*- erlang -*-
 {application, 'yacht',
- [{description, "a"},
+ [{description, "exercism.org - yacht"},
   {vsn, "0.0.1"},
   {modules,
    ['yacht']},

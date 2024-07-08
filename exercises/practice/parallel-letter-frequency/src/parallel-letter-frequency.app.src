@@ -1,6 +1,6 @@
 %% -*- erlang -*-
 {application, 'parallel-letter-frequency',
- [{description, ""},
+ [{description, "exercism.org - parallel letter frequency"},
   {vsn, "0.0.1"},
   {modules,
    ['parallel-letter-frequency']},

@@ -1,6 +1,6 @@
 %% -*- erlang -*-
 {application, 'scrabble-score',
- [{description, ""},
+ [{description, "exercism.org - scrabble score"},
   {vsn, "0.0.1"},
   {modules,
    ['scrabble-score']},

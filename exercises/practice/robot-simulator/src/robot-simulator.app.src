@@ -1,6 +1,6 @@
 %% -*- erlang -*-
 {application, 'robot-simulator',
- [{description, ""},
+ [{description, "exercism.org - robot simulator"},
   {vsn, "0.0.1"},
   {modules,
    ['robot-simulator']},

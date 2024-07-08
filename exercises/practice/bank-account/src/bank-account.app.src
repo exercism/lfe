@@ -1,6 +1,6 @@
 %% -*- erlang -*-
 {application, 'bank-account',
- [{description, ""},
+ [{description, "exercism.org - bank account"},
   {vsn, "0.0.1"},
   {modules,
    ['bank-account']},

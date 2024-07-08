@@ -1,6 +1,6 @@
 %% -*- erlang -*-
 {application, 'raindrops',
- [{description, "Convert a number into its corresponding raindrop sounds - Pling, Plang and Plong."},
+ [{description, "exercism.org - raindrops"},
   {vsn, "0.0.1"},
   {modules,
    ['raindrops']},

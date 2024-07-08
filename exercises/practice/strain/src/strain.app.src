@@ -1,6 +1,6 @@
 %% -*- erlang -*-
 {application, 'strain',
- [{description, ""},
+ [{description, "exercism.org - strain"},
   {vsn, "0.0.1"},
   {modules,
    ['strain']},

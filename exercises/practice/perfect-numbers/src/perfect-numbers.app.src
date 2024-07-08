@@ -1,6 +1,6 @@
 %% -*- erlang -*-
 {application, 'perfect-numbers',
- [{description, ""},
+ [{description, "exercism.org - perfect numbers"},
   {vsn, "0.0.1"},
   {modules,
    ['perfect-numbers']},

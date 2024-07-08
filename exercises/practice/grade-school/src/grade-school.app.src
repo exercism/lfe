@@ -1,6 +1,6 @@
 %% -*- erlang -*-
 {application, 'grade-school',
- [{description, ""},
+ [{description, "exercism.org - grade school"},
   {vsn, "0.0.1"},
   {modules,
    ['grade-school']},

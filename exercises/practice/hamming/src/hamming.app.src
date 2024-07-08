@@ -1,6 +1,6 @@
 %% -*- erlang -*-
 {application, hamming,
- [{description, ""},
+ [{description, "exercism.org - hamming"},
   {vsn, "0.0.1"},
   {modules,
    [hamming]},

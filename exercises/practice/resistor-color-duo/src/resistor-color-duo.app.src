@@ -1,6 +1,6 @@
 %% -*- erlang -*-
 {application, 'resistor-color-duo',
- [{description, ""},
+ [{description, "exercism.org - resistor color duo"},
   {vsn, "0.0.1"},
   {modules,
    ['resistor-color-duo']},

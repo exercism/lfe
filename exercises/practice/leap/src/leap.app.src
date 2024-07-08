@@ -1,6 +1,6 @@
 %% -*- erlang -*-
 {application, 'leap',
- [{description, ""},
+ [{description, "exercism.org - leap"},
   {vsn, "0.0.1"},
   {modules,
    ['leap']},

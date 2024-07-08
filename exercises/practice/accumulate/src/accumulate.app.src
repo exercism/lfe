@@ -1,6 +1,6 @@
 %% -*- erlang -*-
 {application, 'accumulate',
- [{description, ""},
+ [{description, "exercism.org - accumulate"},
   {vsn, "0.0.1"},
   {modules,
    ['accumulate']},

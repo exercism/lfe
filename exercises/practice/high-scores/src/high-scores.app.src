@@ -1,6 +1,6 @@
 %% -*- erlang -*-
 {application, 'high-scores',
- [{description, ""},
+ [{description, "exercism.org - high scores"},
   {vsn, "0.0.1"},
   {modules,
    ['high-scores']},

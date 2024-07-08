@@ -1,6 +1,6 @@
 %% -*- erlang -*-
 {application, 'reverse-string',
- [{description, ""},
+ [{description, "exercism.org - reverse string"},
   {vsn, "0.0.1"},
   {modules,
    [reverse]},

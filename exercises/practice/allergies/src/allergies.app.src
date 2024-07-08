@@ -1,6 +1,6 @@
 %% -*- erlang -*-
 {application, 'allergies',
- [{description, ""},
+ [{description, "exercism.org - allergies"},
   {vsn, "0.0.1"},
   {modules,
    ['allergies']},

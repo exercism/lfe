@@ -1,6 +1,6 @@
 %% -*- erlang -*-
 {application, 'circular-buffer',
- [{description, ""},
+ [{description, "exercism.org - circular buffer"},
   {vsn, "0.0.1"},
   {modules,
    ['circular-buffer']},

@@ -1,6 +1,6 @@
 %% -*- erlang -*-
 {application, 'list-ops',
- [{description, "Implement basic list operations."},
+ [{description, "exercism.org - list ops"},
   {vsn, "0.0.1"},
   {modules,['list-ops']},
   {registered, []},

@@ -1,6 +1,6 @@
 %% -*- erlang -*-
 {application, 'sum-of-multiples',
- [{description, ""},
+ [{description, "exercism.org - sum of multiples"},
   {vsn, "0.0.1"},
   {modules,
    ['sum-of-multiples']},

@@ -1,6 +1,6 @@
 %% -*- erlang -*-
 {application, 'resistor-color',
- [{description, ""},
+ [{description, "exercism.org - resistor color"},
   {vsn, "0.0.1"},
   {modules,
    ['resistor-color']},

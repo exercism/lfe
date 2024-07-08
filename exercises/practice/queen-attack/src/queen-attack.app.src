@@ -1,6 +1,6 @@
 %% -*- erlang -*-
 {application, 'queen-attack',
- [{description, ""},
+ [{description, "exercism.org - queen attack"},
   {vsn, "0.0.1"},
   {modules,
    ['queen-attack']},

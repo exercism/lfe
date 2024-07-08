@@ -1,6 +1,6 @@
 %% -*- erlang -*-
 {application, 'hello-world',
- [{description, ""},
+ [{description, "exercism.org - hello world"},
   {vsn, "0.0.1"},
   {modules,
    ['hello-world']},

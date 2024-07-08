@@ -1,6 +1,6 @@
 %% -*- erlang -*-
 {application, 'pangram',
- [{description, ""},
+ [{description, "exercism.org - pangram"},
   {vsn, "0.0.1"},
   {modules,
    ['pangram']},

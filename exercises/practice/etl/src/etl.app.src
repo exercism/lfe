@@ -1,6 +1,6 @@
 %% -*- erlang -*-
 {application, 'etl',
- [{description, ""},
+ [{description, "exercism.org - etl"},
   {vsn, "0.0.1"},
   {modules,
    ['etl']},

@@ -1,6 +1,6 @@
 %% -*- erlang -*-
 {application, 'acronym',
- [{description, ""},
+ [{description, "exercism.org - acronym"},
   {vsn, "0.0.1"},
   {modules,
    ['acronym']},

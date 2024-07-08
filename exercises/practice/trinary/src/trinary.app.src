@@ -1,6 +1,6 @@
 %% -*- erlang -*-
 {application, 'trinary',
- [{description, ""},
+ [{description, "exercism.org - trinary"},
   {vsn, "0.0.1"},
   {modules,
    ['trinary']},

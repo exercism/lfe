@@ -1,6 +1,6 @@
 %% -*- erlang -*-
 {application, 'clock',
- [{description, ""},
+ [{description, "exercism.org - clock"},
   {vsn, "0.0.1"},
   {modules,
    ['clock']},

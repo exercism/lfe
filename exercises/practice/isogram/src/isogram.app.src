@@ -1,6 +1,6 @@
 %% -*- erlang -*-
 {application, 'isogram',
- [{description, ""},
+ [{description, "exercism.org - isogram"},
   {vsn, "0.0.1"},
   {modules,
    ['isogram']},

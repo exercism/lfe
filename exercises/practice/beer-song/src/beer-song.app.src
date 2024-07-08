@@ -1,6 +1,6 @@
 %% -*- erlang -*-
 {application, 'beer-song',
- [{description, ""},
+ [{description, "exercism.org - beer song"},
   {vsn, "0.0.1"},
   {modules,
    ['beer-song']},
