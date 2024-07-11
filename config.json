@@ -479,6 +479,14 @@
         "difficulty": 5
       },
       {
+        "slug": "pascals-triangle",
+        "name": "Pascal's Triangle",
+        "uuid": "b4b9d4f5-598b-4035-a582-47629d2870ae",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 5
+      },
+      {
         "slug": "phone-number",
         "name": "Phone Number",
         "uuid": "c1e07140-0566-4b50-aca1-3eddaa87d4d2",
