@@ -1,0 +1,11 @@
+%% -*- erlang -*-
+{application, 'pascals-triangle',
+ [{description, "exercism.org - pascal's triangle"},
+  {vsn, "0.0.1"},
+  {modules,
+   ['pascals-triangle']},
+  {registered, []},
+  {applications,
+   [kernel, stdlib]},
+  {included_applications, []},
+  {env, []}]}.
