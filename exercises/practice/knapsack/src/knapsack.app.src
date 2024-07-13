@@ -1,0 +1,11 @@
+%% -*- erlang -*-
+{application, 'knapsack',
+ [{description, "exercism.org - knapsack"},
+  {vsn, "0.0.1"},
+  {modules,
+   ['knapsack']},
+  {registered, []},
+  {applications,
+   [kernel, stdlib]},
+  {included_applications, []},
+  {env, []}]}.
