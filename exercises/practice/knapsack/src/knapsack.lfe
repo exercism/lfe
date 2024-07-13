@@ -1,11 +1,7 @@
 (defmodule knapsack
-  (export (maximum-value 2)
-            (new-item 2)))
+  (export (maximum-value 2)))
 
-(defun new-item (item-weight item-value)
-    ;; Please implement the "new-item" function
-    0)
+(include-lib "include/item.lfe")
 
-(defun maximum-value (items capacity)
-    ;; Please implement the "maximum-value" function
-    0)
+; Please implement the exported function(s).
+

@@ -1,14 +1,7 @@
 (defmodule knapsack
-  (export (maximum-value 2)
-            (new-item 2)))
+  (export (maximum-value 2)))
 
-(defrecord item
-    weight
-    value
-)
-
-(defun new-item (item-weight item-value)
-    (make-item weight item-weight value item-value))
+(include-lib "include/item.lfe")
 
 (defun find-max
     (item last-values capacity)
@@ -37,15 +30,15 @@
             (cons (find-max item last-values capacity) acc))))
 
 (defun do-maximum-values
-    ([[] last-values capacity] (lists:last last-values))
+    (['() last-values capacity] (lists:last last-values))
     ([(cons item remaining) last-values capacity]
         (do-maximum-values
             remaining 
-            (next-values item last-values capacity [])
+            (next-values item last-values capacity '())
             capacity)))
 
 (defun maximum-value
-    (([] _capacity) 0)
+    (('() _capacity) 0)
     ((items capacity)
         (do-maximum-values 
             items
