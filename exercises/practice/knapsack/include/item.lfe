@@ -1,1 +1,0 @@
-(defrecord item weight value)
