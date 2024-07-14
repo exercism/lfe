@@ -1,5 +1,5 @@
 {
-  "language": "LFE",
+  "language": "Lisp Flavoured Erlang",
   "slug": "lfe",
   "active": true,
   "status": {
@@ -8,7 +8,7 @@
     "representer": false,
     "analyzer": false
   },
-  "blurb": "Lisp Flavoured Erlang is one of those eat your cake and have it too programming languages. As they say: It's the best of Erlang and of Lisp; at the same time!",
+  "blurb": "Lisp Flavoured Erlang (LFE) is a Lisp-2 dialect, leveraging both the concurrency of the Erlang compiler and the metaprogramming of a Lisp.",
   "version": 3,
   "online_editor": {
     "indent_style": "space",
