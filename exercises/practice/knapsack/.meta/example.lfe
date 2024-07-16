@@ -1,7 +1,7 @@
 (defmodule knapsack
   (export (maximum-value 2)))
 
-(defrecord item weight value)
+(include-lib "include/item.lfe")
 
 (defun find-max
     (item last-values capacity)

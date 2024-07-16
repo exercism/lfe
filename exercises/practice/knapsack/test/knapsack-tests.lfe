@@ -2,9 +2,8 @@
   (behaviour ltest-unit)
   (export all))
 
+(include-lib "include/item.lfe")
 (include-lib "ltest/include/ltest-macros.lfe")
-
-(defrecord item weight value)
 
 (deftest no-items
   (is-equal 0 (knapsack:maximum-value '() 100)))
