@@ -23,11 +23,14 @@ on:
 
 jobs:
   ci:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-24.04
     container:
-      image: exercism/lfe-test-runner
+      image: erlang:26.2.4.0-alpine
 
     steps:
+      - name: Install dependencies
+        run: apk add --no-cache bash jq coreutils make
+
       - name: Checkout repository
         uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
 

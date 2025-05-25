@@ -1,45 +1,60 @@
 #!/usr/bin/env bash
 
-temp_dir_base=$(mktemp -d)
+set -euo pipefail
 
-run_test() {
-    slug=$(basename $1)
-    temp_dir=${temp_dir_base}/${slug}
-    mkdir -p ${temp_dir}
-    
-    cp -r "$1/." $temp_dir
+original_dir=$(pwd)
 
-    outpath=$temp_dir/src/$slug.lfe
-    if [ "$slug" = "binary" ]; then
-        outpath=$temp_dir/src/binary-string.lfe
-    fi
-
-    cp $temp_dir/.meta/example.lfe $outpath
-
-    (cd /opt/test-runner && bin/run.sh $slug $temp_dir $temp_dir) || exit 1
-
-    test_status="$(jq -r '.status' $temp_dir/results.json)"
-
-    if [ "$test_status" != "pass" ]; then
-    	echo "Tests for $slug have failed:"
-    	cat $temp_dir/results.json
-    	exit 1
+get_deprecated_exercises() {
+    if [ -f "config.json" ]; then
+        jq -r '.exercises.practice[] | select(.status == "deprecated") | .slug' config.json 2>/dev/null || true
     fi
 }
 
+run_test() {
+    exercise_dir="${1%/}"
+    pushd "$exercise_dir"
 
+    slug=$(basename $1)
+    example_path=".meta/example.lfe"
+    stub_path="src/$slug.lfe"
+    stub_backup="src/$slug.bak"
+    if [ "$slug" = "binary" ]; then
+        stub_path="src/binary-string.lfe"
+        stub_backup="src/binary-string.bak"
+    fi
+
+    cp -rf "$stub_path" "$stub_backup"
+    cp -rf "$example_path" "$stub_path"
+    if ! make test; then
+        echo "❌ $slug tests failed"
+        cp "$stub_backup" "$stub_path" 
+        exit 1
+    fi
+    
+    echo "✅ $slug tests passed"
+    cp "$stub_backup" "$stub_path" 
+    popd
+}
 
 for concept_exercise_dir in ./exercises/concept/*/; do
     if [ -d $concept_exercise_dir ]; then
-        echo "Checking $(basename "${concept_exercise_dir}") exercise..."
+        slug=$(basename "${practice_exercise_dir}")
+        echo "Checking $slug"
+        echo 'Checking $(basename "${concept_exercise_dir}") exercise...'
         run_test $concept_exercise_dir
     fi
 done
 
-# Verify the Practice Exercises
+echo "Checking practice exercises..."
+deprecated_exercises=$(jq -r '.exercises.practice[] | select(.status == "deprecated") | .slug' config.json 2>/dev/null || true)
 for practice_exercise_dir in ./exercises/practice/*/; do
     if [ -d $practice_exercise_dir ]; then
-        echo "Checking $(basename "${practice_exercise_dir}") exercise..."
-        run_test $practice_exercise_dir
+      slug=$(basename "${practice_exercise_dir}")
+      if echo "$deprecated_exercises" | grep -q "^${slug}$"; then
+        echo "Skipping ${slug} (deprecated)"
+        continue
+      fi
+      echo "Checking $slug"
+      run_test $practice_exercise_dir
     fi
 done
