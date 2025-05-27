@@ -12,7 +12,6 @@ run_test() {
         fi
     }
 
-    trap cleanup EXIT
 
     exercise_dir="${1%/}"
     cd "$exercise_dir" || return
@@ -33,10 +32,10 @@ run_test() {
     cp "$example_file" "$stub_file"
     if ! test_output=$(make test 2>&1); then
         echo "$test_output"
-        echo "❌ $slug_original."
+        echo "❌ $slug_original"
         exit 1
     else
-        echo "✅ $slug_original."
+        echo "✅ $slug_original"
     fi
   )
 }
