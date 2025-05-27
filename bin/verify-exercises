@@ -6,13 +6,6 @@ original_dir=$PWD
 
 run_test() {
   (
-    cleanup() {
-        if [[ -f "$stub_backup" && -f "$stub_file" ]]; then
-            mv "$stub_backup" "$stub_file"
-        fi
-    }
-
-
     exercise_dir="${1%/}"
     cd "$exercise_dir" || return
 
@@ -27,6 +20,8 @@ run_test() {
     example_file=".meta/example.lfe"
     stub_file="src/$slug.lfe"
     stub_backup="src/$slug.bak"
+
+    trap 'mv "$stub_backup" "$stub_file"' EXIT
 
     cp "$stub_file" "$stub_backup"
     cp "$example_file" "$stub_file"
