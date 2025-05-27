@@ -8,19 +8,18 @@ run_test() {
   (
     cleanup() {
         if [[ -f "$stub_backup" && -f "$stub_file" ]]; then
-            cp "$stub_backup" "$stub_file"
+            mv "$stub_backup" "$stub_file"
         fi
     }
 
     trap cleanup EXIT
 
     exercise_dir="${1%/}"
-    cd "$exercise_dir"
+    cd "$exercise_dir" || return
 
     slug="${1%/}"
     slug="${slug##*/}"
-    echo "Checking $slug"
-
+    slug_original="${slug}"
     # special case where the slug is different inside the folder
     if [[ "$slug" = "binary" ]]; then
         slug="binary-string"
@@ -32,21 +31,21 @@ run_test() {
 
     cp "$stub_file" "$stub_backup"
     cp "$example_file" "$stub_file"
-
-    if ! make test; then
-      echo "❌ $slug tests failed"
-      exit 1
+    if ! test_output=$(make test 2>&1); then
+        echo "$test_output"
+        echo "❌ $slug_original."
+        exit 1
+    else
+        echo "✅ $slug_original."
     fi
-
-    echo "✅ $slug tests passed"
   )
 }
 
 if [[ -d "./exercises/concept" ]]; then
     echo "Checking concept exercises..."
-    for concept_exercise_dir in ./exercises/concept/*/; do
+    for concept_exercise_dir in ./exercises/concept/*; do
         if [[ -d $concept_exercise_dir ]]; then
-            slug=$(basename "${practice_exercise_dir}")
+            slug="${practice_exercise_dir##*/}"
             run_test "$concept_exercise_dir"
         fi
     done
@@ -57,18 +56,20 @@ fi
 
 echo "Checking practice exercises..."
 
-practice_exercises=$(jq -r '
+mapfile -t practice_exercises < <(jq -r '
   .exercises.practice |
-  map(select((.status != "deprecated"))) |
-  sort_by(.slug)[] |
-  .slug
-' config.json)
+  map(
+      select(.status != "deprecated").slug
+  ) |
+  sort
+  | .[] ' config.json
+)
 
-for practice_exercise in $practice_exercises; do
+for practice_exercise in "${practice_exercises[@]}"; do
     if [[ -d "./exercises/practice/$practice_exercise" ]]; then
         run_test "./exercises/practice/$practice_exercise"
     else
-        echo "Folder not found for $practice_exercise"
+        echo "Directory not found for $practice_exercise"
         exit 1
     fi
 done
