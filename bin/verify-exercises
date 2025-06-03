@@ -27,10 +27,9 @@ run_test() {
     cp "$example_file" "$stub_file"
     if ! test_output=$(make test 2>&1); then
         echo "$test_output"
-        echo "❌ $slug_original"
-        exit 1
+        return 1
     else
-        echo "✅ $slug_original"
+        return 0
     fi
   )
 }
@@ -40,7 +39,11 @@ if [[ -d "./exercises/concept" ]]; then
     for concept_exercise_dir in ./exercises/concept/*; do
         if [[ -d $concept_exercise_dir ]]; then
             slug="${practice_exercise_dir##*/}"
-            run_test "$concept_exercise_dir"
+            if run_test "$concept_exercise_dir"; then
+                echo "✅ $slug"
+            else
+                echo "❌ $slug"
+            fi
         fi
     done
 else
@@ -59,11 +62,15 @@ mapfile -t practice_exercises < <(jq -r '
   | .[] ' config.json
 )
 
-for practice_exercise in "${practice_exercises[@]}"; do
-    if [[ -d "./exercises/practice/$practice_exercise" ]]; then
-        run_test "./exercises/practice/$practice_exercise"
+for slug in "${practice_exercises[@]}"; do
+    if [[ -d "./exercises/practice/$slug" ]]; then
+       if run_test "./exercises/practice/$slug"; then
+            echo "✅ $slug"
+        else
+            echo "❌ $slug"
+        fi
     else
-        echo "Directory not found for $practice_exercise"
+        echo "Directory not found for $slug"
         exit 1
     fi
 done
