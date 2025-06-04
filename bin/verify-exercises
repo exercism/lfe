@@ -2,8 +2,6 @@
 
 set -euo pipefail
 
-original_dir=$PWD
-
 run_test() {
   (
     exercise_dir="${1%/}"
