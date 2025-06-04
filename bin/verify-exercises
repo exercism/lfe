@@ -18,9 +18,6 @@ run_test() {
     example_file=".meta/example.lfe"
     stub_file="src/$slug.lfe"
     stub_backup="src/$slug.bak"
-
-    trap 'mv "$stub_backup" "$stub_file"' EXIT
-
     cp "$stub_file" "$stub_backup"
     cp "$example_file" "$stub_file"
     if ! test_output=$(make test 2>&1); then
