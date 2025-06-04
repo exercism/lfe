@@ -43,6 +43,7 @@ if [[ -d "./exercises/concept" ]]; then
                 echo "✅ $slug"
             else
                 echo "❌ $slug"
+                exit 1
             fi
         fi
     done
@@ -68,6 +69,7 @@ for slug in "${practice_exercises[@]}"; do
             echo "✅ $slug"
         else
             echo "❌ $slug"
+            exit 1
         fi
     else
         echo "Directory not found for $slug"
