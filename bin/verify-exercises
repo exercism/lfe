@@ -1,45 +1,75 @@
 #!/usr/bin/env bash
 
-temp_dir_base=$(mktemp -d)
+set -euo pipefail
 
 run_test() {
-    slug=$(basename $1)
-    temp_dir=${temp_dir_base}/${slug}
-    mkdir -p ${temp_dir}
-    
-    cp -r "$1/." $temp_dir
+  (
+    exercise_dir="${1%/}"
+    cd "$exercise_dir" || return
 
-    outpath=$temp_dir/src/$slug.lfe
-    if [ "$slug" = "binary" ]; then
-        outpath=$temp_dir/src/binary-string.lfe
+    slug="${1%/}"
+    slug="${slug##*/}"
+    slug_original="${slug}"
+    # special case where the slug is different inside the folder
+    if [[ "$slug" = "binary" ]]; then
+        slug="binary-string"
     fi
 
-    cp $temp_dir/.meta/example.lfe $outpath
-
-    (cd /opt/test-runner && bin/run.sh $slug $temp_dir $temp_dir) || exit 1
-
-    test_status="$(jq -r '.status' $temp_dir/results.json)"
-
-    if [ "$test_status" != "pass" ]; then
-    	echo "Tests for $slug have failed:"
-    	cat $temp_dir/results.json
-    	exit 1
+    example_file=".meta/example.lfe"
+    stub_file="src/$slug.lfe"
+    stub_backup="src/$slug.bak"
+    cp "$stub_file" "$stub_backup"
+    cp "$example_file" "$stub_file"
+    if ! test_output=$(make test 2>&1); then
+        echo "$test_output"
+        mv "$stub_backup" "$stub_file"
+        return 1
+    else
+        mv "$stub_backup" "$stub_file"
+        return 0
     fi
+  )
 }
 
+if [[ -d "./exercises/concept" ]]; then
+    echo "Checking concept exercises..."
+    for concept_exercise_dir in ./exercises/concept/*; do
+        if [[ -d $concept_exercise_dir ]]; then
+            slug="${practice_exercise_dir##*/}"
+            if run_test "$concept_exercise_dir"; then
+                echo "✅ $slug"
+            else
+                echo "❌ $slug"
+                exit 1
+            fi
+        fi
+    done
+else
+    echo "No concept exercises found. Skipping..."
+fi
 
 
-for concept_exercise_dir in ./exercises/concept/*/; do
-    if [ -d $concept_exercise_dir ]; then
-        echo "Checking $(basename "${concept_exercise_dir}") exercise..."
-        run_test $concept_exercise_dir
-    fi
-done
+echo "Checking practice exercises..."
 
-# Verify the Practice Exercises
-for practice_exercise_dir in ./exercises/practice/*/; do
-    if [ -d $practice_exercise_dir ]; then
-        echo "Checking $(basename "${practice_exercise_dir}") exercise..."
-        run_test $practice_exercise_dir
+mapfile -t practice_exercises < <(jq -r '
+  .exercises.practice |
+  map(
+      select(.status != "deprecated").slug
+  ) |
+  sort
+  | .[] ' config.json
+)
+
+for slug in "${practice_exercises[@]}"; do
+    if [[ -d "./exercises/practice/$slug" ]]; then
+       if run_test "./exercises/practice/$slug"; then
+            echo "✅ $slug"
+        else
+            echo "❌ $slug"
+            exit 1
+        fi
+    else
+        echo "Directory not found for $slug"
+        exit 1
     fi
 done
