@@ -5,7 +5,7 @@
   (string:to_upper char))
 
 (defun upper? (char)
-  (!= 'nomatch (re:run (list char) "\\p{Lu}")))
+  (=/= 'nomatch (re:run (list char) "\\p{Lu}")))
 
 (defun break?
   ((#\ ) 'true)

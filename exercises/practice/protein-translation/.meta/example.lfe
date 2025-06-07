@@ -2,7 +2,7 @@
   (export (proteins 1)))
 
 (defun proteins 
-  ((strand) (when (!= (rem (length strand) 3) 0)) (tuple 'error "Invalid codon") )
+  ((strand) (when (=/= (rem (length strand) 3) 0)) (tuple 'error "Invalid codon") )
   ((strand) (translate strand '()))
 )
 
