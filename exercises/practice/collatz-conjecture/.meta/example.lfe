@@ -3,7 +3,7 @@
 
 (defun add1 (n) (+ n 1))
 
-(defun zerop (n) (=:= (rem n 2)))
+(defun zerop (n) (=:= (rem n 2) 0))
 
 (defun steps (start)
   (do-steps start 0))
