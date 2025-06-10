@@ -44,4 +44,3 @@
   (is-equal "Gur dhvpx oebja sbk whzcf bire gur ynml qbt."
             (rotational-cipher:rotate "The quick brown fox jumps over the lazy dog."
                                       13)))
-

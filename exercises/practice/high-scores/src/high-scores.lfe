@@ -4,4 +4,3 @@
           (personal-top-three 1)))
 
 ; Please implement the exported function(s).
-

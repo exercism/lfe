@@ -9,4 +9,3 @@
                             '(#(return list) global)))
          (uniques (lists:usort chars)))
     (=:= (length chars) (length uniques))))
-

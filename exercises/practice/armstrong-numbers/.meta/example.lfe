@@ -20,4 +20,3 @@
     (do-digits-of (div n 10) (cons (rem n 10) acc)))
   ((n acc)
     (cons n acc)))
-

@@ -18,4 +18,3 @@
                 'abundant)
   ((number sum) (when (> number sum))
                 'deficient))
-

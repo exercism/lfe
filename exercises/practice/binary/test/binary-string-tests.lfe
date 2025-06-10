@@ -30,4 +30,3 @@
 
 (deftest binary-ignores-leading-zeros
   (is-equal 31 (binary-string:to-decimal "000011111")))
-

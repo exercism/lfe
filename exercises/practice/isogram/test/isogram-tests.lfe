@@ -45,4 +45,3 @@
 
 (deftest word-with-duplicated-character-and-with-two-hyphens
   (is-not (isogram:isogram? "up-to-date")))
-

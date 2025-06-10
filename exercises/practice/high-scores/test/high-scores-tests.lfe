@@ -25,4 +25,3 @@
 
 (deftest personal-top-when-there-is-only-one
     (is-equal '(40) (high-scores:personal-top-three '(40))))
-

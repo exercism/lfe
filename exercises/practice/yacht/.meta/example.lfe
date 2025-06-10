@@ -53,4 +53,3 @@
 (defun sum (dice n)
   (let ((matches (lists:filter (lambda (die) (=:= die n)) dice)))
     (* n (length matches))))
-

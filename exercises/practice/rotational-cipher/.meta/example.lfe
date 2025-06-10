@@ -21,4 +21,3 @@
                  (codepoint (+ (rem relative-offset 26) #\a)))
             codepoint))
         (else chr)))
-
