@@ -27,4 +27,3 @@
   ((_ digit) (when (< digit 5)) (* digit 2))
   ((_ digit) (- (* digit 2) 9))
 )
-

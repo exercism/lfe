@@ -3,4 +3,3 @@
 
 (defun to-decimal (string)
   (list_to_integer string 2))
-

@@ -11,4 +11,3 @@
 
 (defun personal-top-three (scores)
   (lists:sublist (lists:sort (lambda (a b) (> a b)) scores) 3))
-
