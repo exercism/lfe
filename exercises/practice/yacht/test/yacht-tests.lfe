@@ -90,4 +90,3 @@
 
 (deftest yacht-as-choice
   (is-equal 10 (yacht:score '(2 2 2 2 2) 'choice)))
-

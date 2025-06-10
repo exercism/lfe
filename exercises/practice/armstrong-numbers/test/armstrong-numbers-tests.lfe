@@ -30,4 +30,3 @@
 
 (deftest seven-digit-number-that-is-not-an-armstrong-number
   (is-not (armstrong-numbers:armstrong-number? 9926314)))
-

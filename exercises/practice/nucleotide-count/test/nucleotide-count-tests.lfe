@@ -22,4 +22,3 @@
 
 (deftest strand-with-invalid-nucleotides
   (is-error (nucleotide-count:counts "AGXXACT")))
-

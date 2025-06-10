@@ -42,4 +42,3 @@
 
 (deftest negative-integer-is-rejected
     (is-not (perfect-numbers:classify -1)))
-
