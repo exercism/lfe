@@ -3,4 +3,3 @@
           (allergic-to? 2)))
 
 ; Please implement the exported function(s).
-

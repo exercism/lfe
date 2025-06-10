@@ -3,4 +3,3 @@
           (can-attack 2)))
 
 ; Please implement the exported function(s).
-
