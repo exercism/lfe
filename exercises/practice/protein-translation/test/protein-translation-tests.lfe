@@ -79,11 +79,14 @@
 (deftest translation-stops-if-stop-codon-in-middle-of-six-codon-sequence
   (is-equal (tuple 'ok (list 'Tryptophan 'Cysteine 'Tyrosine)) (protein-translation:proteins "UGGUGUUAUUAAUGGUUU")))
 
-(deftest non-existing-condon-cant-translate
-  (is-equal (tuple 'error "Invalid codon") (protein-translation:proteins "AAA")))
+(deftest sequence-of-two-non-stop-codons-does-not-translate-to-a-stop-codon
+  (is-equal (tuple 'ok (list 'Methionine 'Methionine)) (protein-translation:proteins "AUGAUG")))
 
-(deftest unknown-amino-acides-not-part-of-a-codon-cant-translate
+(deftest unknown-amino-acids-not-part-of-a-codon-cant-translate
   (is-equal (tuple 'error "Invalid codon") (protein-translation:proteins "XYZ")))
 
 (deftest incomplete-rna-sequence-cant-translate
   (is-equal (tuple 'error "Invalid codon") (protein-translation:proteins "AUGU")))
+
+(deftest incomplete-rna-sequence-can-translate-if-valid-until-stop-codon
+  (is-equal (tuple 'ok (list 'Phenylalanine 'Phenylalanine)) (protein-translation:proteins "UUCUUCUAAUGGU")))
