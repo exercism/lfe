@@ -25,7 +25,7 @@
 (deftest valid-when-eleven-digits-starting-with-one-even-with-punctuation
   (is-equal "2234567890" (phone-number:clean "+1 (223) 456-7890")))
 
-(deftest invalid-when-more-then-11-digits
+(deftest invalid-when-more-than-11-digits
   (is-not (phone-number:clean "321234567890")))
 
 (deftest invalid-with-letters
