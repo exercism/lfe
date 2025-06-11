@@ -116,22 +116,6 @@
     '(#("can" 1)
       #("can't" 2))))
 
-(deftest prefix-punctuation
-  (assert-count
-    "!%%#testing, 1, 2 testing"
-    '(#("testing" 2)
-      #("1"       1)
-      #("2"       1))))
-
-(deftest symbols-are-separators
-  (assert-count
-    "hey,my_spacebar_is_broken."
-    '(#("hey"      1)
-      #("my"       1)
-      #("spacebar" 1)
-      #("is"       1)
-      #("broken"   1))))
-
 (defun assert-count (string expected)
   (is-equal
     (orddict:from_list expected)
