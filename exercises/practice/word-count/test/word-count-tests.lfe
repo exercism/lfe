@@ -6,6 +6,11 @@
 
 ;; dict should be used to implement word-count:count/1.
 
+(defun assert-count (string expected)
+  (is-equal
+    (orddict:from_list expected)
+    (orddict:from_list (dict:to_list (word-count:count string)))))
+
 (deftest count-one-word
   (assert-count
     "word"
@@ -115,8 +120,3 @@
     "can, can't, 'can't'"
     '(#("can" 1)
       #("can't" 2))))
-
-(defun assert-count (string expected)
-  (is-equal
-    (orddict:from_list expected)
-    (orddict:from_list (dict:to_list (word-count:count string)))))
