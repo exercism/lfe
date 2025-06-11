@@ -65,15 +65,6 @@
 
 (deftest with-apostrophes
   (assert-count
-    "First: don't laugh. Then: don't cry."
-    '(#("first" 1)
-      #("don't" 2)
-      #("laugh" 1)
-      #("then" 1)
-      #("cry" 1))))
-
-(deftest with-apostrophes-multiple-letters
-  (assert-count
     "First don't laugh. then: don't cry. You're getting it."
     '(#("first" 1)
       #("don't" 2)
