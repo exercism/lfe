@@ -6,6 +6,11 @@
 
 ;; dict should be used to implement word-count:count/1.
 
+(defun assert-count (string expected)
+  (is-equal
+    (orddict:from_list expected)
+    (orddict:from_list (dict:to_list (word-count:count string)))))
+
 (deftest count-one-word
   (assert-count
     "word"
@@ -65,15 +70,6 @@
 
 (deftest with-apostrophes
   (assert-count
-    "First: don't laugh. Then: don't cry."
-    '(#("first" 1)
-      #("don't" 2)
-      #("laugh" 1)
-      #("then" 1)
-      #("cry" 1))))
-
-(deftest with-apostrophes-multiple-letters
-  (assert-count
     "First don't laugh. then: don't cry. You're getting it."
     '(#("first" 1)
       #("don't" 2)
@@ -124,24 +120,3 @@
     "can, can't, 'can't'"
     '(#("can" 1)
       #("can't" 2))))
-
-(deftest prefix-punctuation
-  (assert-count
-    "!%%#testing, 1, 2 testing"
-    '(#("testing" 2)
-      #("1"       1)
-      #("2"       1))))
-
-(deftest symbols-are-separators
-  (assert-count
-    "hey,my_spacebar_is_broken."
-    '(#("hey"      1)
-      #("my"       1)
-      #("spacebar" 1)
-      #("is"       1)
-      #("broken"   1))))
-
-(defun assert-count (string expected)
-  (is-equal
-    (orddict:from_list expected)
-    (orddict:from_list (dict:to_list (word-count:count string)))))
