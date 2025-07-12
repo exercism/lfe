@@ -1,0 +1,11 @@
+%% -*- erlang -*-
+{application, 'all-your-base',
+ [{description, "exercism.org - all your base"},
+  {vsn, "0.0.1"},
+  {modules,
+   ['all-your-base']},
+  {registered, []},
+  {applications,
+   [kernel, stdlib]},
+  {included_applications, []},
+  {env, []}]}.
