@@ -94,6 +94,7 @@
         "practices": [],
         "prerequisites": [],
         "difficulty": 2,
+        "status": "deprecated",
         "topics": [
           "math"
         ]
@@ -271,6 +272,7 @@
         "practices": [],
         "prerequisites": [],
         "difficulty": 2,
+        "status": "deprecated",
         "topics": [
           "math"
         ]
@@ -391,6 +393,14 @@
         "slug": "allergies",
         "name": "Allergies",
         "uuid": "68eec796-a269-4e66-84b5-e26574ff614e",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 5
+      },
+      {
+        "slug": "all-your-base",
+        "name": "All Your Base",
+        "uuid": "b226abea-2da6-4af5-9a56-af1f21431130",
         "practices": [],
         "prerequisites": [],
         "difficulty": 5
