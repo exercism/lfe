@@ -6,7 +6,7 @@
 **`Lisp Flavoured Erlang (LFE)`** is one of many programming language tracks on [exercism(dot)org][exercism-website].
 This repo holds all the instructions, tests, code, & support files for LFE exercises currently under development or implemented and available for students.
 
-🌟 Track exercises and the test runner currently utilize LFE `2.1.3`.
+🌟 Track exercises and the test runner currently utilize LFE `2.2.0`.
 
 Currently, all exercises are open-ended practice exercises, intended to practice concepts learned, try out new techniques, and most importantly play around with.
 
