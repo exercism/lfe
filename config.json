@@ -183,6 +183,14 @@
         "difficulty": 2
       },
       {
+        "slug": "line-up",
+        "name": "Line Up",
+        "uuid": "4011f95b-f3ab-462c-b0f8-2dfa0e70350a",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 2
+      },
+      {
         "slug": "nucleotide-count",
         "name": "Nucleotide Count",
         "uuid": "9b1ae897-b15d-4180-af45-1c69f98a8f34",

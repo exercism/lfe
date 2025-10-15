@@ -1,0 +1,10 @@
+%% -*- erlang -*-
+{application, 'line-up',
+ [{description, "exercism.org - line up"},
+  {vsn, "0.0.1"},
+  {modules,['line-up']},
+  {registered, []},
+  {applications,
+   [kernel, stdlib]},
+  {included_applications, []},
+  {env, []}]}.
