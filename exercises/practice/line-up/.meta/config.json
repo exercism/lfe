@@ -11,6 +11,10 @@
     ],
     "example": [
       ".meta/example.lfe"
+    ],
+    "invalidator": [
+      "rebar.config",
+      "rebar.lock"
     ]
   },
   "blurb": "Help lining up customers at Yaʻqūb's Deli.",
