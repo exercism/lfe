@@ -446,6 +446,14 @@
         "difficulty": 5
       },
       {
+        "slug": "flower-field",
+        "name": "Flower Field",
+        "uuid": "0643257b-8e60-4d6f-9668-86173c24a77b",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 5
+      },
+      {
         "slug": "kindergarten-garden",
         "name": "Kindergarten Garden",
         "uuid": "a595aa35-6947-4c9c-af31-ec099f7dd582",
