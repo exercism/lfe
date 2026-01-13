@@ -23,3 +23,18 @@
 (deftest reverses-an-even-sized-word
   (is-equal "reward"
             (reverse:string "drawer")))
+
+;; Uncomment the following Unicode tests locally if you want an extra challenge.
+;; The online test runner won't run these.
+;;
+;; (deftest wide-characters
+;;   (is-equal "猫子"
+;;             (reverse:string "子猫")))
+;;
+;; (deftest reverses-grapheme-cluster-with-pre-combined-form
+;;   (is-equal "dnatsnehctsrüW"
+;;             (reverse:string "Würstchenstand")))
+;; 
+;; (deftest reverses-grapheme-clusters
+;;   (is-equal "มรกแรปโนยขีเผู้"
+;;             (reverse:string "ผู้เขียนโปรแกรม")))
