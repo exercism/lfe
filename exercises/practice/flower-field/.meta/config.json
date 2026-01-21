@@ -1,0 +1,23 @@
+{
+  "authors": [
+    "BNAndras"
+  ],
+  "contributors": [
+    "ErikSchierboom",
+    "iHiD",
+    "juhlig",
+    "NobbZ"
+  ],
+  "files": {
+    "solution": [
+      "src/flower-field.lfe"
+    ],
+    "test": [
+      "test/flower-field-tests.lfe"
+    ],
+    "example": [
+      ".meta/example.lfe"
+    ]
+  },
+  "blurb": "Mark all the flowers in a garden."
+}
