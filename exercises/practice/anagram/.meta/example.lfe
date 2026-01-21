@@ -16,5 +16,7 @@
    'false))
 
 (defun normalize (str)
-  (let ((lowered (string:to_lower str)))
+  (let* ((bin (erlang:list_to_binary str))
+         (cleaned (unicode:characters_to_list bin))
+         (lowered (string:to_lower cleaned)))
     `#(,lowered ,(lists:sort lowered))))
