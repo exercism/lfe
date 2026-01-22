@@ -1,0 +1,11 @@
+%% -*- erlang -*-
+{application, 'flower-field',
+ [{description, "exercism.org - flower field"},
+  {vsn, "0.0.1"},
+  {modules,
+   ['flower-field']},
+  {registered, []},
+  {applications,
+   [kernel, stdlib]},
+  {included_applications, []},
+  {env, []}]}.
