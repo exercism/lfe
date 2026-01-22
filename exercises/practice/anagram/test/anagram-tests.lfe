@@ -59,3 +59,12 @@
 
 (deftest words-other-than-themselves-can-be-anagrams
   (is-equal '("Silent") (anagram:find "LISTEN" '("LISTEN" "Silent"))))
+
+;; Uncomment the following Unicode tests locally if you want an extra challenge.
+;; The online test runner won't run these.
+;;
+;; (deftest handles-case-of-greek-letters
+;;   (is-equal '("ΒΓΑ" "γβα") (anagram:find "ΑΒΓ" '("ΒΓΑ" "ΒΓΔ" "γβα" "αβγ"))))
+;;
+;; (deftest different-characters-may-have-the-same-bytes
+;;   (is-equal '() (anagram:find "a⬂" '("€a"))))
