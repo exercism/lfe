@@ -9,24 +9,44 @@
             (game-of-life:tick '())))
 
 (deftest live-cells-with-zero-live-neighbors-die
-  (is-equal '((0 0 0) (0 0 0) (0 0 0))
-            (game-of-life:tick '((0 0 0) (0 1 0) (0 0 0)))))
+  (is-equal '((0 0 0)
+              (0 0 0)
+              (0 0 0))
+            (game-of-life:tick '((0 0 0)
+                                 (0 1 0)
+                                 (0 0 0)))))
 
 (deftest live-cells-with-only-one-live-neighbor-die
-  (is-equal '((0 0 0) (0 0 0) (0 0 0))
-            (game-of-life:tick '((0 0 0) (0 1 0) (0 1 0)))))
+  (is-equal '((0 0 0)
+              (0 0 0)
+              (0 0 0))
+            (game-of-life:tick '((0 0 0)
+                                 (0 1 0)
+                                 (0 1 0)))))
 
 (deftest live-cells-with-two-live-neighbors-stay-alive
-  (is-equal '((0 0 0) (1 0 1) (0 0 0))
-            (game-of-life:tick '((1 0 1) (1 0 1) (1 0 1)))))
+  (is-equal '((0 0 0)
+              (1 0 1)
+              (0 0 0))
+            (game-of-life:tick '((1 0 1)
+                                 (1 0 1)
+                                 (1 0 1)))))
 
 (deftest live-cells-with-three-live-neighbors-stay-alive
-  (is-equal '((0 0 0) (1 0 0) (1 1 0))
-            (game-of-life:tick '((0 1 0) (1 0 0) (1 1 0)))))
+  (is-equal '((0 0 0)
+              (1 0 0)
+              (1 1 0))
+            (game-of-life:tick '((0 1 0)
+                                 (1 0 0)
+                                 (1 1 0)))))
 
 (deftest dead-cells-with-three-live-neighbors-become-alive
-  (is-equal '((0 0 0) (1 1 0) (0 0 0))
-            (game-of-life:tick '((1 1 0) (0 0 0) (1 0 0)))))
+  (is-equal '((0 0 0)
+              (1 1 0)
+              (0 0 0))
+            (game-of-life:tick '((1 1 0)
+                                 (0 0 0)
+                                 (1 0 0)))))
 
 (deftest live-cells-with-four-or-more-neighbors-die
   (is-equal '((1 0 1) (0 0 0) (1 0 1))
