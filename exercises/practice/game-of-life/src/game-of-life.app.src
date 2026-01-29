@@ -1,0 +1,11 @@
+%% -*- erlang -*-
+{application, 'game-of-life',
+ [{description, "exercism.org - game of life"},
+  {vsn, "0.0.1"},
+  {modules,
+   ['game-of-life']},
+  {registered, []},
+  {applications,
+   [kernel, stdlib]},
+  {included_applications, []},
+  {env, []}]}.

@@ -430,6 +430,14 @@
         "difficulty": 5
       },
       {
+        "slug": "game-of-life",
+        "name": "Conway's Game of Life",
+        "uuid": "4f6a4274-f860-4a39-88cb-b68f35b2945b",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 5
+      },
+      {
         "slug": "etl",
         "name": "ETL",
         "uuid": "049c088d-a0e6-4a19-8040-0a470c838e42",
