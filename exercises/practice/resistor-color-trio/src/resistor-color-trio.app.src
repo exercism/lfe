@@ -1,0 +1,11 @@
+%% -*- erlang -*-
+{application, 'resistor-color-trio',
+ [{description, "exercism.org - resistor color trio"},
+  {vsn, "0.0.1"},
+  {modules,
+   ['resistor-color-trio']},
+  {registered, []},
+  {applications,
+   [kernel, stdlib]},
+  {included_applications, []},
+  {env, []}]}.
