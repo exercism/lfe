@@ -4,6 +4,7 @@
           (close 1)
           (create 0)
           (deposit 2)
+          (open 1)
           (withdraw 2)))
 
 ; Please implement the exported function(s).
