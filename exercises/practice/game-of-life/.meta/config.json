@@ -11,6 +11,10 @@
     ],
     "example": [
       ".meta/example.lfe"
+    ],
+    "invalidator": [
+      "rebar.config",
+      "rebar.lock"
     ]
   },
   "blurb": "Implement Conway's Game of Life.",

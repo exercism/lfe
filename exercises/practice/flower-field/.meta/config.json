@@ -17,6 +17,10 @@
     ],
     "example": [
       ".meta/example.lfe"
+    ],
+    "invalidator": [
+      "rebar.config",
+      "rebar.lock"
     ]
   },
   "blurb": "Mark all the flowers in a garden."
