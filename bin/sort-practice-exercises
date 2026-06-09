@@ -1,0 +1,30 @@
+#!/bin/bash
+
+die () { echo "$*" >&2; exit 1; }
+
+(( $# == 2 )) || die "Usage: $0 <comparison-type> <config.json>"
+[[ -r $2 ]] || die "$2 is not a readable file"
+
+tmp=$(mktemp)
+jq -r '
+  # Bucket by displayed difficulty. 0-3: easy; 4-7: medium; 8-10: hard.
+  def bucket(i): [1, 1, 1, 1, 2, 2, 2, 2, 3, 3, 3][i];
+  # Code injection to inject the sort literal expression.
+  def sort: sort_by('"$1"');
+  .exercises.practice = (
+    .exercises.practice |
+    # Add displayed difficulty
+    map(.lowercase_name = (.name | ascii_downcase)) |
+    map(.bucket = bucket(.difficulty)) |
+    # Leave hello-world at the top
+    if .[0].slug == "hello-world" then
+      [.[0]] + (.[1:] | sort)
+    else
+      sort
+    end |
+    map(del(.lowercase_name)) |
+    map(del(.bucket))
+  )
+' "$2" > "$tmp" && \
+cat "$tmp" > "$2"
+rm "$tmp"
