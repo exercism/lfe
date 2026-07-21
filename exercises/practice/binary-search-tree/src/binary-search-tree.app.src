@@ -1,0 +1,11 @@
+%% -*- erlang -*-
+{application, 'binary-search-tree',
+ [{description, "exercism.org - binary search tree"},
+  {vsn, "0.0.1"},
+  {modules,
+   ['binary-search-tree']},
+  {registered, []},
+  {applications,
+   [kernel, stdlib]},
+  {included_applications, []},
+  {env, []}]}.

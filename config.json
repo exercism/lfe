@@ -430,6 +430,14 @@
         "difficulty": 5
       },
       {
+        "slug": "binary-search-tree",
+        "name": "Binary Search Tree",
+        "uuid": "fb1e24f4-4b37-414e-bba3-9f4f4832826d",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 5
+      },
+      {
         "slug": "clock",
         "name": "Clock",
         "uuid": "0a75c71e-b634-4b49-b374-718528e21075",
