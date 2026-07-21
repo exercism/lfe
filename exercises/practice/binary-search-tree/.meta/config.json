@@ -1,0 +1,22 @@
+{
+  "authors": [
+    "BNAndras"
+  ],
+  "files": {
+    "solution": [
+      "src/binary-search-tree.lfe"
+    ],
+    "test": [
+      "test/binary-search-tree-tests.lfe"
+    ],
+    "example": [
+      ".meta/example.lfe"
+    ],
+    "invalidator": [
+      "rebar.config",
+      "rebar.lock"
+    ]
+  },
+  "blurb": "Insert and search for numbers in a binary tree.",
+  "source": "Josh Cheek"
+}
