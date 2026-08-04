@@ -1,0 +1,11 @@
+%% -*- erlang -*-
+{application, 'diamond',
+ [{description, "exercism.org - diamond"},
+  {vsn, "0.0.1"},
+  {modules,
+   ['diamond']},
+  {registered, []},
+  {applications,
+   [kernel, stdlib]},
+  {included_applications, []},
+  {env, []}]}.

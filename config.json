@@ -454,6 +454,14 @@
         "difficulty": 5
       },
       {
+        "slug": "diamond",
+        "name": "Diamond",
+        "uuid": "ac2a1040-77fe-4fe3-9907-c0e675a453c5",
+        "practices": [],
+        "prerequisites": [],
+        "difficulty": 5
+      },
+      {
         "slug": "etl",
         "name": "ETL",
         "uuid": "049c088d-a0e6-4a19-8040-0a470c838e42",
