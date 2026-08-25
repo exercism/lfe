@@ -1,0 +1,11 @@
+%% -*- erlang -*-
+{application, 'isbn-verifier',
+ [{description, "exercism.org - isbn verifier"},
+  {vsn, "0.0.1"},
+  {modules,
+   ['isbn-verifier']},
+  {registered, []},
+  {applications,
+   [kernel, stdlib]},
+  {included_applications, []},
+  {env, []}]}.
