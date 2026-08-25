@@ -106,19 +106,36 @@
               (bank-account:deposit account -50))))
 
 (deftest can-handle-concurrent-transactions
-  (let* ((account (bank-account:create))
-         (spawn-deposits (lambda ()
-                          (lists:foreach
-                            (lambda (_)
-                              (spawn (lambda () (bank-account:deposit account 1))))
-                            (lists:seq 1 1000))))
-         (spawn-withdrawals (lambda ()
-                             (lists:foreach
-                               (lambda (_)
-                                 (spawn (lambda () (bank-account:withdraw account 1))))
-                               (lists:seq 1 1000)))))
+  (let ((account (bank-account:create)))
     (bank-account:open account)
-    (funcall spawn-deposits)
-    (funcall spawn-withdrawals)
-    (timer:sleep 500)
+
+    (run-concurrently
+      1000
+      (lambda ()
+        (bank-account:deposit account 1)))
+    (is-equal 1000 (bank-account:balance account))
+
+    (run-concurrently
+      1000
+      (lambda ()
+        (bank-account:withdraw account 1)))
     (is-equal 0 (bank-account:balance account))))
+
+(defun run-concurrently (count operation)
+  (lists:foreach
+    (lambda (_)
+      (spawn_monitor operation))
+    (lists:seq 1 count))
+  (await-workers count))
+
+(defun await-workers
+  ([0]
+   'ok)
+  ([remaining]
+   (receive
+     ((tuple 'DOWN _ref 'process _pid 'normal)
+      (await-workers (- remaining 1)))
+     ((tuple 'DOWN _ref 'process _pid reason)
+      (erlang:error reason))
+     (after 2000
+      (erlang:error 'timeout)))))
