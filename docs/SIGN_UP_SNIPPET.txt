@@ -1,0 +1,15 @@
+(defun most-common-word (text)
+  (let* ((words (string:lexemes (string:lowercase text) " "))
+         ((tuple counts best)
+          (lists:foldl
+           (match-lambda
+             ((word (tuple acc top))
+              (let ((count (+ (maps:get word acc 0) 1)))
+                (if (> count (maps:get top acc 0))
+                  (tuple (maps:put word count acc) word)
+                  (tuple (maps:put word count acc) top)))))
+           (tuple (map) "")
+           words)))
+    (lists:flatten
+     (io_lib:format "\"~s\" appears ~p times"
+                    (list best (maps:get best counts))))))
