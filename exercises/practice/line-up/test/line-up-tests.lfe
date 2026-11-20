@@ -60,9 +60,29 @@
   (is-equal "Washi, you are the 21st customer we serve today. Thank you!"
             (line-up:format "Washi" 21)))
 
+(deftest format-exceptional-ordinal-numeral-22-ending-in-nd-even-though-it-is-a-multiple-of-11
+  (is-equal "Ingrid, you are the 22nd customer we serve today. Thank you!"
+            (line-up:format "Ingrid" 22)))
+
+(deftest format-exceptional-ordinal-numeral-33-ending-in-rd-even-though-it-is-a-multiple-of-11
+  (is-equal "Mario, you are the 33rd customer we serve today. Thank you!"
+            (line-up:format "Mario" 33)))
+
+(deftest format-exceptional-ordinal-numeral-52-ending-in-nd-even-though-it-is-a-multiple-of-13
+  (is-equal "Quentin, you are the 52nd customer we serve today. Thank you!"
+            (line-up:format "Quentin" 52)))
+
 (deftest format-exceptional-ordinal-numeral-62
   (is-equal "Nayra, you are the 62nd customer we serve today. Thank you!"
             (line-up:format "Nayra" 62)))
+
+(deftest format-non-exceptional-ordinal-numeral-72-ending-in-nd-even-though-it-is-a-multiple-of-12
+  (is-equal "Ugo, you are the 72nd customer we serve today. Thank you!"
+            (line-up:format "Ugo" 72)))
+
+(deftest format-exceptional-ordinal-numeral-91-ending-in-st-even-though-it-is-a-multiple-of-13
+  (is-equal "Boris, you are the 91st customer we serve today. Thank you!"
+            (line-up:format "Boris" 91)))
 
 (deftest format-exceptional-ordinal-numeral-100
   (is-equal "John, you are the 100th customer we serve today. Thank you!"
@@ -79,3 +99,7 @@
 (deftest format-exceptional-ordinal-numeral-123
   (is-equal "Yma, you are the 123rd customer we serve today. Thank you!"
             (line-up:format "Yma" 123)))
+
+(deftest format-large-number-972-ending-in-nd-even-though-it-is-a-multiple-of-12
+  (is-equal "Elias, you are the 972nd customer we serve today. Thank you!"
+            (line-up:format "Elias" 972)))
