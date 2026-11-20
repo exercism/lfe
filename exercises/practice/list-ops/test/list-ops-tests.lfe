@@ -64,8 +64,11 @@
 (deftest reverse-empty-list
   (is-equal '() (list-ops:reverse '())))
 
-(deftest reverse-non-empty-list
+(deftest reverse-non-empty-even-length-list
   (is-equal '(7 5 3 1) (list-ops:reverse '(1 3 5 7))))
+
+(deftest reverse-non-empty-odd-length-list
+  (is-equal '(13 11 9 7 5 3 1) (list-ops:reverse '(1 3 5 7 9 11 13))))
 
 (deftest reverse-list-of-lists-is-not-flattened
   (is-equal (list '(4 5 6) '() '(3) '(1 2)) (list-ops:reverse (list '(1 2) '(3) '() '(4 5 6)))))
