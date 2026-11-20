@@ -5,9 +5,14 @@
           (sort 1)))
 
 (defun add (name grade school)
-  (case (get grade school)
-    (() (orddict:store grade `(,name) school))
-    (class (orddict:store grade (ordsets:add_element name class) school))))
+  (let ((enrolled (lc ((<- `#(,_ ,students) school)
+                      (<- student students))
+                   student)))
+    (if (lists:member name enrolled)
+        school
+        (case (get grade school)
+          (() (orddict:store grade `(,name) school))
+          (class (orddict:store grade (ordsets:add_element name class) school))))))
 
 (defun get (grade students)
   (case (orddict:find grade students)
