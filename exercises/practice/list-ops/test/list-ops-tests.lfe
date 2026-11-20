@@ -7,10 +7,10 @@
 (deftest append-empty-lists
   (is-equal '() (list-ops:append '() '())))
 
-(deftest append-list-to-empty-list 
+(deftest append-list-to-empty-list
   (is-equal '(1 2 3 4) (list-ops:append '() '(1 2 3 4))))
 
-(deftest append-empty-list-to-list 
+(deftest append-empty-list-to-list
   (is-equal '(1 2 3 4) (list-ops:append '(1 2 3 4) '())))
 
 (deftest append-non-empty-lists
@@ -64,8 +64,11 @@
 (deftest reverse-empty-list
   (is-equal '() (list-ops:reverse '())))
 
-(deftest reverse-non-empty-list
+(deftest reverse-non-empty-even-length-list
   (is-equal '(7 5 3 1) (list-ops:reverse '(1 3 5 7))))
+
+(deftest reverse-non-empty-odd-length-list
+  (is-equal '(13 11 9 7 5 3 1) (list-ops:reverse '(1 3 5 7 9 11 13))))
 
 (deftest reverse-list-of-lists-is-not-flattened
   (is-equal (list '(4 5 6) '() '(3) '(1 2)) (list-ops:reverse (list '(1 2) '(3) '() '(4 5 6)))))
