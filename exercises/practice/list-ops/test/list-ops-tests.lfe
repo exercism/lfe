@@ -7,10 +7,10 @@
 (deftest append-empty-lists
   (is-equal '() (list-ops:append '() '())))
 
-(deftest append-list-to-empty-list 
+(deftest append-list-to-empty-list
   (is-equal '(1 2 3 4) (list-ops:append '() '(1 2 3 4))))
 
-(deftest append-empty-list-to-list 
+(deftest append-empty-list-to-list
   (is-equal '(1 2 3 4) (list-ops:append '(1 2 3 4) '())))
 
 (deftest append-non-empty-lists
