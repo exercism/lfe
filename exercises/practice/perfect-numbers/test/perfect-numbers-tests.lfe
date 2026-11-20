@@ -22,6 +22,9 @@
 (deftest large-abundant-number
     (is-equal 'abundant (perfect-numbers:classify 33550335)))
 
+(deftest perfect-square-abundant-number
+    (is-equal 'abundant (perfect-numbers:classify 196)))
+
 (deftest smallest-prime-deficient-number
     (is-equal 'deficient (perfect-numbers:classify 2)))
 
